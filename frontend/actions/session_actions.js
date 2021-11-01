@@ -43,8 +43,6 @@ export const login = user => dispatch => (
     SessionAPIUtil.login(user)
         .then(user => { dispatch(receiveCurrentUser(user)); dispatch(clearErrors()) },
             error => (dispatch(receiveErrors(error.responseJSON)))));
-// error.responseJSON.errors 
-// jbuilder returns a json obj
 
 export const logout = () => dispatch => (
     SessionAPIUtil.logout().then(user => (dispatch(logoutCurrentUser()))));
