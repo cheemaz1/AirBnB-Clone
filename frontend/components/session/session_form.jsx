@@ -89,7 +89,6 @@ class SessionForm extends React.Component {
 
         const header = this.props.formType === "login" ? "LOG IN" : "SIGN UP";
 
-        // const errors = this.renderErrors();
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
