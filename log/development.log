@@ -4730,3 +4730,270 @@ Redirected to http://127.0.0.1:3000api/users/show
 Completed 302 Found in 325ms (ActiveRecord: 17.7ms | Allocations: 10544)
 
 
+Started POST "/api/session" for 127.0.0.1 at 2021-11-02 15:28:39 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"cheemz1", "password"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "birthday"=>"", "email"=>""}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cheemz1"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12:in `find_by_credentials'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "cheemz1"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "zPMFkRY3ffMJL6Hp8Hw6Sw"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Update (1.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "zPMFkRY3ffMJL6Hp8Hw6Sw"], ["updated_at", "2021-11-02 19:28:40.299183"], ["id", 2]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/show.json.jbuilder (Duration: 1.8ms | Allocations: 3317)
+Completed 500 Internal Server Error in 317ms (ActiveRecord: 25.7ms | Allocations: 20629)
+
+
+
+ActionView::MissingTemplate - Missing partial api/sessions/_user, application/_user with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:jbuilder]}. Searched in:
+  * "/Users/zayedcheema/Desktop/newproj/bnb/app/views"
+  * "/Users/zayedcheema/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/zayedcheema/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionmailbox-6.1.4.1/app/views":
+  app/views/api/users/show.json.jbuilder:3
+  app/views/api/users/show.json.jbuilder:2
+  app/views/api/users/show.json.jbuilder:1
+  app/controllers/api/sessions_controller.rb:12:in `create'
+
+Started GET "/" for 127.0.0.1 at 2021-11-02 15:31:06 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5LVCzxjjMKTiipA4zXUQRQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1336)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5LVCzxjjMKTiipA4zXUQRQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 164.3ms | Allocations: 84175)
+Completed 200 OK in 169ms (Views: 166.0ms | ActiveRecord: 1.8ms | Allocations: 85186)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-02 15:31:07 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5LVCzxjjMKTiipA4zXUQRQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1081)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5LVCzxjjMKTiipA4zXUQRQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 6003)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 2.2ms | Allocations: 6305)
+
+
+Started POST "/api/session" for 127.0.0.1 at 2021-11-02 15:31:28 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"cheemz1", "password"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "birthday"=>"", "email"=>""}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cheemz1"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12:in `find_by_credentials'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "cheemz1"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "OnBIH6iw8nurm7M6zh7ulg"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "OnBIH6iw8nurm7M6zh7ulg"], ["updated_at", "2021-11-02 19:31:28.779814"], ["id", 2]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/show.json.jbuilder (Duration: 1.0ms | Allocations: 2795)
+Completed 500 Internal Server Error in 314ms (ActiveRecord: 7.0ms | Allocations: 8150)
+
+
+
+ActionView::MissingTemplate - Missing partial api/sessions/_user, application/_user with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:jbuilder]}. Searched in:
+  * "/Users/zayedcheema/Desktop/newproj/bnb/app/views"
+  * "/Users/zayedcheema/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/zayedcheema/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionmailbox-6.1.4.1/app/views":
+  app/views/api/users/show.json.jbuilder:3
+  app/views/api/users/show.json.jbuilder:2
+  app/views/api/users/show.json.jbuilder:1
+  app/controllers/api/sessions_controller.rb:12:in `create'
+
+Started GET "/" for 127.0.0.1 at 2021-11-02 15:39:06 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5LVCzxjjMKTiipA4zXUQRQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 63.7ms | Allocations: 5766)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5LVCzxjjMKTiipA4zXUQRQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 465.2ms | Allocations: 89786)
+Completed 200 OK in 467ms (Views: 466.6ms | ActiveRecord: 33.7ms | Allocations: 90086)
+
+
+Started POST "/api/session" for 127.0.0.1 at 2021-11-02 15:39:16 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"cheemz1", "password"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "birthday"=>"", "email"=>""}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cheemz1"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12:in `find_by_credentials'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "cheemz1"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "mUxOJ1rMEVRkWP2aMDuc5w"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Update (1.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "mUxOJ1rMEVRkWP2aMDuc5w"], ["updated_at", "2021-11-02 19:39:16.989028"], ["id", 2]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/show.json.jbuilder (Duration: 1.2ms | Allocations: 2795)
+Completed 500 Internal Server Error in 332ms (ActiveRecord: 8.5ms | Allocations: 8176)
+
+
+
+ActionView::MissingTemplate - Missing partial api/sessions/_user, application/_user with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:jbuilder]}. Searched in:
+  * "/Users/zayedcheema/Desktop/newproj/bnb/app/views"
+  * "/Users/zayedcheema/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/zayedcheema/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionmailbox-6.1.4.1/app/views":
+  app/views/api/users/show.json.jbuilder:3
+  app/views/api/users/show.json.jbuilder:2
+  app/views/api/users/show.json.jbuilder:1
+  app/controllers/api/sessions_controller.rb:12:in `create'
+
+Started GET "/" for 127.0.0.1 at 2021-11-02 15:39:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5LVCzxjjMKTiipA4zXUQRQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1080)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5LVCzxjjMKTiipA4zXUQRQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 413.0ms | Allocations: 89857)
+Completed 200 OK in 415ms (Views: 411.7ms | ActiveRecord: 2.2ms | Allocations: 90158)
+
+
+Started POST "/api/session" for 127.0.0.1 at 2021-11-02 15:40:06 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"cheemz1", "password"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "birthday"=>"", "email"=>""}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cheemz1"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12:in `find_by_credentials'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "cheemz1"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "M60tP--YHJ9BpybSsTvhzg"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "M60tP--YHJ9BpybSsTvhzg"], ["updated_at", "2021-11-02 19:40:06.397884"], ["id", 2]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/show.json.jbuilder (Duration: 0.9ms | Allocations: 2795)
+Completed 500 Internal Server Error in 320ms (ActiveRecord: 7.5ms | Allocations: 8151)
+
+
+
+ActionView::MissingTemplate - Missing partial api/sessions/_user, application/_user with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:jbuilder]}. Searched in:
+  * "/Users/zayedcheema/Desktop/newproj/bnb/app/views"
+  * "/Users/zayedcheema/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/zayedcheema/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionmailbox-6.1.4.1/app/views":
+  app/views/api/users/show.json.jbuilder:3
+  app/views/api/users/show.json.jbuilder:2
+  app/views/api/users/show.json.jbuilder:1
+  app/controllers/api/sessions_controller.rb:12:in `create'
+
+Started GET "/" for 127.0.0.1 at 2021-11-02 15:40:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5LVCzxjjMKTiipA4zXUQRQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1079)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5LVCzxjjMKTiipA4zXUQRQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 5999)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 1.9ms | Allocations: 6300)
+
+
+Started POST "/api/session" for 127.0.0.1 at 2021-11-02 15:40:59 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"cheemz1", "password"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "birthday"=>"", "email"=>""}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cheemz1"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12:in `find_by_credentials'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "cheemz1"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "DpB_11g11diJeUR6M0gXMA"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "DpB_11g11diJeUR6M0gXMA"], ["updated_at", "2021-11-02 19:41:00.227461"], ["id", 2]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/show.json.jbuilder (Duration: 1.2ms | Allocations: 2795)
+Completed 500 Internal Server Error in 321ms (ActiveRecord: 7.0ms | Allocations: 8149)
+
+
+
+ActionView::MissingTemplate - Missing partial api/sessions/_user, application/_user with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:jbuilder]}. Searched in:
+  * "/Users/zayedcheema/Desktop/newproj/bnb/app/views"
+  * "/Users/zayedcheema/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/zayedcheema/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionmailbox-6.1.4.1/app/views":
+  app/views/api/users/show.json.jbuilder:3
+  app/views/api/users/show.json.jbuilder:2
+  app/views/api/users/show.json.jbuilder:1
+  app/controllers/api/sessions_controller.rb:12:in `create'
+
+Started GET "/" for 127.0.0.1 at 2021-11-02 15:42:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5LVCzxjjMKTiipA4zXUQRQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 18.6ms | Allocations: 3372)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5LVCzxjjMKTiipA4zXUQRQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 8297)
+Completed 200 OK in 26ms (Views: 14.4ms | ActiveRecord: 11.3ms | Allocations: 8772)
+
+
+Started POST "/api/session" for 127.0.0.1 at 2021-11-02 15:42:12 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"cheemz1", "password"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "birthday"=>"", "email"=>""}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cheemz1"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12:in `find_by_credentials'
+Started POST "/api/session" for 127.0.0.1 at 2021-11-02 15:43:05 -0400
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/session" for 127.0.0.1 at 2021-11-02 15:43:05 -0400
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Exists? (2.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "cheemz1"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"cheemz1", "password"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "birthday"=>"", "email"=>""}}
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"cheemz1", "password"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "birthday"=>"", "email"=>""}}
+  [1m[36mUser Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "8f202y1glOKkisbW4blKtg"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Update (1.8ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "8f202y1glOKkisbW4blKtg"], ["updated_at", "2021-11-02 19:43:05.518234"], ["id", 2]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/show.json.jbuilder (Duration: 1.6ms | Allocations: 2717)
+Completed 500 Internal Server Error in 53135ms (ActiveRecord: 30.8ms | Allocations: 118035)
+
+
+
+ActionView::MissingTemplate - Missing partial api/sessions/_user, application/_user with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:jbuilder]}. Searched in:
+  * "/Users/zayedcheema/Desktop/newproj/bnb/app/views"
+  * "/Users/zayedcheema/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/zayedcheema/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionmailbox-6.1.4.1/app/views":
+  app/views/api/users/show.json.jbuilder:3
+  app/views/api/users/show.json.jbuilder:2
+  app/views/api/users/show.json.jbuilder:1
+  app/controllers/api/sessions_controller.rb:13:in `create'
+
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cheemz1"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12:in `find_by_credentials'
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cheemz1"], ["LIMIT", 1]]
