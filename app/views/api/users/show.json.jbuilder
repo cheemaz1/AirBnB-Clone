@@ -1,1 +1,5 @@
-json.extract! @user, :id, :username
+json.users do 
+    json.set! @user.id do 
+        json.partial! "user", user: @user 
+    end
+end
