@@ -5455,3 +5455,112 @@ Processing by Api::SessionsController#destroy as JSON
 Completed 200 OK in 16ms (Views: 0.9ms | ActiveRecord: 6.8ms | Allocations: 5589)
 
 
+Started GET "/" for 127.0.0.1 at 2021-11-02 17:19:43 -0400
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 5.0ms | Allocations: 651)
+  Rendered layout layouts/application.html.erb (Duration: 160.4ms | Allocations: 17596)
+Completed 200 OK in 169ms (Views: 163.0ms | ActiveRecord: 0.0ms | Allocations: 21488)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-02 17:19:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 1.7ms | Allocations: 209)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4606)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 4910)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-02 17:19:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 0.6ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 4604)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 4908)
+
+
+Started POST "/api/session" for 127.0.0.1 at 2021-11-02 17:19:51 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"cheemz1", "password"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "birthday"=>"", "email"=>""}}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cheemz1"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12:in `find_by_credentials'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "cheemz1"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "vkQwxT9nk9TVhysLPHB6Rw"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "vkQwxT9nk9TVhysLPHB6Rw"], ["updated_at", "2021-11-02 21:19:52.342101"], ["id", 2]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (Duration: 0.4ms | Allocations: 117)
+  Rendered api/users/show.json.jbuilder (Duration: 1.2ms | Allocations: 496)
+Completed 200 OK in 342ms (Views: 2.9ms | ActiveRecord: 21.8ms | Allocations: 16365)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-02 17:19:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "vkQwxT9nk9TVhysLPHB6Rw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: api/users/_user.json.jbuilder (called from _app_views_static_pages_root_html_erb__2203033888027458567_70182369815860 at /Users/zayedcheema/Desktop/newproj/bnb/app/views/static_pages/root.html.erb:4)
+  Rendered api/users/_user.json.jbuilder (Duration: 1.1ms | Allocations: 144)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 15.3ms | Allocations: 1786)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.2ms | Allocations: 78)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 6344)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 2.0ms | Allocations: 6649)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-02 17:19:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "vkQwxT9nk9TVhysLPHB6Rw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.4ms | Allocations: 80)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1259)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.4ms | Allocations: 78)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 5810)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 2.5ms | Allocations: 6112)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-02 17:19:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "vkQwxT9nk9TVhysLPHB6Rw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.3ms | Allocations: 80)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1257)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.6ms | Allocations: 78)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 5808)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 1.9ms | Allocations: 6108)
+
+
+Started DELETE "/api/session" for 127.0.0.1 at 2021-11-02 17:19:57 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "vkQwxT9nk9TVhysLPHB6Rw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Exists? (2.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "cheemz1"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Exists? (2.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "t2hqO7XCrJqy55Ayu4oKYg"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Update (2.5ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "t2hqO7XCrJqy55Ayu4oKYg"], ["updated_at", "2021-11-02 21:19:58.020392"], ["id", 2]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (Duration: 0.3ms | Allocations: 48)
+  Rendered api/users/show.json.jbuilder (Duration: 0.8ms | Allocations: 220)
+Completed 200 OK in 34ms (Views: 2.2ms | ActiveRecord: 13.5ms | Allocations: 5587)
+
+
