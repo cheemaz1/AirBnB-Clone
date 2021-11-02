@@ -43,7 +43,7 @@ class Splash extends React.Component {
 
                             <div>
                                 <div>
-                                    <p>Not sure where to go?</p>
+                                    <p>Not sure where to go? Perfect.</p>
                                 </div>
                                 <div>
                                     <Link className="flex-button" to="/listings">

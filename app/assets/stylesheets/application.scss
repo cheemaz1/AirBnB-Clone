@@ -14,12 +14,6 @@
  *= require_self
  */
 
- .close-x {
-   position: absolute;
-   top: 5px;
-   right: 5px;
-   cursor: pointer;
- }
+// @import "base/reset.scss";
 
- // Components
 @import "components/*";
