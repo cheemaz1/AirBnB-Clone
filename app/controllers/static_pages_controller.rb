@@ -1,5 +1,3 @@
-class StaticPagesController < ApplicationController 
-  def root 
-    render :root
-  end 
-end 
+class StaticPagesController < ApplicationController
+  def root; end
+end

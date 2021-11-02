@@ -7,14 +7,9 @@
     "lib": "lib",
     "test": "test"
   },
-  "engines": {
-    "node": "14.17.1",
-    "npm": "8.1.0"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch --mode=development",
-    "postinstall": "webpack"
+    "start": "webpack --watch --mode=development"
   },
   "keywords": [],
   "author": "",

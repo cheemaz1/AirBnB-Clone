@@ -1,25 +1,14 @@
-import { combineReducers } from "redux";
-//import entitiesReducer from "./entities_reducer";
-import errorsReducer from "./errors_reducer";
-import sessionReducer from "./session_reducer";
-
-
-// const DEFAULT_STATE = {
-//     entities: {
-//       users: {}
-//     },
-//     session: {
-//       id: null,
-//     },
-//     errors: {
-//       session: ["Invalid credentials"]
-//     }
-// };
+import { combineReducers } from 'redux';
+import ui from './ui_reducer';
+import entities from './entities_reducer';
+import session from './session_reducer';
+import errors from './errors_reducer';
 
 const rootReducer = combineReducers({
-   // entities: entitiesReducer,
-    errors: errorsReducer,
-    session: sessionReducer,
+    entities,
+    session,
+    ui,
+    errors,
 });
 
 export default rootReducer;
