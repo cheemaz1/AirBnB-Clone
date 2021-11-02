@@ -20,3 +20,6 @@
    right: 5px;
    cursor: pointer;
  }
+
+ // Components
+@import "components/*";

@@ -199,7 +199,12 @@ class SessionForm extends React.Component {
                         <button value={this.props.formType}>
                             {header}
                         </button>
-
+                        {header !== "SIGN UP" ? (<button
+                            className="session-submit"
+                            onClick={() =>
+                                this.props
+                                    .login({ username: "user3", password: "123123" })
+                                    .then(this.props.closeModal)}>Demo</button>) : <></>}
                     </div>
                 </form>
             </div>
