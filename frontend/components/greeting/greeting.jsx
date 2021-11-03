@@ -9,7 +9,10 @@ const Greeting = ({ currentUser, logout, openModal }) => {
             <button onClick={() => openModal('login')}>Login</button>
             &nbsp;or&nbsp;
             <button onClick={() => openModal('signup')}>Signup</button>
+            {/* <img className="splashbg" src={window.bg} alt="BG" /> */}
         </nav>
+        
+     
     );
     const personalGreeting = () => (
         <hgroup className="header-group">
@@ -19,6 +22,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
     );
 
     return (
+        
         currentUser ?
             personalGreeting(currentUser, logout) :
             sessionLinks()
