@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
+
 class Splash extends React.Component {
     constructor(props) {
         super(props);
@@ -42,6 +43,7 @@ class Splash extends React.Component {
                             {/* <img className="bg-img" src={splash_bg} alt="Splash BG" /> */}
 
                             <div>
+                                <img className="splashbg" src={window.bg} alt="BG" />
                                 <div>
                                     <p>Not sure where to go? Perfect.</p>
                                 </div>
@@ -49,8 +51,8 @@ class Splash extends React.Component {
                                     <Link className="flex-button" to="/listings">
                                         I'm flexible
                                     </Link>
-                        </div>
-                    </div>
+                                </div>
+                            </div>
                     <div>
                         <div>
                             <h3>Explore Places To Stay</h3>
