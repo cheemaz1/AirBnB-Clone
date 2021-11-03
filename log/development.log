@@ -5899,3 +5899,123 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 17ms (Views: 15.8ms | Allocations: 5213)
 
 
+Started GET "/" for 127.0.0.1 at 2021-11-02 22:11:21 -0400
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 6.2ms | Allocations: 652)
+  Rendered layout layouts/application.html.erb (Duration: 173.3ms | Allocations: 21506)
+Completed 200 OK in 183ms (Views: 176.5ms | ActiveRecord: 0.0ms | Allocations: 25398)
+
+
+Started POST "/api/user" for 127.0.0.1 at 2021-11-02 22:11:48 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/user"):
+  
+Started GET "/" for 127.0.0.1 at 2021-11-02 22:13:13 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 0.4ms | Allocations: 209)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 4918)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 5393)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-02 22:13:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 0.6ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 4914)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 5216)
+
+
+Started POST "/api/user" for 127.0.0.1 at 2021-11-02 22:13:36 -0400
+
+ActionController::RoutingError - uninitialized constant Api::UserController:
+
+Started GET "/" for 127.0.0.1 at 2021-11-02 22:15:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 0.4ms | Allocations: 209)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4919)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 5394)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-02 22:15:13 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 0.5ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 4913)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 5213)
+
+
+Started POST "/api/user" for 127.0.0.1 at 2021-11-02 22:15:33 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/user"):
+  
+Started GET "/" for 127.0.0.1 at 2021-11-02 22:16:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 0.5ms | Allocations: 209)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 4919)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5393)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-02 22:16:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 0.7ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 4913)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 5213)
+
+
+Started POST "/api/user" for 127.0.0.1 at 2021-11-02 22:16:39 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/user"):
+  
+Started GET "/" for 127.0.0.1 at 2021-11-02 22:17:44 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 4.2ms | Allocations: 651)
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | Allocations: 11309)
+Completed 200 OK in 51ms (Views: 44.8ms | ActiveRecord: 0.0ms | Allocations: 15202)
+
+
+Started POST "/api/user" for 127.0.0.1 at 2021-11-02 22:18:02 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"fsdfsdfs", "password"=>"[FILTERED]", "first_name"=>"sfsdf", "last_name"=>"sdfsdfsd", "birthday"=>"1998-09-09", "email"=>"fdfsdf@hotmail.com"}}
+[31mUnpermitted parameters: :first_name, :last_name, :birthday, :email[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fsdfsdfs"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "MTiN4RsHZH8c0apWQ-Wtow"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:6:in `create'
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "fsdfsdfs"], ["password_digest", "$2a$12$mk.LQkW/d2MTug/hmGbpeuLcAQHME/8oS3sYqXFytI2iwoA10B.hS"], ["session_token", "MTiN4RsHZH8c0apWQ-Wtow"], ["created_at", "2021-11-03 02:18:02.777245"], ["updated_at", "2021-11-03 02:18:02.777245"]]
+  ↳ app/controllers/api/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "fsdfsdfs"], ["id", 5], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "iqakftwb3ntneWNROPoOSA"], ["id", 5], ["LIMIT", 1]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mUser Update (0.9ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "iqakftwb3ntneWNROPoOSA"], ["updated_at", "2021-11-03 02:18:02.785334"], ["id", 5]]
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:26:in `reset_session_token!'
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (Duration: 0.4ms | Allocations: 117)
+  Rendered api/users/show.json.jbuilder (Duration: 1.1ms | Allocations: 495)
+Completed 200 OK in 323ms (Views: 2.8ms | ActiveRecord: 21.7ms | Allocations: 19495)
+
+
