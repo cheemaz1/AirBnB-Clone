@@ -58,79 +58,111 @@ class Splash extends React.Component {
                             <h3>Explore Places To Stay</h3>
                         </div>
                         <div>
-                            <div>
-                                {/* <img className="location-img" src={window.night_sky} alt="Location img" /> */}
+                                <div className="frog-row">
+                            <div className="explore-location">
+                                {/* <div className="img-row"> */}
+                                <img className="location-img" src={toronto} alt="Location img" />
                                 <Link
                                     to={`/listings/Toronto`}
                                     className="explore-location-text"
                                 >
                                     Toronto
                                 </Link>
+                                    <p>
+                                        <span>$250</span>/night avg.
+                                    </p>
                             </div>
                             <div className="explore-location">
-                                {/* <img className="location-img" src={window.night_sky} alt="Location img" /> */}
+                                <img className="location-img" src={vancouver} alt="Location img" />
                                 <Link
                                     to={`/listings/Vancouver`}
                                     className="explore-location-text"
                                 >
                                     Vancouver
                                 </Link>
+                                <p>
+                                    <span>$300</span>/night avg.
+                                </p>
                             </div>
                             <div className="explore-location">
-                                {/* <img className="location-img" src={window.night_sky} alt="Location img" /> */}
+                                <img className="location-img" src={chicago} alt="Location img" />
                                 <Link
                                     to={`/listings/Chicago`}
                                     className="explore-location-text"
                                 >
                                     Chicago
                                 </Link>
+                                <p>
+                                    <span>$180</span>/night avg.
+                                </p>
                             </div>
                             <div className="explore-location">
-                                {/* <img className="location-img" src={window.night_sky} alt="Location img" /> */}
+                                <img className="location-img" src={nyc} alt="Location img" />
                                 <Link to={`/listings/New York`} className="explore-location-text">
                                     New York
                                 </Link>
+                                <p>
+                                    <span>$250</span>/night avg.
+                                </p>
                             </div>
+                            </div>
+                            <div className="frog-row">
+
                             <div className="explore-location">
-                                {/* <img className="location-img" src={window.night_sky} alt="Location img" /> */}
+                                <img className="location-img" src={nj} alt="Location img" />
                                 <Link
                                     to={`/listings/New Jersey`}
                                     className="explore-location-text"
                                 >
                                     New Jersey
                                 </Link>
+                                <p>
+                                    <span>$130</span>/night avg.
+                                </p>
                             </div>
                             <div className="explore-location">
-                                {/* <img className="location-img" src={window.night_sky} alt="Location img" /> */}
+                                <img className="location-img" src={sanfran} alt="Location img" />
                                 <Link
                                     to={`/listings/San Francisco`}
                                     className="explore-location-text"
                                 >
                                     San Francisco
                                 </Link>
+                                <p>
+                                    <span>$250</span>/night avg.
+                                </p>
                             </div>
                             <div className="explore-location">
-                                {/* <img className="location-img" src={window.night_sky} alt="Location img" /> */}
+                                <img className="location-img" src={dallas} alt="Location img" />
                                 <Link
                                     to={`/listings/Dallas`}
                                     className="explore-location-text"
                                 >
                                     Dallas
                                 </Link>
+                                <p>
+                                    <span>$180</span>/night avg.
+                                </p>
                             </div>
                             <div className="explore-location">
-                                {/* <img className="location-img" src={window.night_sky} alt="Location img" /> */}
-                                <Link to={`/listings/Houstan`} className="explore-location-text">
-                                    Houstan
+                                <img className="location-img" src={houston} alt="Location img" />
+                                <Link to={`/listings/Houston`} className="explore-location-text">
+                                    Houston
                                 </Link>
+                                <p>
+                                    <span>$140</span>/night avg.
+                                </p>
                             </div>
                         </div>
                     </div>
+                    </div>
+                    
                     <div>
                         <div>
                             <div>
                                 {/* <img className="try-hosting-img" src={try_hosting} alt="Location img" /> */}
                             </div>
+                        
 
                             <div>
                                 <h3>Try Hosting</h3>
