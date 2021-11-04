@@ -159,12 +159,28 @@ class Splash extends React.Component {
                             </div>
                         
 
-                            <div>
+                            {/* <div>
                                 <h3>Try Hosting</h3>
                                 <p>
                                     Earn extra income and unlock new opportunities by sharing your
                                     space
                                 </p>
+                            </div> */}
+                            <div className="try-hosting-container-container">
+                                <div className="try-hosting-container">
+                                    <div className="try-hosting-img-container">
+                                        <img className="try-hosting-img" src={try_hosting} alt="Location img" />
+                                    </div>
+
+                                    <div className="try-hosting-text-container">
+                                        <h3 className="try-hosting-h3">Try Hosting</h3>
+                                        <p className="try-hosting-text">
+                                            Earn extra income and unlock new opportunities by sharing your
+                                            space
+                                        </p>
+                                        <p className="learnmore">Learn More</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
