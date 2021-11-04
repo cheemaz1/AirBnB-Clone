@@ -19,14 +19,28 @@ const Greeting = ({ currentUser, logout, openModal }) => {
      
     // );
     const sessionLinks = () => (
-        <ul className="login-signup-ul">
-            <li className="menu-li" onClick={() => openModal("login")}>
-                Log In
-            </li>
-            <li className="menu-li" onClick={() => openModal("signup")}>
-                Sign Up
-            </li>
-        </ul>
+        <div>
+            <ul className="login-signup-ul">
+                <li className="menu-li" onClick={() => openModal("login")}>
+                    Log In
+                </li>
+                <li className="menu-li" onClick={() => openModal("signup")}>
+                    Sign Up
+                </li>
+            </ul>
+            {/* <div className="container">
+                <button type="button" class="button">
+                    ☰
+                </button>
+                <div class="dropdown">
+                    <ul>
+                        <li>Option 1</li>
+                        <li>Option 2</li>
+                    </ul>
+                </div>
+            </div> */}
+        </div>
+        
     );
     const personalGreeting = () => (
         <hgroup className="header-group">
@@ -45,3 +59,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
 
 
 export default Greeting;
+
+
+
+

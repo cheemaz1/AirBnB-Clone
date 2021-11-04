@@ -19,14 +19,16 @@ const App = () => (
     <div>
         <Modal />
         <header>
-            <Link to="/" className="header-link">
-                <h1 className="cozybnb"><i className="fab fa-airbnb"></i>cozybnb</h1>
-            </Link>
-            <GreetingContainer />
-            <SearchContainer />
-            <SplashContainer />
+            <div className="headercomp">
+                <Link to="/" className="header-link">
+                    <div className="cozybnb"><p className="name"><i className="fab fa-airbnb"></i>cozybnb</p></div>
+                </Link> 
+                <GreetingContainer />
+                <SearchContainer />  
+            </div>
         </header>
-            {/* <AuthRoute exact path="/" component={SplashContainer} /> */}
+            {/* <SplashContainer /> */}
+            <AuthRoute exact path="/" component={SplashContainer} />
             <AuthRoute exact path="/signup" component={SignUpFormContainer} />
             <AuthRoute exact path="/login" component={LogInFormContainer} />
             {/* <Route path={`/search`} component={SearchContainer} /> */}

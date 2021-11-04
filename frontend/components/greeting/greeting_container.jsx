@@ -20,3 +20,18 @@ export default connect(
     mapStateToProps,
     mapDispatchToProps
 )(Greeting);
+
+// const mapState = ({ session }) => {
+//     return {
+//         currentUser: session.currentUser
+//     }
+// };
+
+// const mapDispatch = dispatch => {
+//     return {
+//         logout: () => dispatch(logout()),
+//         openModal: modal => dispatch(openModal(modal))
+//     }
+// }
+
+// export default connect(mapState, mapDispatch)(Greeting);

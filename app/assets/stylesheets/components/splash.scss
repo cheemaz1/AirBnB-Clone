@@ -7,3 +7,38 @@
 
 }
 
+
+.perfect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainbg {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    // display: flex;
+    // z-index: -100px;
+}
+
+.flex-button {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 2px 2px 1px 1px #888888;
+
+}
+
