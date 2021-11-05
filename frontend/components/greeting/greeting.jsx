@@ -1,60 +1,95 @@
 import React from "react";
 import { withRouter } from 'react-router-dom';
 import Dropdown from "react-dropdown";
+import { DropdownButton } from 'react-bootstrap';
 import SearchContainer from "../search/search_container";
+import {
+
+    Link,
+
+} from 'react-router-dom';
 
 
-const Greeting = ({ currentUser, logout, openModal }) => {
-    // const sessionLinks = () => (
-    //     <nav className="login-signup">
-    //         <select>
-    //         <button onClick={() => openModal('login')}>Login</button>
-    //         &nbsp;or&nbsp;
-    //         <button onClick={() => openModal('signup')}>Signup</button>
+class Greeting extends React.Component {
+    constructor(props) {
+        super(props);
 
-    //         </select>
-    //         {/* <img className="splashbg" src={window.bg} alt="BG" /> */}
-    //     </nav>
+    }
+    gotoMain() {
+        this.props.history.push(`/`)
+    };
+
+    //  = ({ currentUser, logout, openModal })
+    render() {
+        const { currentUser, logout, openModal, title } = this.props 
+        // debugger; 
         
-     
-    // );
-    const sessionLinks = () => (
-        <div>
-            <ul className="login-signup-ul">
-                <li className="menu-li" onClick={() => openModal("login")}>
-                    Log In
-                </li>
-                <li className="menu-li" onClick={() => openModal("signup")}>
-                    Sign Up
-                </li>
-            </ul>
-            {/* <div className="container">
-                <button type="button" class="button">
-                    ☰
-                </button>
-                <div class="dropdown">
-                    <ul>
-                        <li>Option 1</li>
-                        <li>Option 2</li>
-                    </ul>
+        const sessionLinks = (
+            <div className="ddown">
+                <Link to="/" className="header-link">
+                    <div className="cozybnb"><p className="name"><i id="hellobob" className="fab fa-airbnb" ></i>cozybnb</p></div>
+                </Link>
+                <div className="pfcontainer">
+
+                <button className="pf-ask" >☰</button>
+                <ul className="login-signup-ul">
+                    <li className="menu-li" onClick={() => openModal("login")}>
+                        Log In
+                    </li>
+                    <li className="menu-li" onClick={() => openModal("signup")}>
+                        Sign Up
+                    </li>
+                </ul> 
                 </div>
-            </div> */}
-        </div>
-        
-    );
-    const personalGreeting = () => (
-        <hgroup className="header-group">
-            <h2 className="header-name">Hi, {currentUser.username}!</h2>
-            <button className="header-button" onClick={logout}>Log Out</button>
-        </hgroup>
-    );
+              
+       
 
-    return (
+  
+               
+            </div>
+            
+        );
         
-        currentUser ?
-            personalGreeting(currentUser, logout) :
-            sessionLinks()
-    );
+
+        let personalGreeting
+        if (currentUser) {
+            personalGreeting = (
+                
+                <div className="ddown">
+                <Link to="/" className="header-link">
+                    <div className="cozybnb"><p className="name"><i id="hellobob" className="fab fa-airbnb" ></i>cozybnb</p></div>
+                </Link>
+                <div className="pfcontainer">
+
+                <button className="pf-ask" >☰</button>
+                <ul className="login-signup-ul">
+                    <li className="menu-li">
+                        Profile
+                    </li>
+                    <li className="menu-li" onClick={logout}>
+                        Logout
+                    </li>
+                </ul> 
+                </div>
+              
+       
+
+  
+               
+            </div>
+
+
+            );
+        }
+        return (
+            <div>
+            {currentUser ?
+            personalGreeting :
+                sessionLinks}
+            </div>
+        );
+
+    }
 };
 
 

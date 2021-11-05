@@ -43,7 +43,7 @@ class Splash extends React.Component {
                     <div className="mainbg">
                         <img className="splashbg" src={window.bg} alt="BG" />
                         <div className="perfect">Not sure where to go? Perfect.</div>
-                        <div><Link className="flex-button" to="/listings">I'm flexible</Link></div>
+                        <div><Link className="flex-button" to="/homes">I'm flexible</Link></div>
                         {/* <button class="button-17" role="button" onClick="/listings">I'm flexible</button> */}
                     </div>
                             
@@ -56,9 +56,9 @@ class Splash extends React.Component {
                                 <div className="frog-row">
                             <div className="explore-location">
                                 {/* <div className="img-row"> */}
-                                    <a href={`#/listings/Toronto`}><img className="location-img" src={toronto} alt="Location img" /></a>
+                                    <a href={`#/homes/Toronto`}><img className="location-img" src={toronto} alt="Location img" /></a>
                                 <Link
-                                    to={`/listings/Toronto`}
+                                    to={`/homes/Toronto`}
                                     className="explore-location-text"
                                 >
                                     Toronto
@@ -68,9 +68,9 @@ class Splash extends React.Component {
                                     </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/listings/Vancouver`}><img className="location-img" src={vancouver} alt="Location img" /></a>
+                                    <a href={`#/homes/Vancouver`}><img className="location-img" src={vancouver} alt="Location img" /></a>
                                 <Link
-                                    to={`/listings/Vancouver`}
+                                    to={`/homes/Vancouver`}
                                     className="explore-location-text"
                                 >
                                     Vancouver
@@ -80,9 +80,9 @@ class Splash extends React.Component {
                                 </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/listings/Chicago`}><img className="location-img" src={chicago} alt="Location img" /></a>
+                                    <a href={`#/homes/Chicago`}><img className="location-img" src={chicago} alt="Location img" /></a>
                                 <Link
-                                    to={`/listings/Chicago`}
+                                    to={`/homes/Chicago`}
                                     className="explore-location-text"
                                 >
                                     Chicago
@@ -92,8 +92,8 @@ class Splash extends React.Component {
                                 </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/listings/New York`}><img className="location-img" src={nyc} alt="Location img" /></a>
-                                <Link to={`/listings/New York`} className="explore-location-text">
+                                    <a href={`#/homes/New York`}><img className="location-img" src={nyc} alt="Location img" /></a>
+                                <Link to={`/homes/New York`} className="explore-location-text">
                                     New York
                                 </Link>
                                 <p>
@@ -104,9 +104,9 @@ class Splash extends React.Component {
                             <div className="frog-row">
 
                             <div className="explore-location">
-                                    <a href={`#/listings/New Jersey`}><img className="location-img" src={nj} alt="Location img" /></a>
+                                    <a href={`#/homes/New Jersey`}><img className="location-img" src={nj} alt="Location img" /></a>
                                 <Link
-                                    to={`/listings/New Jersey`}
+                                    to={`/homes/New Jersey`}
                                     className="explore-location-text"
                                 >
                                     New Jersey
@@ -116,9 +116,9 @@ class Splash extends React.Component {
                                 </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/listings/San Francisco`}><img className="location-img" src={sanfran} alt="Location img" /></a>
+                                    <a href={`#/homes/San Francisco`}><img className="location-img" src={sanfran} alt="Location img" /></a>
                                 <Link
-                                    to={`/listings/San Francisco`}
+                                    to={`/homes/San Francisco`}
                                     className="explore-location-text"
                                 >
                                     San Francisco
@@ -128,9 +128,9 @@ class Splash extends React.Component {
                                 </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/listings/Dallas`}><img className="location-img" src={dallas} alt="Location img" /></a>
+                                    <a href={`#/homes/Dallas`}><img className="location-img" src={dallas} alt="Location img" /></a>
                                 <Link
-                                    to={`/listings/Dallas`}
+                                    to={`/homes/Dallas`}
                                     className="explore-location-text"
                                 >
                                     Dallas
@@ -140,8 +140,8 @@ class Splash extends React.Component {
                                 </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/listings/Houston`}><img className="location-img" src={houston} alt="Location img" /></a>
-                                <Link to={`/listings/Houston`} className="explore-location-text">
+                                    <a href={`#/homes/Houston`}><img className="location-img" src={houston} alt="Location img" /></a>
+                                <Link to={`/homes/Houston`} className="explore-location-text">
                                     Houston
                                 </Link>
                                 <p>
@@ -149,23 +149,20 @@ class Splash extends React.Component {
                                 </p>
                             </div>
                         </div>
+                        
                     </div>
+                    
                     </div>
+                    
+
+                    
                     
                     <div>
                         <div>
-                            <div>
-                                {/* <img className="try-hosting-img" src={try_hosting} alt="Location img" /> */}
-                            </div>
+                            
                         
 
-                            {/* <div>
-                                <h3>Try Hosting</h3>
-                                <p>
-                                    Earn extra income and unlock new opportunities by sharing your
-                                    space
-                                </p>
-                            </div> */}
+                            
                             <div className="try-hosting-container-container">
                                 <div className="try-hosting-container">
                                     <div className="try-hosting-img-container">

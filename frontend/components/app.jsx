@@ -11,27 +11,41 @@ import SearchContainer from "./search/search_container";
 import GreetingContainer from './greeting/greeting_container';
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
+import HomeContainer from "./homes/home/home_container";
+import HomesIndexContainer from "./homes/home_index_container";
 import Modal from './modal/modal';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import SplashContainer from "./splash/splash_container";
+import 'bootstrap'; 
+import 'bootstrap';
+// import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/js/bootstrap.js';
+import $ from 'jquery';
+import Popper from 'popper.js';
 
 const App = () => (
     <div>
         <Modal />
         <header>
             <div className="headercomp">
-                <Link to="/" className="header-link">
-                    <div className="cozybnb"><p className="name"><i className="fab fa-airbnb"></i>cozybnb</p></div>
-                </Link> 
                 <GreetingContainer />
                 <SearchContainer />  
             </div>
         </header>
             {/* <SplashContainer /> */}
-            <AuthRoute exact path="/" component={SplashContainer} />
+            {/* <AuthRoute exact path="/" component={SplashContainer} />
+            <Route exact path="/homes" component={HomesIndexContainer} />
+            <Route path={`/homes/:homeId`} component={HomeContainer} />
             <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-            <AuthRoute exact path="/login" component={LogInFormContainer} />
+            <AuthRoute exact path="/login" component={LogInFormContainer} /> */}
             {/* <Route path={`/search`} component={SearchContainer} /> */}
+        <Switch>
+            <Route exact path="/" component={SplashContainer} />
+            {/* <Route exact path="/users/:userId" component={ProfileShowContainer} /> */}
+            <Route exact path="/homes" component={HomesIndexContainer} />
+            <Route path={`/homes/:homeId`} component={HomeContainer} />
+            {/* <Route path={`/search`} component={SearchContainer} /> */}
+        </Switch>
     </div>
 );
 

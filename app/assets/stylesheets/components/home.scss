@@ -1,0 +1,118 @@
+.homes-div {
+  display: flex;
+}
+
+.home-name {
+  font-size: 15px;
+}
+.home-name:hover {
+  cursor: pointer;
+  background-color: beige;
+}
+
+.home-info {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: lighter;
+  color: grey;
+}
+
+.indiv-home {
+  width: 80%;
+  margin-left: 40px;
+  padding: 5px;
+}
+
+.indiv-home-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 5px;
+}
+
+.indiv-home:hover {
+  transform: scale(1.01);
+  transition: all 0.7s ease;
+}
+
+.home-price {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: -6%;
+  margin-left: 85%;
+}
+
+.indiv-photo-index {
+  border-radius: 5px;
+  outline: none;
+  width: 20%;
+  length: 20%
+};
+
+.star {
+  color: rgb(242, 88, 88);
+}
+
+.details {
+  width: 50%;
+}
+.inner-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-show-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 100px;
+}
+
+.home-top {
+  margin-bottom: 50px;
+}
+
+.home-show-rating {
+  font-size: 15px;
+}
+
+.home-show-desc-p {
+  font-size: 15px;
+}
+
+.home-show-info {
+  height: 300px;
+  width: 60%;
+  margin-top: 50px;
+}
+
+.home-show-info-container {
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.home-bedroom,
+.home-common {
+  height: 80px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: left;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.amenities {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-between;
+  font-size: 18px;
+  font-weight: 200;
+}

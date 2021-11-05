@@ -6,7 +6,9 @@ import Greeting from './greeting';
 
 const mapStateToProps = ({ session, entities: { users } }) => {
     return {
-        currentUser: users[session.id]
+        currentUser: users[session.id],
+        currentUser2: users[session]
+        // title: "hello"
     };
 };
 
@@ -15,12 +17,8 @@ const mapDispatchToProps = dispatch => ({
     openModal: modal => dispatch(openModal(modal))
 });
 
-
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(Greeting);
-
+const GreetingContainer = connect(mapStateToProps, mapDispatchToProps)(Greeting);
+export default GreetingContainer;
 // const mapState = ({ session }) => {
 //     return {
 //         currentUser: session.currentUser
