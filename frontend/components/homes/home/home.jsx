@@ -28,7 +28,7 @@ class Home extends React.Component {
         //   lng,
         //   city,
         // } = this.props.home;
-        debugger;
+        // debugger;
         return home ? (
             <div className="home-show-container">
                 <div className="home-top">
