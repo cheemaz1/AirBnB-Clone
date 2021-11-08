@@ -13,11 +13,15 @@ import {
 class Greeting extends React.Component {
     constructor(props) {
         super(props);
+        console.log(props);
 
     }
     gotoMain() {
         this.props.history.push(`/`)
     };
+    gotoProfile() {
+        this.props.history.push(`/users/${this.props.currentUser.id}`)
+    }
 
     //  = ({ currentUser, logout, openModal })
     render() {
@@ -63,9 +67,12 @@ class Greeting extends React.Component {
 
                 <button className="pf-ask" >☰</button>
                 <ul className="login-signup-ul">
-                    <li className="menu-li">
+                    {/* <li className="menu-li">
                         Profile
-                    </li>
+                    </li> */}
+                    <button className="menu-li" onClick={this.gotoProfile.bind(this)}>
+                        <i className="fas fa-address-card"></i>
+                    </button>
                     <li className="menu-li" onClick={logout}>
                         Logout
                     </li>

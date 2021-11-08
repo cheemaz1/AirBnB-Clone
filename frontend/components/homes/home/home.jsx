@@ -1,5 +1,5 @@
 import React from "react";
-// import SingleSpotMap from "../../map/single_spot_map";
+import SingleHomeMap from "../../map/home_show_map";
 // import ReviewContainer from "../../review/review_container";
 
 class Home extends React.Component {
@@ -19,6 +19,7 @@ class Home extends React.Component {
             Math.floor(Math.random() * 10)
         ];
         const { home } = this.props;
+        debugger; 
         // const {
         //   home_name,
         //   description,
@@ -112,7 +113,7 @@ class Home extends React.Component {
                 </div>
                 <div className="show-map">
                     <h2>Location</h2>
-                    {/* <SingleHomeMap /> */}
+                    <SingleHomeMap />
                 </div>
             </div>
         ) : null;

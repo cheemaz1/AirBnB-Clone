@@ -2,12 +2,13 @@ import { connect } from 'react-redux';
 import { openModal } from '../../actions/modal_actions';
 import { logout } from '../../actions/session_actions';
 import Greeting from './greeting';
+import { withRouter } from "react-router-dom";
 
 
 const mapStateToProps = ({ session, entities: { users } }) => {
     return {
         currentUser: users[session.id],
-        currentUser2: users[session]
+        // currentUser2: session.currentUser2
         // title: "hello"
     };
 };
@@ -17,8 +18,10 @@ const mapDispatchToProps = dispatch => ({
     openModal: modal => dispatch(openModal(modal))
 });
 
-const GreetingContainer = connect(mapStateToProps, mapDispatchToProps)(Greeting);
-export default GreetingContainer;
+// const GreetingContainer = connect(mapStateToProps, mapDispatchToProps)(Greeting);
+// export default GreetingContainer;
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Greeting));
+
 // const mapState = ({ session }) => {
 //     return {
 //         currentUser: session.currentUser

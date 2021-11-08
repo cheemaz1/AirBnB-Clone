@@ -1,6 +1,6 @@
 import React from "react";
 import HomeIndexItem from "./home_index_item";
-// import HomeMap from "../map/home_map";
+import HomeMap from "../map/home_map";
 
 class HomeIndex extends React.Component {
     constructor(props) {
@@ -16,11 +16,22 @@ class HomeIndex extends React.Component {
         const homes = this.props.homes.map((home) => (
             <HomeIndexItem home={home} key={home.id} />
         ));
+        debugger;
         return homes;
     }
+
+    // searchHomeIndex() {
+    //     if (scity) {
+    //         const homes = this.props.homes.map((home) => (
+    //             if (home.city === scity) {
+    //                 <HomeIndexItem home={home} key={home.id} />
+    //             }
+    //         ));
+    //         }
+    // }
     
     render() {
-        
+        debugger;
         return (
             <div className="homes-div">
                 <div className="homes-left">
@@ -28,7 +39,7 @@ class HomeIndex extends React.Component {
                 </div>
                 <div className="homes-right">
                     <div className="google-map">
-                        {/* <HomeMap homes={this.props.homes} /> */}
+                        <HomeMap homes={this.props.homes} />
                     </div>
                 </div>
             </div>

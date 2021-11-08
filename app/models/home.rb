@@ -27,12 +27,7 @@ class Home < ApplicationRecord
     # AWS
     # for user to be able to upload photos & videos
 
-    # def self.in_bounds(bounds)
-    #     self.where("ltd < ?", bounds[:northEast][:ltd])
-    #         .where("ltd > ?", bounds[:southWest][:ltd])
-    #         .where("lng > ?", bounds[:southWest][:lng])
-    #         .where("lng < ?", bounds[:northWest][:lng])
-    # end
+
 
     def self.filtered(query)
         filtered_result = self.where("city LIKE ?", "%#{query}%")

@@ -14,6 +14,7 @@ import LogInFormContainer from './session_form/login_form_container';
 import HomeContainer from "./homes/home/home_container";
 import HomesIndexContainer from "./homes/home_index_container";
 import Modal from './modal/modal';
+import ProfileShowContainer from "./profile/profile_show_container";
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import SplashContainer from "./splash/splash_container";
 import 'bootstrap'; 
@@ -41,8 +42,8 @@ const App = () => (
             {/* <Route path={`/search`} component={SearchContainer} /> */}
         <Switch>
             <Route exact path="/" component={SplashContainer} />
-            {/* <Route exact path="/users/:userId" component={ProfileShowContainer} /> */}
             <Route exact path="/homes" component={HomesIndexContainer} />
+            <Route exact path="/users/:userId" component={ProfileShowContainer} />
             <Route path={`/homes/:homeId`} component={HomeContainer} />
             {/* <Route path={`/search`} component={SearchContainer} /> */}
         </Switch>

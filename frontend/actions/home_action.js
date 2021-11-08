@@ -2,6 +2,7 @@ import * as APIUtil from "../util/home_api_util";
 
 export const RECEIVE_HOMES = "RECEIVE_HOMES";
 export const RECEIVE_HOME = "RECEIVE_HOME";
+export const REQUIRE_SEARCH = "REQUIRE_SEARCH";
 
 
 export const receiveHomes = (homes) => {
@@ -19,6 +20,16 @@ export const receiveHome = (home) => {
     };
 };
 
+export const requireSearch = (scity) => ({
+    type: REQUIRE_SEARCH,
+    scity,
+});
+
+
+export const searchHomes = () => (dispatch) =>
+    APIUtil.searchHomes(query).then((homes) => {
+        return dispatch(receiveHomes(homes));
+    });
 
 export const fetchHomes = () => (dispatch) =>
 APIUtil.fetchHomes().then((homes) => {
@@ -35,6 +46,16 @@ APIUtil.createHome(home).then((home) => dispatch(receiveHome(home)));
 
 export const updateHome = (home) => (dispatch) =>
 APIUtil.updateHome(home).then((home) => dispatch(receiveHome(home)));
+
+
+
+
+
+
+
+
+
+
 
 // export const createReview = (review) => (dispatch) =>
 //     APIUtil.createReview(review).then(

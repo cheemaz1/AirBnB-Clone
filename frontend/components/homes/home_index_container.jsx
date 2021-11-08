@@ -7,6 +7,7 @@ import { withRouter } from "react-router-dom";
 
 const mapState = (state) => ({
     homes: Object.values(state.entities.homes),
+    // scity 
 });
 
 const mapDispatch = (dispatch) => ({

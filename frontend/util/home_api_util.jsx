@@ -25,16 +25,14 @@ export const fetchHomes = () => {
     });
 };
 
-// export const createReview = (review) =>
-//     $.ajax({
-//         method: "POST",
-//         url: "api/reviews",
-//         data: { review },
-//     });
+export const searchHomes = (query) => {
+    return $.ajax({
+        method: "GET",
+        url: "/api/search",
+        data: { query }
+    });
+};
 
-// export const fetchReviews = (homeId) =>
-//     $.ajax({
-//         method: "GET",
-//         url: "/api/reviews",
-//         data: { homeId },
-//     });
+
+
+
