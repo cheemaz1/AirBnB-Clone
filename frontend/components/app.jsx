@@ -13,10 +13,12 @@ import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
 import HomeContainer from "./homes/home/home_container";
 import HomesIndexContainer from "./homes/home_index_container";
+import HomesIndexContainer2 from "./homes/home_index_container2";
 import Modal from './modal/modal';
 import ProfileShowContainer from "./profile/profile_show_container";
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import SplashContainer from "./splash/splash_container";
+import ErrorPage from "./error_page/error_page";
 import 'bootstrap'; 
 import 'bootstrap';
 // import 'bootstrap/dist/css/bootstrap.css';
@@ -42,9 +44,11 @@ const App = () => (
             {/* <Route path={`/search`} component={SearchContainer} /> */}
         <Switch>
             <Route exact path="/" component={SplashContainer} />
-            <Route exact path="/homes" component={HomesIndexContainer} />
+            <Route exact path="/search/:city" component={HomesIndexContainer} />
+            <Route exact path="/homes" component={HomesIndexContainer2} />
             <Route exact path="/users/:userId" component={ProfileShowContainer} />
             <Route path={`/homes/:homeId`} component={HomeContainer} />
+            <Route component={ErrorPage} />
             {/* <Route path={`/search`} component={SearchContainer} /> */}
         </Switch>
     </div>

@@ -20,21 +20,22 @@ export const receiveHome = (home) => {
     };
 };
 
-export const requireSearch = (scity) => ({
-    type: REQUIRE_SEARCH,
-    scity,
-});
+// export const requireSearch = (scity) => ({
+//     type: REQUIRE_SEARCH,
+//     scity,
+// });
 
 
-export const searchHomes = () => (dispatch) =>
-    APIUtil.searchHomes(query).then((homes) => {
-        return dispatch(receiveHomes(homes));
-    });
+// export const searchHomes = () => (dispatch) =>
+//     APIUtil.searchHomes(query).then((homes) => {
+//         return dispatch(receiveHomes(homes));
+//     });
 
-export const fetchHomes = () => (dispatch) =>
-APIUtil.fetchHomes().then((homes) => {
+export const fetchHomes = (searchParams) => (dispatch) =>
+APIUtil.fetchHomes(searchParams).then((homes) => {
     return dispatch(receiveHomes(homes));
 });
+
 
 export const fetchHome = (homeId) => (dispatch) =>
 APIUtil.fetchHome(homeId).then((home) => {

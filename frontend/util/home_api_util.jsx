@@ -18,20 +18,21 @@ export const fetchHome = (homeId) =>
         url: `/api/homes/${homeId}`,
     });
 
-export const fetchHomes = () => {
+export const fetchHomes = (searchParams) => {
     return $.ajax({
         method: "GET",
         url: "/api/homes",
+        data: {searchParams}
     });
 };
 
-export const searchHomes = (query) => {
-    return $.ajax({
-        method: "GET",
-        url: "/api/search",
-        data: { query }
-    });
-};
+// export const searchHomes = (query) => {
+//     return $.ajax({
+//         method: "GET",
+//         url: "/api/homes",
+//         data: { query }
+//     });
+// };
 
 
 

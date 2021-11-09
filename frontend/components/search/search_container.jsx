@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { requireSearch } from "../../actions/search_action";
+import { fetchHomes } from "../../actions/home_action";
 import Search from "./search";
 
 const mapState = (state, ownProps) => ({
@@ -9,7 +9,7 @@ const mapState = (state, ownProps) => ({
 
 const mapDispatch = (dispatch) => {
     return {
-        requireSearch: (scity) => dispatch(requireSearch(scity)),
+        fetchHomes: (city) => dispatch(fetchHomes(city)),
     };
 };
 

@@ -2,7 +2,15 @@ class Api::HomesController < ApplicationController
     before_action :require_logged_in, only: [:create]
 
     def index 
-        @homes = Home.all 
+        if !params[:searchParams]   
+            # debugger  
+            @homes = Home.all    
+        elsif params[:searchParams][:city]
+            # debugger
+            @homes = Home.where(city: params[:searchParams][:city])
+            
+        end
+        render :index
     end
 
     def create
@@ -15,20 +23,8 @@ class Api::HomesController < ApplicationController
     end
     
     def show
-        if params[:id].is_a? Integer 
-            @home = Home.find(params[:id])
-            render :show  
-        else
-            search_homes = Home.filtered(params[:query])
-            if search_homes
-                @homes = search_homes
-                render :index
-            else 
-                render json: ["No Home is Available :"], status: 404
-            end
-        end
-        # @home = Home.find(params[:city])
-        # render :show 
+        @home = Home.find(params[:id])
+        render :show 
     end
 
     def update 
@@ -40,15 +36,15 @@ class Api::HomesController < ApplicationController
         end
     end
 
-    def search
-        search_homes = Home.filtered(params[:query])
-        if search_homes
-            @homes = search_homes
-            render :index
-        else 
-            render json: ["No Home is Available :"], status: 404
-        end
-    end
+    # def search
+    #     search_homes = Home.filtered(params[:query])
+    #     if search_homes
+    #         @homes = search_homes
+    #         render :index
+    #     else 
+    #         render json: ["No Home is Available :"], status: 404
+    #     end
+    # end
 
     private
 
@@ -56,8 +52,8 @@ class Api::HomesController < ApplicationController
         params.require(:home).permit(:home_name, :description, :address, :price, :city, :lat, :lng, images: [])
     end
 
-    def bounds
-        params[:bounds]
-    end
+    # def bounds
+    #     params[:bounds]
+    # end
 
 end
