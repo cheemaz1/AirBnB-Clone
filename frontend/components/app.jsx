@@ -18,6 +18,7 @@ import Modal from './modal/modal';
 import ProfileShowContainer from "./profile/profile_show_container";
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import SplashContainer from "./splash/splash_container";
+import Footer from './footer/footer';
 import ErrorPage from "./error_page/error_page";
 import 'bootstrap'; 
 import 'bootstrap';
@@ -51,6 +52,7 @@ const App = () => (
             <Route component={ErrorPage} />
             {/* <Route path={`/search`} component={SearchContainer} /> */}
         </Switch>
+        <Footer />
     </div>
 );
 

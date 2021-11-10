@@ -30461,3 +30461,1043 @@ Processing by Api::HomesController#show as JSON
 Completed 200 OK in 11ms (Views: 2.5ms | ActiveRecord: 3.5ms | Allocations: 1438)
 
 
+Started GET "/" for 127.0.0.1 at 2021-11-10 00:34:06 -0500
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: api/users/_user.json.jbuilder (called from _app_views_static_pages_root_html_erb__1230361988671678689_70149368096540 at /Users/zayedcheema/Desktop/newproj/bnb/app/views/static_pages/root.html.erb:4)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.8ms | Allocations: 229)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 35.7ms | Allocations: 11055)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.2ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 322.7ms | Allocations: 50106)
+Completed 200 OK in 334ms (Views: 310.0ms | ActiveRecord: 15.8ms | Allocations: 53996)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-10 00:40:30 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.5ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 53.9ms | Allocations: 6084)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.4ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 81.1ms | Allocations: 17757)
+Completed 200 OK in 83ms (Views: 82.1ms | ActiveRecord: 33.4ms | Allocations: 18062)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-10 00:45:25 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 1.1ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 14.5ms | Allocations: 1329)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.2ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 52.6ms | Allocations: 13000)
+Completed 200 OK in 57ms (Views: 53.5ms | ActiveRecord: 2.3ms | Allocations: 13301)
+
+
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 383]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 384]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 385]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 386]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 387]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 388]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 389]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 390]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 391]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 392]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 393]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 394]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 395]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 396]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 382]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mHome Load (0.9ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 32], ["record_type", "Home"], ["name", "photos"]]
+  [1m[36mHome Destroy (0.3ms)[0m  [1m[31mDELETE FROM "homes" WHERE "homes"."id" = $1[0m  [["id", 32]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 33], ["record_type", "Home"], ["name", "photos"]]
+  [1m[36mHome Destroy (0.2ms)[0m  [1m[31mDELETE FROM "homes" WHERE "homes"."id" = $1[0m  [["id", 33]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "user3"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XCFnSKOHlA2aPMLr_UzY-Q"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "user3"], ["email", "u33@gmail.com"], ["first_name", "user"], ["last_name", "3rthy"], ["birthday", "1995-01-01"], ["password_digest", "$2a$12$2Q0m5caaBZsbiHQejdpcRu2IsC8lUyveiswTLJ2s8cavtjiPAMega"], ["session_token", "XCFnSKOHlA2aPMLr_UzY-Q"], ["created_at", "2021-11-10 05:53:46.050740"], ["updated_at", "2021-11-10 05:53:46.050740"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "user61"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "WNJRHGxvK0W8ELs0c0ECpg"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "user61"], ["email", "u33f@gmail.com"], ["first_name", "scottyp"], ["last_name", "3rthy"], ["birthday", "1995-01-01"], ["password_digest", "$2a$12$osB1VH.dEEZ1t3GU5r/I.OeJlneCB/FpvGHzDfeZVc6URPh6WbTBG"], ["session_token", "WNJRHGxvK0W8ELs0c0ECpg"], ["created_at", "2021-11-10 05:53:46.318777"], ["updated_at", "2021-11-10 05:53:46.318777"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 397], ["LIMIT", 1]]
+  [1m[36mHome Create (2.7ms)[0m  [1m[32mINSERT INTO "homes" ("host_id", "description", "home_name", "price", "address", "city", "country", "lng", "ltd", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["host_id", 397], ["description", "Come chill here for amazing balcony views of the Manhattan Skyline"], ["home_name", "Luxury Condo in DT"], ["price", 90.0], ["address", "31 W 71st St, New York, NY 10023"], ["city", "New York"], ["country", "USA"], ["lng", -73.9803], ["ltd", 40.777384], ["created_at", "2021-11-10 05:53:46.325661"], ["updated_at", "2021-11-10 05:53:46.325661"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 398], ["LIMIT", 1]]
+  [1m[36mHome Create (0.4ms)[0m  [1m[32mINSERT INTO "homes" ("host_id", "description", "home_name", "price", "address", "city", "country", "lng", "ltd", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["host_id", 398], ["description", "Come chill here for amazing balcony views of the Toronto Skyline"], ["home_name", "Amazing CN Tower view"], ["price", 400.0], ["address", "14 York St, Toronto, ON M5J 2Z2"], ["city", "Toronto"], ["country", "Canada"], ["lng", -73.9803], ["ltd", 40.777384], ["created_at", "2021-11-10 05:53:46.331877"], ["updated_at", "2021-11-10 05:53:46.331877"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 397]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 398]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mHome Load (0.8ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 34], ["record_type", "Home"], ["name", "photos"]]
+  [1m[36mHome Destroy (0.2ms)[0m  [1m[31mDELETE FROM "homes" WHERE "homes"."id" = $1[0m  [["id", 34]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 35], ["record_type", "Home"], ["name", "photos"]]
+  [1m[36mHome Destroy (0.2ms)[0m  [1m[31mDELETE FROM "homes" WHERE "homes"."id" = $1[0m  [["id", 35]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "user3"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "dcDYaFQDhtSrCUHEZlJctQ"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "user3"], ["email", "u33@gmail.com"], ["first_name", "user"], ["last_name", "3rthy"], ["birthday", "1995-01-01"], ["password_digest", "$2a$12$CcD.Xg6Wm4yXnV7Has/jo.BYcvpzEO63Yq5V6uNXQqQ5iSXFKj90W"], ["session_token", "dcDYaFQDhtSrCUHEZlJctQ"], ["created_at", "2021-11-10 05:54:57.750090"], ["updated_at", "2021-11-10 05:54:57.750090"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "user61"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "bRfZ3W195hxh4cJl5hGtnw"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "user61"], ["email", "u33f@gmail.com"], ["first_name", "scottyp"], ["last_name", "3rthy"], ["birthday", "1995-01-01"], ["password_digest", "$2a$12$giSqw4M70tD85BAl8sZOMeBw8UFbEo.zDHJtBszdeM.RqV/xzag9C"], ["session_token", "bRfZ3W195hxh4cJl5hGtnw"], ["created_at", "2021-11-10 05:54:58.018208"], ["updated_at", "2021-11-10 05:54:58.018208"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 399], ["LIMIT", 1]]
+  [1m[36mHome Create (0.5ms)[0m  [1m[32mINSERT INTO "homes" ("host_id", "description", "home_name", "price", "address", "city", "country", "lng", "ltd", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["host_id", 399], ["description", "Come chill here for amazing balcony views of the Manhattan Skyline"], ["home_name", "Luxury Condo in DT"], ["price", 90.0], ["address", "31 W 71st St, New York, NY 10023"], ["city", "New York"], ["country", "USA"], ["lng", -73.9803], ["ltd", 40.777384], ["created_at", "2021-11-10 05:54:58.024603"], ["updated_at", "2021-11-10 05:54:58.024603"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 400], ["LIMIT", 1]]
+  [1m[36mHome Create (0.3ms)[0m  [1m[32mINSERT INTO "homes" ("host_id", "description", "home_name", "price", "address", "city", "country", "lng", "ltd", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["host_id", 400], ["description", "Come chill here for amazing balcony views of the Toronto Skyline"], ["home_name", "Amazing CN Tower view"], ["price", 400.0], ["address", "14 York St, Toronto, ON M5J 2Z2"], ["city", "Toronto"], ["country", "Canada"], ["lng", -73.9803], ["ltd", 40.777384], ["created_at", "2021-11-10 05:54:58.028512"], ["updated_at", "2021-11-10 05:54:58.028512"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "jonie"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XWvaRTM46ZG1GIcvH67pPw"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "jonie"], ["email", "jeni@hyatt-douglas.co"], ["first_name", "Cinthia"], ["last_name", "Waelchi"], ["birthday", "1984-11-01"], ["password_digest", "$2a$12$3nBjl2nKNWb5aV2dK9s1duO56pZ01Wlw3c0MmOrpN60Kojc/wq4Wi"], ["session_token", "XWvaRTM46ZG1GIcvH67pPw"], ["created_at", "2021-11-10 05:54:58.438303"], ["updated_at", "2021-11-10 05:54:58.438303"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "rich"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4HYBshFpZY2Wp7yB02EqZg"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "rich"], ["email", "annamae_murphy@botsford-wyman.io"], ["first_name", "Emerita"], ["last_name", "Botsford"], ["birthday", "1973-08-28"], ["password_digest", "$2a$12$riT.HeEZTuBjdJNy2uFZiupmRqtkXhS1/SFmgp9csz23xnGZ4V0DK"], ["session_token", "4HYBshFpZY2Wp7yB02EqZg"], ["created_at", "2021-11-10 05:54:58.704006"], ["updated_at", "2021-11-10 05:54:58.704006"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "antione_macgyver"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "rPagcS3cwGO2Osef6vP44g"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "antione_macgyver"], ["email", "milton.mayert@dubuque.name"], ["first_name", "Stuart"], ["last_name", "DuBuque"], ["birthday", "1977-06-08"], ["password_digest", "$2a$12$nLWE4h96N6B2yovFKqIQJOlBdqFtge/LwNsOnO9QsysusW7aCA43."], ["session_token", "rPagcS3cwGO2Osef6vP44g"], ["created_at", "2021-11-10 05:54:58.977741"], ["updated_at", "2021-11-10 05:54:58.977741"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "jamar"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "46J9rNooq1KPKeCmpxEYDw"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "jamar"], ["email", "caprice.hills@krajcik-huels.io"], ["first_name", "Bennie"], ["last_name", "Bashirian"], ["birthday", "1987-12-31"], ["password_digest", "$2a$12$oos/4hG5EhxmzPDhFM.5rOWnMLev.MHVPxM/qtsIA4BF9kJn1uZFa"], ["session_token", "46J9rNooq1KPKeCmpxEYDw"], ["created_at", "2021-11-10 05:54:59.242780"], ["updated_at", "2021-11-10 05:54:59.242780"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cameron_metz"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "v_u25Sl_C2uOFjFOtXbmHw"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "cameron_metz"], ["email", "garland.wuckert@bashirian-johnston.org"], ["first_name", "Min"], ["last_name", "Schimmel"], ["birthday", "1999-05-04"], ["password_digest", "$2a$12$DqD7ivYDZSytIhKzD.igqeFb6j5/2w6JyXkPOMC1iDUuSUsUitBJW"], ["session_token", "v_u25Sl_C2uOFjFOtXbmHw"], ["created_at", "2021-11-10 05:54:59.507939"], ["updated_at", "2021-11-10 05:54:59.507939"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "rosanna"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "JHWRjTtg4CyTkxgXIJijRQ"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "rosanna"], ["email", "linwood@botsford-brakus.info"], ["first_name", "Jed"], ["last_name", "Johnson"], ["birthday", "1999-04-21"], ["password_digest", "$2a$12$KlvThzyNy/ixrbd5JTnUUuWB8kyFw7XkVQx8bxH9vhjji12Gh.7/y"], ["session_token", "JHWRjTtg4CyTkxgXIJijRQ"], ["created_at", "2021-11-10 05:54:59.773981"], ["updated_at", "2021-11-10 05:54:59.773981"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "robby_auer"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "aCHGPxt-hyF_n6H4DUK0yA"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "robby_auer"], ["email", "marceline@mcdermott.info"], ["first_name", "Felicitas"], ["last_name", "Howell"], ["birthday", "1962-04-26"], ["password_digest", "$2a$12$BkT7J.O.6C0cv23I2zo6kunUagnnn.Eg/DC64VJHQjipIKTwLldbq"], ["session_token", "aCHGPxt-hyF_n6H4DUK0yA"], ["created_at", "2021-11-10 05:55:00.038741"], ["updated_at", "2021-11-10 05:55:00.038741"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "irvin"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "WhjnThdW6_-HdokP7vS3bQ"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "irvin"], ["email", "wilmer_lang@johnston.info"], ["first_name", "Reynalda"], ["last_name", "Pfannerstill"], ["birthday", "1982-08-24"], ["password_digest", "$2a$12$8Z337fJNH0XqO6BbVXfYMOxBv1a946VeDvxCjz9agl/clu1GiNhAa"], ["session_token", "WhjnThdW6_-HdokP7vS3bQ"], ["created_at", "2021-11-10 05:55:00.304399"], ["updated_at", "2021-11-10 05:55:00.304399"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dori_swaniawski"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "wQnIIL1BJKsWzKkgx8qb0g"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "dori_swaniawski"], ["email", "ty@rice.co"], ["first_name", "Marylee"], ["last_name", "Lebsack"], ["birthday", "1977-06-28"], ["password_digest", "$2a$12$PCCH8TRusVHBC5KRtceyeu65xS882dI.VbXhEaDTuRGuWyI7jeKc6"], ["session_token", "wQnIIL1BJKsWzKkgx8qb0g"], ["created_at", "2021-11-10 05:55:00.571316"], ["updated_at", "2021-11-10 05:55:00.571316"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "malika"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "czsJfYgXp33elo873TqLkg"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "malika"], ["email", "dario.gerlach@reynolds.biz"], ["first_name", "Connie"], ["last_name", "Boyle"], ["birthday", "1984-08-12"], ["password_digest", "$2a$12$V2TqQM8klN/IxcHX/1e2e.3mvv3bXEvYjMp2WsQI18ybMDVVmpJx2"], ["session_token", "czsJfYgXp33elo873TqLkg"], ["created_at", "2021-11-10 05:55:00.836729"], ["updated_at", "2021-11-10 05:55:00.836729"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dale_ebert"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "rwR4yTgg0B2mmSKjDyuA4Q"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "dale_ebert"], ["email", "solomon_schumm@mcglynn-tillman.io"], ["first_name", "Carri"], ["last_name", "Adams"], ["birthday", "1994-11-18"], ["password_digest", "$2a$12$v8XsP38LGwyuqicq2i50K.Byw8Y3u2REQHCXJ6lu/IXCTged398Qa"], ["session_token", "rwR4yTgg0B2mmSKjDyuA4Q"], ["created_at", "2021-11-10 05:55:01.102728"], ["updated_at", "2021-11-10 05:55:01.102728"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "jutta_pollich"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4pWoNn9DuJ8KL1vcd--YGg"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "jutta_pollich"], ["email", "rochel@bins.io"], ["first_name", "Laveta"], ["last_name", "Rempel"], ["birthday", "1995-12-09"], ["password_digest", "$2a$12$AOmkarRr6sKDHyjWRb5N2eNakToJbni1.8tyqZ0WoR.zwZDqnn6di"], ["session_token", "4pWoNn9DuJ8KL1vcd--YGg"], ["created_at", "2021-11-10 05:55:01.371893"], ["updated_at", "2021-11-10 05:55:01.371893"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "marx_waters"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "mWLvhZ3zhATGFMo9GawcYg"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "marx_waters"], ["email", "jonah@bogan-buckridge.name"], ["first_name", "Augustus"], ["last_name", "Homenick"], ["birthday", "1969-09-15"], ["password_digest", "$2a$12$J5fOREZyxIkIdkAbg.C8Vepz6VqxpgF1EFMZpezyKmptC9.DGZjE2"], ["session_token", "mWLvhZ3zhATGFMo9GawcYg"], ["created_at", "2021-11-10 05:55:01.641711"], ["updated_at", "2021-11-10 05:55:01.641711"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "ruthie_farrell"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "zy5QSMQ1npBuJbngz2UZvw"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "ruthie_farrell"], ["email", "piper.bogisich@marks.com"], ["first_name", "Lynn"], ["last_name", "O'Connell"], ["birthday", "1977-11-30"], ["password_digest", "$2a$12$gElT9e5PVHGugdY4vKOiIOTfbjaoYbE4vK.X6r87N2NrquhAcDqSS"], ["session_token", "zy5QSMQ1npBuJbngz2UZvw"], ["created_at", "2021-11-10 05:55:01.911860"], ["updated_at", "2021-11-10 05:55:01.911860"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "levi"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "P1zWvFe1c9cLZirL4r-yKQ"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "levi"], ["email", "shawn.hoppe@bartell.info"], ["first_name", "Xiao"], ["last_name", "Lebsack"], ["birthday", "1963-05-30"], ["password_digest", "$2a$12$.j9.7LXwLhQ1ocK9lq1CpOlPYsXlX.W6sElp2mopij.Sikzvem0NK"], ["session_token", "P1zWvFe1c9cLZirL4r-yKQ"], ["created_at", "2021-11-10 05:55:02.183913"], ["updated_at", "2021-11-10 05:55:02.183913"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "jc_block"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "s81Lp84J0aUphgrWZq1WMw"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "jc_block"], ["email", "roxanna@wiza.info"], ["first_name", "Nicky"], ["last_name", "Haley"], ["birthday", "1992-08-16"], ["password_digest", "$2a$12$rIds8KzBX2/dJpdj.xToUeETsxjAHTT35ZmwiFW.7W3e/mRazG..K"], ["session_token", "s81Lp84J0aUphgrWZq1WMw"], ["created_at", "2021-11-10 05:55:02.455028"], ["updated_at", "2021-11-10 05:55:02.455028"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "roxie"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "ZZwBJQ5PuLe1Ic3MXleUDA"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "roxie"], ["email", "suzann@keebler.info"], ["first_name", "Lupita"], ["last_name", "Keeling"], ["birthday", "1993-08-28"], ["password_digest", "$2a$12$Bim1d5HB7EU6bwavMj/zp.SS3D0/yWW1vEni8hRxHd0ZFwHx6O1mi"], ["session_token", "ZZwBJQ5PuLe1Ic3MXleUDA"], ["created_at", "2021-11-10 05:55:02.725606"], ["updated_at", "2021-11-10 05:55:02.725606"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "charmaine_stracke"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "FJMyTjzwpwX7Lydn6HqjZg"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "charmaine_stracke"], ["email", "len_cartwright@schuppe.com"], ["first_name", "Jovan"], ["last_name", "Little"], ["birthday", "1973-10-02"], ["password_digest", "$2a$12$m1kHVRCF6gNZHEZPolCclOKM3T4xffgQc4BRd1jkNZFXAQ2iPr.fy"], ["session_token", "FJMyTjzwpwX7Lydn6HqjZg"], ["created_at", "2021-11-10 05:55:02.997001"], ["updated_at", "2021-11-10 05:55:02.997001"]]
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "eldon_mosciski"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "LhYNh0iRAmx6_sA70cYcKQ"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "eldon_mosciski"], ["email", "many@adams.name"], ["first_name", "Deloras"], ["last_name", "Christiansen"], ["birthday", "1996-05-08"], ["password_digest", "$2a$12$Ki5oXqM0myyr/T2tDwh5XeFFQkPkra1L5uwvs8RptjuHabzqwpP3K"], ["session_token", "LhYNh0iRAmx6_sA70cYcKQ"], ["created_at", "2021-11-10 05:55:03.276100"], ["updated_at", "2021-11-10 05:55:03.276100"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "eliseo"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "VvK_uHZGbfOFdNvfzP0NmA"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "eliseo"], ["email", "moira@satterfield-russel.org"], ["first_name", "Vannessa"], ["last_name", "Weber"], ["birthday", "1980-08-04"], ["password_digest", "$2a$12$RIkLaw3D0F0MM01Qo7Jv7OgBARiQFCSKW2e1YXMETB/cmBk8W9RzW"], ["session_token", "VvK_uHZGbfOFdNvfzP0NmA"], ["created_at", "2021-11-10 05:55:03.545898"], ["updated_at", "2021-11-10 05:55:03.545898"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 399]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 400]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 401]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 402]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 403]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 404]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 405]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 406]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 407]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 408]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 409]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 410]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 411]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 412]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 413]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 414]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 415]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 416]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 417]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 418]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 419]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 420]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mHome Load (0.9ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 36], ["record_type", "Home"], ["name", "photos"]]
+  [1m[36mHome Destroy (0.2ms)[0m  [1m[31mDELETE FROM "homes" WHERE "homes"."id" = $1[0m  [["id", 36]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 37], ["record_type", "Home"], ["name", "photos"]]
+  [1m[36mHome Destroy (0.2ms)[0m  [1m[31mDELETE FROM "homes" WHERE "homes"."id" = $1[0m  [["id", 37]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "user3"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "sRLyqLnWuv_kQN4MfEa1Gw"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "user3"], ["email", "u33@gmail.com"], ["first_name", "user"], ["last_name", "3rthy"], ["birthday", "1995-01-01"], ["password_digest", "$2a$12$L2WkIxzq94QYapqPS0oxk..m6Twn/rDHKWzwScykgVzeUtIy16AnS"], ["session_token", "sRLyqLnWuv_kQN4MfEa1Gw"], ["created_at", "2021-11-10 05:56:49.463077"], ["updated_at", "2021-11-10 05:56:49.463077"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "user61"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "DCIFjR1ecUQnaVl4CbTqmQ"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "user61"], ["email", "u33f@gmail.com"], ["first_name", "scottyp"], ["last_name", "3rthy"], ["birthday", "1995-01-01"], ["password_digest", "$2a$12$jlk3GNqJ0BEut6PqdOuTo.iC50M0DB/heI1hYuk8o0q1jigvqLDSK"], ["session_token", "DCIFjR1ecUQnaVl4CbTqmQ"], ["created_at", "2021-11-10 05:56:49.729483"], ["updated_at", "2021-11-10 05:56:49.729483"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 421], ["LIMIT", 1]]
+  [1m[36mHome Create (0.5ms)[0m  [1m[32mINSERT INTO "homes" ("host_id", "description", "home_name", "price", "address", "city", "country", "lng", "ltd", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["host_id", 421], ["description", "Come chill here for amazing balcony views of the Manhattan Skyline"], ["home_name", "Luxury Condo in DT"], ["price", 90.0], ["address", "31 W 71st St, New York, NY 10023"], ["city", "New York"], ["country", "USA"], ["lng", -73.9803], ["ltd", 40.777384], ["created_at", "2021-11-10 05:56:49.736882"], ["updated_at", "2021-11-10 05:56:49.736882"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 422], ["LIMIT", 1]]
+  [1m[36mHome Create (0.3ms)[0m  [1m[32mINSERT INTO "homes" ("host_id", "description", "home_name", "price", "address", "city", "country", "lng", "ltd", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["host_id", 422], ["description", "Come chill here for amazing balcony views of the Toronto Skyline"], ["home_name", "Amazing CN Tower view"], ["price", 400.0], ["address", "14 York St, Toronto, ON M5J 2Z2"], ["city", "Toronto"], ["country", "Canada"], ["lng", -73.9803], ["ltd", 40.777384], ["created_at", "2021-11-10 05:56:49.741435"], ["updated_at", "2021-11-10 05:56:49.741435"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "victor_morissette"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "-cIMy2a-jfJG2YLbvIFDPA"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "victor_morissette"], ["email", "aida@schmeler-barton.name"], ["first_name", "Darrick"], ["last_name", "Grady"], ["birthday", "1962-09-23"], ["password_digest", "$2a$12$vQX1qDp2Oe98gHneVEJk8eGC5ptB1URXSGhMicSPajA.UQGo1HcDe"], ["session_token", "-cIMy2a-jfJG2YLbvIFDPA"], ["created_at", "2021-11-10 05:56:50.156251"], ["updated_at", "2021-11-10 05:56:50.156251"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "francisco_bashirian"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "A9YSV282TT-9uRuIexJtIQ"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "francisco_bashirian"], ["email", "larue@gutkowski.com"], ["first_name", "Warner"], ["last_name", "Kunde"], ["birthday", "1987-12-19"], ["password_digest", "$2a$12$IRh7PpGqQGeOajm.Q7.1veBIsRg4WDbiQYZuS6LsE27d/5By3hnTu"], ["session_token", "A9YSV282TT-9uRuIexJtIQ"], ["created_at", "2021-11-10 05:56:50.431473"], ["updated_at", "2021-11-10 05:56:50.431473"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "jc_jacobson"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "YlNrhgsACMpv7ftyZ2w0-g"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "jc_jacobson"], ["email", "micheline.erdman@kreiger.co"], ["first_name", "Karey"], ["last_name", "Wiza"], ["birthday", "1992-01-19"], ["password_digest", "$2a$12$nNds/N8AmG.B5g/JxzZhD.B/0bEGon9Ip3Ca4SRHxoH8rHFf8OtzO"], ["session_token", "YlNrhgsACMpv7ftyZ2w0-g"], ["created_at", "2021-11-10 05:56:50.700012"], ["updated_at", "2021-11-10 05:56:50.700012"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "andrew"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "REZpdXGwgy2cKkZpyBBrPQ"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "andrew"], ["email", "dominic_bergnaum@mosciski.info"], ["first_name", "Yun"], ["last_name", "Schulist"], ["birthday", "1965-12-24"], ["password_digest", "$2a$12$VWmgDCylU1yj/OqbgfzyueMB2o3F9rH8cDy/I4IQNX394aeGLJY7G"], ["session_token", "REZpdXGwgy2cKkZpyBBrPQ"], ["created_at", "2021-11-10 05:56:50.969717"], ["updated_at", "2021-11-10 05:56:50.969717"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "marylouise_bechtelar"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "lJwDMHU5XkLQ6T1rKiDqSg"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "marylouise_bechtelar"], ["email", "arline@cassin.info"], ["first_name", "Karin"], ["last_name", "Leuschke"], ["birthday", "1963-07-27"], ["password_digest", "$2a$12$oQq6lSjij3DV5tV3GzEJf.mbNfztyVUGZWmiQEZ/ypQBB3qNIKEiK"], ["session_token", "lJwDMHU5XkLQ6T1rKiDqSg"], ["created_at", "2021-11-10 05:56:51.238938"], ["updated_at", "2021-11-10 05:56:51.238938"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "damien"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "auXNB4dcjJGyZx2r_JjBZQ"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "damien"], ["email", "princess@stiedemann-halvorson.net"], ["first_name", "Emanuel"], ["last_name", "Stracke"], ["birthday", "1990-05-25"], ["password_digest", "$2a$12$6g2FFh8meZn/Imt2UxjbhecQRA7mvQxS3VGD9ZbSsGaTao2/Ht7sa"], ["session_token", "auXNB4dcjJGyZx2r_JjBZQ"], ["created_at", "2021-11-10 05:56:51.538108"], ["updated_at", "2021-11-10 05:56:51.538108"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "damion"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "er0p1UYi3sFEXzKzfl_xrw"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "damion"], ["email", "mitchell.hahn@hayes.info"], ["first_name", "Shad"], ["last_name", "Powlowski"], ["birthday", "1968-06-05"], ["password_digest", "$2a$12$Aw/.3XqEWHnAJLXW1Ev2nOG17E7NySzZJZJzVQ04saQhORvmJfWXm"], ["session_token", "er0p1UYi3sFEXzKzfl_xrw"], ["created_at", "2021-11-10 05:56:51.817064"], ["updated_at", "2021-11-10 05:56:51.817064"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luther"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "JmjEqkU846dMea-1JOX57w"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "luther"], ["email", "cary@hickle.co"], ["first_name", "Cortez"], ["last_name", "Murphy"], ["birthday", "1956-01-18"], ["password_digest", "$2a$12$9zYCY8k3liARKUhqjbtna.KOy1ptdvgQ8I/8lS.qc.ae/T.J9LpGO"], ["session_token", "JmjEqkU846dMea-1JOX57w"], ["created_at", "2021-11-10 05:56:52.086448"], ["updated_at", "2021-11-10 05:56:52.086448"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "raul"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "MPokFPgad8wxwkXM7s0plg"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "raul"], ["email", "dorinda@vandervort.co"], ["first_name", "Vicente"], ["last_name", "Parker"], ["birthday", "1956-05-25"], ["password_digest", "$2a$12$hcARFDZv.pG/1OFJ8bvDa.bo6XQtYTDxVYhWvEh01YnzXY4/pfDm6"], ["session_token", "MPokFPgad8wxwkXM7s0plg"], ["created_at", "2021-11-10 05:56:52.354786"], ["updated_at", "2021-11-10 05:56:52.354786"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "burton_hills"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "PmNKttkCl73-UEX5DK3Acw"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "burton_hills"], ["email", "monique@kiehn-ferry.biz"], ["first_name", "Heriberto"], ["last_name", "Rodriguez"], ["birthday", "1981-07-25"], ["password_digest", "$2a$12$wceCoSsF1ux6DzXsYvAvwO6dXEbX1ouXYaxFiN2VV9dEo.mNr.Ctu"], ["session_token", "PmNKttkCl73-UEX5DK3Acw"], ["created_at", "2021-11-10 05:56:52.622425"], ["updated_at", "2021-11-10 05:56:52.622425"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "timothy"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "tnHU4oH6mZxpDVbS67ySOQ"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "timothy"], ["email", "waldo@hane.io"], ["first_name", "Marcelino"], ["last_name", "Gulgowski"], ["birthday", "1966-04-04"], ["password_digest", "$2a$12$.L5so8mineYFY6zxrdlFuuQwSD..Y6MN1HvsWCOR3Fcd6UY0hZFGC"], ["session_token", "tnHU4oH6mZxpDVbS67ySOQ"], ["created_at", "2021-11-10 05:56:52.891768"], ["updated_at", "2021-11-10 05:56:52.891768"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "mayme"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "YeEsl9kS24U9bOskwmSgeg"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "mayme"], ["email", "sharyl@hoppe.io"], ["first_name", "Floyd"], ["last_name", "Little"], ["birthday", "1982-06-03"], ["password_digest", "$2a$12$GbuCo3RC0XvrUPSHU1pVOOvhdpnXBaTYHyWozGONMVWRoHU4SPAmu"], ["session_token", "YeEsl9kS24U9bOskwmSgeg"], ["created_at", "2021-11-10 05:56:53.158047"], ["updated_at", "2021-11-10 05:56:53.158047"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "virgilio_greenfelder"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Cgqx8zrFbf5vvl8rRv4TEg"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "virgilio_greenfelder"], ["email", "jetta.bednar@senger.net"], ["first_name", "Darrel"], ["last_name", "Glover"], ["birthday", "1996-07-31"], ["password_digest", "$2a$12$FgKIeOBkFEB.THO955USTOVCB5fU9Xcznjq/j1glnnB0xYgNys2E."], ["session_token", "Cgqx8zrFbf5vvl8rRv4TEg"], ["created_at", "2021-11-10 05:56:53.423753"], ["updated_at", "2021-11-10 05:56:53.423753"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "charla"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "_d8tLr6-X6sm2Kwv6JI5WQ"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "charla"], ["email", "wade@crist.co"], ["first_name", "Sonia"], ["last_name", "Turner"], ["birthday", "1979-08-19"], ["password_digest", "$2a$12$E6J64LgufR8QIalkglciLe5sFtTQGnY40.xm9VcTg3s9FH0WYZtvy"], ["session_token", "_d8tLr6-X6sm2Kwv6JI5WQ"], ["created_at", "2021-11-10 05:56:53.691248"], ["updated_at", "2021-11-10 05:56:53.691248"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "tracy"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "F85IEX0HzicPtqlSn7TN2g"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "tracy"], ["email", "bruce.konopelski@heller.org"], ["first_name", "Grant"], ["last_name", "Herman"], ["birthday", "1966-06-11"], ["password_digest", "$2a$12$JTtnO2Jcwc6K/m5YH5IJTO46v0/F3YnoaeCtl2RvjjckQVxfAwGMS"], ["session_token", "F85IEX0HzicPtqlSn7TN2g"], ["created_at", "2021-11-10 05:56:53.956580"], ["updated_at", "2021-11-10 05:56:53.956580"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fannie_bahringer"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "eQbZkkW5HlXchq05FuY-8A"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "fannie_bahringer"], ["email", "clint_stanton@blick.net"], ["first_name", "Chandra"], ["last_name", "Wintheiser"], ["birthday", "1961-05-16"], ["password_digest", "$2a$12$5pCUxuJ2z818iWFZi4vhdOp/ZeVuwi8SDCVcqUEuYEKAB0Dkr4LKS"], ["session_token", "eQbZkkW5HlXchq05FuY-8A"], ["created_at", "2021-11-10 05:56:54.225049"], ["updated_at", "2021-11-10 05:56:54.225049"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "onita_dare"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Nmr1-6OYGiBlPslDYNcm7Q"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "onita_dare"], ["email", "vernon_osinski@brekke-kassulke.io"], ["first_name", "Chet"], ["last_name", "Turner"], ["birthday", "1976-07-27"], ["password_digest", "$2a$12$7zgbCNsqlNP1fJbJ3iDOz.s9PIFTzN/ZHN18bcaivALdpHrj631Mm"], ["session_token", "Nmr1-6OYGiBlPslDYNcm7Q"], ["created_at", "2021-11-10 05:56:54.490399"], ["updated_at", "2021-11-10 05:56:54.490399"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "brock_mitchell"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "W6cQOd1pht9kgo7Nu64kgQ"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "brock_mitchell"], ["email", "chanda@kiehn.info"], ["first_name", "Luigi"], ["last_name", "Feest"], ["birthday", "1963-01-03"], ["password_digest", "$2a$12$sEo0iEzoiQN5WtyW7dSVZOaemBmqBx7p.qq./e8FeWsVAW/tqYhBu"], ["session_token", "W6cQOd1pht9kgo7Nu64kgQ"], ["created_at", "2021-11-10 05:56:54.757127"], ["updated_at", "2021-11-10 05:56:54.757127"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 421]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 422]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 423]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 424]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 425]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 426]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 427]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 428]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 429]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 430]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 431]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 432]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 433]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 434]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 435]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 436]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 437]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 438]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 439]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 440]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mHome Load (0.9ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 38], ["record_type", "Home"], ["name", "photos"]]
+  [1m[36mHome Destroy (0.2ms)[0m  [1m[31mDELETE FROM "homes" WHERE "homes"."id" = $1[0m  [["id", 38]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 39], ["record_type", "Home"], ["name", "photos"]]
+  [1m[36mHome Destroy (0.2ms)[0m  [1m[31mDELETE FROM "homes" WHERE "homes"."id" = $1[0m  [["id", 39]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "user3"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "-wK0mBJLiBhNTFG_11eHQQ"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "user3"], ["email", "u33@gmail.com"], ["first_name", "user"], ["last_name", "3rthy"], ["birthday", "1995-01-01"], ["password_digest", "$2a$12$E2zn4mI7P6gVE6.WWnB6KuWGik23FU4l6vN02mNHAsQO8wUdg7ID."], ["session_token", "-wK0mBJLiBhNTFG_11eHQQ"], ["created_at", "2021-11-10 05:57:15.930308"], ["updated_at", "2021-11-10 05:57:15.930308"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "user61"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "TvH3SOdNHpN0UZGWDR_Mvg"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "user61"], ["email", "u33f@gmail.com"], ["first_name", "scottyp"], ["last_name", "3rthy"], ["birthday", "1995-01-01"], ["password_digest", "$2a$12$u9cBYMc6C/9X50nf4ENryeKTrm65B5Q4ppItfIsmON81zyco8rvLm"], ["session_token", "TvH3SOdNHpN0UZGWDR_Mvg"], ["created_at", "2021-11-10 05:57:16.197085"], ["updated_at", "2021-11-10 05:57:16.197085"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 441], ["LIMIT", 1]]
+  [1m[36mHome Create (0.9ms)[0m  [1m[32mINSERT INTO "homes" ("host_id", "description", "home_name", "price", "address", "city", "country", "lng", "ltd", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["host_id", 441], ["description", "Come chill here for amazing balcony views of the Manhattan Skyline"], ["home_name", "Luxury Condo in DT"], ["price", 90.0], ["address", "31 W 71st St, New York, NY 10023"], ["city", "New York"], ["country", "USA"], ["lng", -73.9803], ["ltd", 40.777384], ["created_at", "2021-11-10 05:57:16.204019"], ["updated_at", "2021-11-10 05:57:16.204019"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 442], ["LIMIT", 1]]
+  [1m[36mHome Create (0.6ms)[0m  [1m[32mINSERT INTO "homes" ("host_id", "description", "home_name", "price", "address", "city", "country", "lng", "ltd", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["host_id", 442], ["description", "Come chill here for amazing balcony views of the Toronto Skyline"], ["home_name", "Amazing CN Tower view"], ["price", 400.0], ["address", "14 York St, Toronto, ON M5J 2Z2"], ["city", "Toronto"], ["country", "Canada"], ["lng", -73.9803], ["ltd", 40.777384], ["created_at", "2021-11-10 05:57:16.208402"], ["updated_at", "2021-11-10 05:57:16.208402"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "florida"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "56GZQQ1F6Ewa5RXN9Z_epA"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "florida"], ["email", "juan@sporer.info"], ["first_name", "Willy"], ["last_name", "Carroll"], ["birthday", "1988-09-27"], ["password_digest", "$2a$12$hVlPVHTt2riHf4nohupubeMj5qeTVB16lnnLZcjmRpFQEUMLEbwmK"], ["session_token", "56GZQQ1F6Ewa5RXN9Z_epA"], ["created_at", "2021-11-10 05:57:16.593633"], ["updated_at", "2021-11-10 05:57:16.593633"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "jeromy_hilll"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "62CM4xxcTsP87kTw8m6jxQ"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "jeromy_hilll"], ["email", "londa@friesen.com"], ["first_name", "Kristin"], ["last_name", "Dach"], ["birthday", "1960-08-13"], ["password_digest", "$2a$12$c7GQXAHlyvjthnOYtfXMnOSQdH9HjbIdTsdaPdaCOZd.cyJmis2kq"], ["session_token", "62CM4xxcTsP87kTw8m6jxQ"], ["created_at", "2021-11-10 05:57:16.869651"], ["updated_at", "2021-11-10 05:57:16.869651"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "derrick"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "MffH0RPxZlGF5qm-gby5vw"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "derrick"], ["email", "ana@doyle.com"], ["first_name", "Minh"], ["last_name", "Gleason"], ["birthday", "1994-10-18"], ["password_digest", "$2a$12$7Rd1X4PxBGERim78XXz7G.pYRnlvKdtOdp7h9Fdv9xGs.VJHKF61W"], ["session_token", "MffH0RPxZlGF5qm-gby5vw"], ["created_at", "2021-11-10 05:57:17.136248"], ["updated_at", "2021-11-10 05:57:17.136248"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "ivette"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "aEs_hwjTlU3Sr9c-gcZZBg"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "ivette"], ["email", "kylie@hyatt.name"], ["first_name", "Blair"], ["last_name", "Blick"], ["birthday", "1970-07-31"], ["password_digest", "$2a$12$2Nnqj84g.cNGj6Vbl/bVkuhUY7lin.irgPo.m1x7LKx0Ik/F.SBLW"], ["session_token", "aEs_hwjTlU3Sr9c-gcZZBg"], ["created_at", "2021-11-10 05:57:17.404451"], ["updated_at", "2021-11-10 05:57:17.404451"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "beverlee"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "xqN4GDYep6ciHa0nfZAjsg"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "beverlee"], ["email", "xuan.corkery@klocko.info"], ["first_name", "Kayla"], ["last_name", "Veum"], ["birthday", "1966-07-04"], ["password_digest", "$2a$12$DS6IkWnpjb6naeiUITGTa.SuApx.oB291gl5WjyYvdz6oARk6kJSS"], ["session_token", "xqN4GDYep6ciHa0nfZAjsg"], ["created_at", "2021-11-10 05:57:17.671589"], ["updated_at", "2021-11-10 05:57:17.671589"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bernice_hammes"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "fyeFDQBy8h66--qAESUDWA"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "bernice_hammes"], ["email", "gerard@bergnaum.co"], ["first_name", "Efren"], ["last_name", "Lind"], ["birthday", "1995-07-07"], ["password_digest", "$2a$12$stulc9gQl2rj/VuEwUmL0OqGRBb7mh7glijDKsRv2IkfBUevA48um"], ["session_token", "fyeFDQBy8h66--qAESUDWA"], ["created_at", "2021-11-10 05:57:17.938231"], ["updated_at", "2021-11-10 05:57:17.938231"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "raymundo_franecki"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "kYfu-Hv9GnuF3t6RatOFew"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "raymundo_franecki"], ["email", "dana@casper.org"], ["first_name", "Claire"], ["last_name", "Pfeffer"], ["birthday", "1985-02-22"], ["password_digest", "$2a$12$/KN285dG00nlpypTmbAyH.GUoDtYLcwEZdrpve/ctyM69g2d0WycK"], ["session_token", "kYfu-Hv9GnuF3t6RatOFew"], ["created_at", "2021-11-10 05:57:18.207348"], ["updated_at", "2021-11-10 05:57:18.207348"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "vonnie_kilback"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "N1TBqw7rIn1KZEVfxUDCIA"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "vonnie_kilback"], ["email", "reda@thiel.co"], ["first_name", "Leonard"], ["last_name", "Spinka"], ["birthday", "1992-12-09"], ["password_digest", "$2a$12$G2YYz7qb35MkUMYznw.8x.YcvRbukeHpzk4kbEvisgCXk.71TEtY2"], ["session_token", "N1TBqw7rIn1KZEVfxUDCIA"], ["created_at", "2021-11-10 05:57:18.473285"], ["updated_at", "2021-11-10 05:57:18.473285"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "brooks"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "7v01BswwMuIJdCQjpVepiw"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "brooks"], ["email", "king@hickle-marks.name"], ["first_name", "Leta"], ["last_name", "Koss"], ["birthday", "1991-09-04"], ["password_digest", "$2a$12$70Rjuq/vqBSqZr1OuxRj/.s7fvF8XxLfbSIa1kZubh.wcv10yuPJu"], ["session_token", "7v01BswwMuIJdCQjpVepiw"], ["created_at", "2021-11-10 05:57:18.759580"], ["updated_at", "2021-11-10 05:57:18.759580"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "martha_bednar"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Y4BY5mSOV37zS5Y4j8HqLA"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "martha_bednar"], ["email", "marhta@nikolaus.info"], ["first_name", "Cleo"], ["last_name", "Schuppe"], ["birthday", "1996-01-14"], ["password_digest", "$2a$12$w887kYlapQQegkp0qptPyO229/5GVCDZeISrmhvDplkguCmZ.78LO"], ["session_token", "Y4BY5mSOV37zS5Y4j8HqLA"], ["created_at", "2021-11-10 05:57:19.027667"], ["updated_at", "2021-11-10 05:57:19.027667"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "jarrod_hilpert"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "vUYK3JTet_cByQLA2VPVgQ"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "jarrod_hilpert"], ["email", "tommie_harber@waelchi.net"], ["first_name", "Shad"], ["last_name", "Bashirian"], ["birthday", "1981-11-15"], ["password_digest", "$2a$12$Rjjde1h/b0xve3aj6s4wveJE7yy9N/0CF/Psd9D.2ZyyD4Yb2MEoi"], ["session_token", "vUYK3JTet_cByQLA2VPVgQ"], ["created_at", "2021-11-10 05:57:19.294781"], ["updated_at", "2021-11-10 05:57:19.294781"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "vince"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "aklvxKjD6d6mYN7t6pdmlw"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "vince"], ["email", "vito_kerluke@franecki-borer.io"], ["first_name", "Li"], ["last_name", "Effertz"], ["birthday", "1978-11-10"], ["password_digest", "$2a$12$odSvGElr.zZvnAq17xFnGOL3J1HxjdGpjoUYTw4feqSGfVfa5ekMa"], ["session_token", "aklvxKjD6d6mYN7t6pdmlw"], ["created_at", "2021-11-10 05:57:19.562211"], ["updated_at", "2021-11-10 05:57:19.562211"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "reginald"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pAdQBhog341YMnFG1PkAFw"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "reginald"], ["email", "ginny.rowe@kutch.info"], ["first_name", "Pattie"], ["last_name", "Welch"], ["birthday", "1994-10-07"], ["password_digest", "$2a$12$cEOnmyjl1OeOiff7xbf/Ve.9CS55SxBIlOW/.NmyKynsSrphFpAiq"], ["session_token", "pAdQBhog341YMnFG1PkAFw"], ["created_at", "2021-11-10 05:57:19.830830"], ["updated_at", "2021-11-10 05:57:19.830830"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kylie"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "weFT5ikk0YPyLNueZRAX-w"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "kylie"], ["email", "lavina@yost.net"], ["first_name", "Hoyt"], ["last_name", "Sawayn"], ["birthday", "1973-06-07"], ["password_digest", "$2a$12$EGA6URIBpaa/IZO/6LJpk.Xuv5FU62LgXja8a.dlP7XKxGkRLGFiu"], ["session_token", "weFT5ikk0YPyLNueZRAX-w"], ["created_at", "2021-11-10 05:57:20.099814"], ["updated_at", "2021-11-10 05:57:20.099814"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "stacy_veum"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "yXDir2Er6T5oWuxJXUcfbw"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "stacy_veum"], ["email", "millard.upton@olson.io"], ["first_name", "Mike"], ["last_name", "Kirlin"], ["birthday", "1985-03-08"], ["password_digest", "$2a$12$oPRALmqBdtKM7TPFZDpUvO78KuBkbCJIH4x5yJKlvW8JHHdX5oq2G"], ["session_token", "yXDir2Er6T5oWuxJXUcfbw"], ["created_at", "2021-11-10 05:57:20.382336"], ["updated_at", "2021-11-10 05:57:20.382336"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "brandon_cummerata"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "fQ4LNTIMxWbycWWRNDIfmg"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "brandon_cummerata"], ["email", "hung.romaguera@schumm.net"], ["first_name", "Calista"], ["last_name", "Reinger"], ["birthday", "1964-04-12"], ["password_digest", "$2a$12$5uG6e7K2E7QnkAzYo0yxE.HagzWmJNiss66zjxcRg/ays318sdA92"], ["session_token", "fQ4LNTIMxWbycWWRNDIfmg"], ["created_at", "2021-11-10 05:57:20.660276"], ["updated_at", "2021-11-10 05:57:20.660276"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "saturnina"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "WC5D0v1fLGHabIueiIwY_A"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "saturnina"], ["email", "wilbur_zulauf@moen.io"], ["first_name", "Enola"], ["last_name", "Durgan"], ["birthday", "1965-10-23"], ["password_digest", "$2a$12$4ZdPzI09IY8GK4Wt9AgvauFrsNOuER3l8JHL/0Lmpq2oVj.9c191e"], ["session_token", "WC5D0v1fLGHabIueiIwY_A"], ["created_at", "2021-11-10 05:57:20.953330"], ["updated_at", "2021-11-10 05:57:20.953330"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "edwina"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "mLJk9exj01-8sfUkH9XJJw"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "edwina"], ["email", "demetrius.konopelski@breitenberg.biz"], ["first_name", "Rudolph"], ["last_name", "Blick"], ["birthday", "1963-07-10"], ["password_digest", "$2a$12$tTp4Avxy.WcQQIKElREgeuv81ZjA8./3R.L5gsNc57EVqJ1nYxMme"], ["session_token", "mLJk9exj01-8sfUkH9XJJw"], ["created_at", "2021-11-10 05:57:21.248926"], ["updated_at", "2021-11-10 05:57:21.248926"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8310871852403426250)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8310871852403426250)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 441]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 442]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 443]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 444]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 445]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 446]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 447]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 448]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 449]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 450]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 451]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 452]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 453]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 454]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 455]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 456]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 457]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 458]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 459]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 460]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mHome Load (0.9ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 40], ["record_type", "Home"], ["name", "photos"]]
+  [1m[36mHome Destroy (0.2ms)[0m  [1m[31mDELETE FROM "homes" WHERE "homes"."id" = $1[0m  [["id", 40]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 41], ["record_type", "Home"], ["name", "photos"]]
+  [1m[36mHome Destroy (0.2ms)[0m  [1m[31mDELETE FROM "homes" WHERE "homes"."id" = $1[0m  [["id", 41]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "user3"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "0BotMUqITOhSqbISDzU-Lg"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "user3"], ["email", "u33@gmail.com"], ["first_name", "user"], ["last_name", "3rthy"], ["birthday", "1995-01-01"], ["password_digest", "$2a$12$LG3Gac3YZzdrE5thiraOluvrhQ1immAo2jPxEyFoiJlYDhawhZ9.S"], ["session_token", "0BotMUqITOhSqbISDzU-Lg"], ["created_at", "2021-11-10 06:00:30.797741"], ["updated_at", "2021-11-10 06:00:30.797741"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "user61"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "r51mxGPe2Jw25NdALmszkA"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "user61"], ["email", "u33f@gmail.com"], ["first_name", "scottyp"], ["last_name", "3rthy"], ["birthday", "1995-01-01"], ["password_digest", "$2a$12$MhHwOblld6s/UgAMmIVjH.e2Gc9zAAfH2C3.f7Bt5f55vT2Qn7B1i"], ["session_token", "r51mxGPe2Jw25NdALmszkA"], ["created_at", "2021-11-10 06:00:31.066629"], ["updated_at", "2021-11-10 06:00:31.066629"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2021-11-10 10:00:51 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 38.6ms | Allocations: 7219)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 55.7ms | Allocations: 19111)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 20.0ms | Allocations: 19587)
+
+
+Started GET "/api/homes" for 127.0.0.1 at 2021-11-10 10:01:12 -0500
+Processing by Api::HomesController#index as JSON
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (1.9ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/index.json.jbuilder (Duration: 5.9ms | Allocations: 1105)
+Completed 200 OK in 23ms (Views: 8.6ms | ActiveRecord: 1.9ms | Allocations: 6310)
+
+
+Started GET "/api/homes" for 127.0.0.1 at 2021-11-10 10:01:15 -0500
+Processing by Api::HomesController#index as JSON
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (1.9ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/index.json.jbuilder (Duration: 15.9ms | Allocations: 1538)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 1.9ms | Allocations: 1884)
+
+
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 461]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 462]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mHome Load (1.0ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "user3"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "skFmfuWOyIqZIzIeTRBvGg"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "user3"], ["email", "u33@gmail.com"], ["first_name", "user"], ["last_name", "3rthy"], ["birthday", "1995-01-01"], ["password_digest", "$2a$12$qVQKz8r2/J1w6ZBuTmvXlecJc9fmT5mzmqsBcgQVgLrnbizDjTnWm"], ["session_token", "skFmfuWOyIqZIzIeTRBvGg"], ["created_at", "2021-11-10 15:03:37.347444"], ["updated_at", "2021-11-10 15:03:37.347444"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "user61"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2seCw_tSAQH_OZiHE3gE9A"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "first_name", "last_name", "birthday", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["username", "user61"], ["email", "u33f@gmail.com"], ["first_name", "scottyp"], ["last_name", "3rthy"], ["birthday", "1995-01-01"], ["password_digest", "$2a$12$4jVJ82p6hOk2Tlb72WHJVu6MXrGeu43Qe3Byu406BMT1FjMxPE1MK"], ["session_token", "2seCw_tSAQH_OZiHE3gE9A"], ["created_at", "2021-11-10 15:03:37.617699"], ["updated_at", "2021-11-10 15:03:37.617699"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 463], ["LIMIT", 1]]
+  [1m[36mHome Create (0.8ms)[0m  [1m[32mINSERT INTO "homes" ("host_id", "description", "home_name", "price", "address", "city", "country", "lng", "ltd", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["host_id", 463], ["description", "Come chill here for amazing balcony views of the Manhattan Skyline"], ["home_name", "Luxury Condo in DT"], ["price", 90.0], ["address", "31 W 71st St, New York, NY 10023"], ["city", "New York"], ["country", "USA"], ["lng", -73.9803], ["ltd", 40.777384], ["created_at", "2021-11-10 15:03:37.649401"], ["updated_at", "2021-11-10 15:03:37.649401"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 464], ["LIMIT", 1]]
+  [1m[36mHome Create (0.5ms)[0m  [1m[32mINSERT INTO "homes" ("host_id", "description", "home_name", "price", "address", "city", "country", "lng", "ltd", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["host_id", 464], ["description", "Come chill here for amazing balcony views of the Toronto Skyline"], ["home_name", "Amazing CN Tower view"], ["price", 400.0], ["address", "14 York St, Toronto, ON M5J 2Z2"], ["city", "Toronto"], ["country", "Canada"], ["lng", -73.9803], ["ltd", 40.777384], ["created_at", "2021-11-10 15:03:37.654292"], ["updated_at", "2021-11-10 15:03:37.654292"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2021-11-10 10:03:42 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 12.3ms | Allocations: 1082)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 12972)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 2.3ms | Allocations: 13274)
+
+
+Started GET "/api/homes" for 127.0.0.1 at 2021-11-10 10:03:43 -0500
+Processing by Api::HomesController#index as JSON
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (2.7ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 4.1ms | Allocations: 169)
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.7ms | Allocations: 81)
+  Rendered api/homes/index.json.jbuilder (Duration: 103.5ms | Allocations: 9692)
+Completed 200 OK in 105ms (Views: 44.7ms | ActiveRecord: 59.9ms | Allocations: 10035)
+
+
+Started GET "/api/homes/42" for 127.0.0.1 at 2021-11-10 10:04:00 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"42"}
+  [1m[36mHome Load (2.0ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.7ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 3.3ms | Allocations: 446)
+Completed 200 OK in 19ms (Views: 5.8ms | ActiveRecord: 2.0ms | Allocations: 1748)
+
+
+Started GET "/api/homes" for 127.0.0.1 at 2021-11-10 10:07:26 -0500
+Processing by Api::HomesController#index as JSON
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (2.8ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.4ms | Allocations: 82)
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.1ms | Allocations: 81)
+  Rendered api/homes/index.json.jbuilder (Duration: 17.0ms | Allocations: 2267)
+Completed 200 OK in 22ms (Views: 16.6ms | ActiveRecord: 2.8ms | Allocations: 2610)
+
+
+Started GET "/api/homes/42" for 127.0.0.1 at 2021-11-10 10:07:30 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"42"}
+  [1m[36mHome Load (1.8ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.8ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 2.4ms | Allocations: 380)
+Completed 200 OK in 13ms (Views: 3.8ms | ActiveRecord: 1.8ms | Allocations: 1439)
+
+
+Started GET "/api/homes?searchParams%5Bcity%5D=New+York" for 127.0.0.1 at 2021-11-10 10:07:48 -0500
+Processing by Api::HomesController#index as JSON
+  Parameters: {"searchParams"=>{"city"=>"New York"}}
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (2.1ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."city" = $1[0m  [["city", "New York"]]
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.4ms | Allocations: 82)
+  Rendered api/homes/index.json.jbuilder (Duration: 9.1ms | Allocations: 1298)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 2.1ms | Allocations: 1680)
+
+
+Started GET "/api/homes/42" for 127.0.0.1 at 2021-11-10 10:07:51 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"42"}
+  [1m[36mHome Load (2.2ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.6ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 2.0ms | Allocations: 380)
+Completed 200 OK in 21ms (Views: 3.3ms | ActiveRecord: 2.2ms | Allocations: 1438)
+
+
+Started GET "/api/homes" for 127.0.0.1 at 2021-11-10 10:08:49 -0500
+Processing by Api::HomesController#index as JSON
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (3.0ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.5ms | Allocations: 82)
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.5ms | Allocations: 81)
+  Rendered api/homes/index.json.jbuilder (Duration: 18.0ms | Allocations: 1630)
+Completed 200 OK in 21ms (Views: 16.8ms | ActiveRecord: 3.0ms | Allocations: 1971)
+
+
+Started GET "/api/homes" for 127.0.0.1 at 2021-11-10 10:11:20 -0500
+Processing by Api::HomesController#index as JSON
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (1.9ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.4ms | Allocations: 82)
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.1ms | Allocations: 81)
+  Rendered api/homes/index.json.jbuilder (Duration: 25.7ms | Allocations: 2267)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 1.9ms | Allocations: 2608)
+
+
+Started GET "/api/homes?searchParams%5Bcity%5D=Toronto" for 127.0.0.1 at 2021-11-10 10:12:21 -0500
+Processing by Api::HomesController#index as JSON
+  Parameters: {"searchParams"=>{"city"=>"Toronto"}}
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (2.1ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."city" = $1[0m  [["city", "Toronto"]]
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.6ms | Allocations: 82)
+  Rendered api/homes/index.json.jbuilder (Duration: 10.8ms | Allocations: 1302)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 2.1ms | Allocations: 1705)
+
+
+Started GET "/api/homes/43" for 127.0.0.1 at 2021-11-10 10:12:25 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"43"}
+  [1m[36mHome Load (2.5ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.7ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 1.9ms | Allocations: 380)
+Completed 200 OK in 12ms (Views: 3.8ms | ActiveRecord: 2.5ms | Allocations: 1438)
+
+
+Started GET "/api/homes?searchParams%5Bcity%5D=Toronto" for 127.0.0.1 at 2021-11-10 10:12:32 -0500
+Processing by Api::HomesController#index as JSON
+  Parameters: {"searchParams"=>{"city"=>"Toronto"}}
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (2.2ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."city" = $1[0m  [["city", "Toronto"]]
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.6ms | Allocations: 82)
+  Rendered api/homes/index.json.jbuilder (Duration: 8.8ms | Allocations: 1300)
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 2.2ms | Allocations: 1691)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-10 10:18:37 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 43.8ms | Allocations: 5819)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 150.2ms | Allocations: 128424)
+Completed 200 OK in 154ms (Views: 153.0ms | ActiveRecord: 24.4ms | Allocations: 128725)
+
+
+Started GET "/api/homes" for 127.0.0.1 at 2021-11-10 10:18:39 -0500
+Processing by Api::HomesController#index as JSON
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (2.9ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.8ms | Allocations: 82)
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.3ms | Allocations: 81)
+  Rendered api/homes/index.json.jbuilder (Duration: 10.5ms | Allocations: 1792)
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 2.9ms | Allocations: 2177)
+
+
+Started GET "/api/homes/42" for 127.0.0.1 at 2021-11-10 10:18:41 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"42"}
+  [1m[36mHome Load (2.0ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.5ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 1.5ms | Allocations: 380)
+Completed 200 OK in 11ms (Views: 2.9ms | ActiveRecord: 2.0ms | Allocations: 1445)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-10 10:26:16 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 64.8ms | Allocations: 5762)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 735.7ms | Allocations: 148022)
+Completed 200 OK in 740ms (Views: 738.1ms | ActiveRecord: 34.7ms | Allocations: 148323)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-10 10:26:54 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1080)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 99.0ms | Allocations: 63182)
+Completed 200 OK in 100ms (Views: 97.8ms | ActiveRecord: 1.9ms | Allocations: 63482)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-10 10:31:56 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 18.4ms | Allocations: 1080)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 678.1ms | Allocations: 141248)
+Completed 200 OK in 680ms (Views: 677.1ms | ActiveRecord: 2.2ms | Allocations: 141548)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-10 10:33:44 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 14.6ms | Allocations: 1080)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 697.1ms | Allocations: 142775)
+Completed 200 OK in 700ms (Views: 695.8ms | ActiveRecord: 2.9ms | Allocations: 143076)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-10 10:34:30 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1080)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 628.6ms | Allocations: 142772)
+Completed 200 OK in 629ms (Views: 627.5ms | ActiveRecord: 1.5ms | Allocations: 143073)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.debug-176b9c07350ad7e5f755ee13c304be6810159145a5b5342acdeab2b8e7256b38.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-11-10 10:35:05 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 33.5ms | Allocations: 1079)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 59.4ms | Allocations: 13138)
+Completed 200 OK in 63ms (Views: 58.9ms | ActiveRecord: 2.7ms | Allocations: 13439)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-10 10:35:23 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1079)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 13074)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 3.0ms | Allocations: 13374)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-10 10:35:24 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1080)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "o6zUm0ts0ivtTSlVNOEF2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 184.4ms | Allocations: 23060)
+Completed 200 OK in 185ms (Views: 184.0ms | ActiveRecord: 0.7ms | Allocations: 23361)
+
+
