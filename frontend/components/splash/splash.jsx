@@ -56,9 +56,9 @@ class Splash extends React.Component {
                                 <div className="frog-row">
                             <div className="explore-location">
                                 {/* <div className="img-row"> */}
-                                    <a href={`#/homes/Toronto`}><img className="location-img" src={toronto} alt="Location img" /></a>
+                                    <a href={`#/search/Toronto`}><img className="location-img" src={toronto} alt="Location img" /></a>
                                 <Link
-                                    to={`/homes/Toronto`}
+                                    to={`/search/Toronto`}
                                     className="explore-location-text"
                                 >
                                     Toronto
@@ -68,9 +68,9 @@ class Splash extends React.Component {
                                     </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/homes/Vancouver`}><img className="location-img" src={vancouver} alt="Location img" /></a>
+                                    <a href={`#/search/Vancouver`}><img className="location-img" src={vancouver} alt="Location img" /></a>
                                 <Link
-                                    to={`/homes/Vancouver`}
+                                    to={`/search/Vancouver`}
                                     className="explore-location-text"
                                 >
                                     Vancouver
@@ -80,9 +80,9 @@ class Splash extends React.Component {
                                 </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/homes/Chicago`}><img className="location-img" src={chicago} alt="Location img" /></a>
+                                    <a href={`#/search/Chicago`}><img className="location-img" src={chicago} alt="Location img" /></a>
                                 <Link
-                                    to={`/homes/Chicago`}
+                                    to={`/search/Chicago`}
                                     className="explore-location-text"
                                 >
                                     Chicago
@@ -92,8 +92,8 @@ class Splash extends React.Component {
                                 </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/homes/New York`}><img className="location-img" src={nyc} alt="Location img" /></a>
-                                <Link to={`/homes/New York`} className="explore-location-text">
+                                    <a href={`#/search/New York`}><img className="location-img" src={nyc} alt="Location img" /></a>
+                                <Link to={`/search/New York`} className="explore-location-text">
                                     New York
                                 </Link>
                                 <p>
@@ -104,9 +104,9 @@ class Splash extends React.Component {
                             <div className="frog-row">
 
                             <div className="explore-location">
-                                    <a href={`#/homes/New Jersey`}><img className="location-img" src={nj} alt="Location img" /></a>
+                                    <a href={`#/search/New Jersey`}><img className="location-img" src={nj} alt="Location img" /></a>
                                 <Link
-                                    to={`/homes/New Jersey`}
+                                    to={`/search/New Jersey`}
                                     className="explore-location-text"
                                 >
                                     New Jersey
@@ -116,9 +116,9 @@ class Splash extends React.Component {
                                 </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/homes/San Francisco`}><img className="location-img" src={sanfran} alt="Location img" /></a>
+                                    <a href={`#/search/San Francisco`}><img className="location-img" src={sanfran} alt="Location img" /></a>
                                 <Link
-                                    to={`/homes/San Francisco`}
+                                    to={`/search/San Francisco`}
                                     className="explore-location-text"
                                 >
                                     San Francisco
@@ -128,9 +128,9 @@ class Splash extends React.Component {
                                 </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/homes/Dallas`}><img className="location-img" src={dallas} alt="Location img" /></a>
+                                    <a href={`#/search/Dallas`}><img className="location-img" src={dallas} alt="Location img" /></a>
                                 <Link
-                                    to={`/homes/Dallas`}
+                                    to={`/search/Dallas`}
                                     className="explore-location-text"
                                 >
                                     Dallas
@@ -140,8 +140,8 @@ class Splash extends React.Component {
                                 </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/homes/Houston`}><img className="location-img" src={houston} alt="Location img" /></a>
-                                <Link to={`/homes/Houston`} className="explore-location-text">
+                                    <a href={`#/search/Houston`}><img className="location-img" src={houston} alt="Location img" /></a>
+                                <Link to={`/search/Houston`} className="explore-location-text">
                                     Houston
                                 </Link>
                                 <p>

@@ -1,6 +1,6 @@
 import React from "react";
 import SingleHomeMap from "../../map/home_show_map";
-// import ReviewContainer from "../../review/review_container";
+import ReviewContainer from "../../review/review_container";
 
 class Home extends React.Component {
     constructor(props) {
@@ -109,7 +109,7 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <div className="create-review">
-                    {/* <ReviewContainer home={this.props.home} /> */}
+                    <ReviewContainer home={this.props.home} />
                 </div>
                 <div className="show-map">
                     <h2>Location</h2>

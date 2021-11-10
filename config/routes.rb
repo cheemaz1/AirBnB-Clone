@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     resource :user, only: [:create, :show]
     resource :session, only: [:create, :destroy, :show]
     resources :homes
+    resources :reviews, only: [:create, :index]
     # get 'search' => 'homes#search'
 
   end

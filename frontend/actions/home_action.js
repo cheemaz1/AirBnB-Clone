@@ -4,6 +4,8 @@ export const RECEIVE_HOMES = "RECEIVE_HOMES";
 export const RECEIVE_HOME = "RECEIVE_HOME";
 export const REQUIRE_SEARCH = "REQUIRE_SEARCH";
 
+export const RECEIVE_REVIEW = "RECEIVE_REVIEW";
+export const RECEIVE_REVIEWS = "RECEIVE_REVIEWS";
 
 export const receiveHomes = (homes) => {
     // debugger
@@ -17,6 +19,20 @@ export const receiveHome = (home) => {
     return {
         type: RECEIVE_HOME,
         home,
+    };
+};
+
+export const receiveReview = (review) => {
+    return {
+        type: RECEIVE_REVIEW,
+        review,
+    };
+};
+
+export const receiveReviews = (reviews) => {
+    return {
+        type: RECEIVE_REVIEWS,
+        reviews,
     };
 };
 
@@ -49,6 +65,16 @@ export const updateHome = (home) => (dispatch) =>
 APIUtil.updateHome(home).then((home) => dispatch(receiveHome(home)));
 
 
+export const createReview = (review) => (dispatch) =>
+    APIUtil.createReview(review).then(
+        (review) => dispatch(receiveReview(review)),
+        (error) => dispatch(receiveReviewErrors(error.responseJSON))
+    );
+
+export const fetchReviews = (homeId) => (dispatch) =>
+    APIUtil.fetchReviews(homeId).then((reviews) =>
+        dispatch(receiveReviews(reviews))
+    );
 
 
 
