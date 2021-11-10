@@ -12,7 +12,7 @@ class HomeIndexItem extends React.Component {
     }
 
     showHome() {
-        let randomRating = [5.0, 4.67, 4.3, 4.88, 3.7, 4.8, 4.9, 3.8, 4.6, 4.75][
+        let randomRating = [5.0, 4.9, 4.3, 4.8, 3.7, 4.8, 4.1, 3.8, 4.6, 4.7][
             Math.floor(Math.random() * 10)
         ];
         let randomHomeType = [
@@ -24,6 +24,7 @@ class HomeIndexItem extends React.Component {
             "Farm Stay",
         ][Math.floor(Math.random() * 6)];
         let randomHomeImg = [
+            dallas, toronto, houston, chicago, nj, nyc, sanfran, vancouver
 
         ][Math.floor(Math.random() * 8)];
         let randN = [1, 2, 3, 4, 5][Math.floor(Math.random() * 5)];

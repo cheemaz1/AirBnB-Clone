@@ -43,7 +43,7 @@ class HomeIndex extends React.Component {
             return (
                 <div className="no-homes-container">
                     <div className="no-homes">
-                        <p className="no-homes-text"> No homes Here</p>{" "}
+                        <p className="no-homes-text"> No Homes Available Here</p>{" "}
                         <span className="no-homes-sad-face">
         
                         </span>{" "}

@@ -7,10 +7,8 @@ export default () => {
             <div className="footer-list-container">
                 <ul>
                     <h3>About me</h3>
-                    <li><a href="https://github.com/cheemaz1" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/zayed-cheema-30521920a/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                    {/* <li><a href="https://angel.co/u/jared-p-greenberg" target="_blank">AngelList</a></li> */}
-                    {/* <li><a href="https://jared-greenberg.github.io" target="_blank">Personal Site</a></li> */}
+                    <li><a href="https://github.com/cheemaz1" target="_blank" className="github"><i className="fab fa-github-square"> GitHub</i></a></li>
+                    <li><a href="https://www.linkedin.com/in/zayed-cheema-30521920a/" target="_blank" className="github"><i className="fab fa-linkedin"></i> LinkedIn</a></li>
                 </ul>
                 <ul>
                     <h3>Contact</h3>
@@ -36,7 +34,7 @@ export default () => {
                 </ul>
             </div>
             <div className="footer-tag-line">
-                <h3 id="copyright">{'\u00A9'} 2021 CozyBnB, Inc. All rights reserved</h3>
+                <h3 id="copyright">{'\u00A9'} 2021 CozyBnB Inc. All rights reserved</h3>
             </div>
 
         </footer>

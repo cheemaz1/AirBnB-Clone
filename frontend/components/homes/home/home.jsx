@@ -19,7 +19,7 @@ class Home extends React.Component {
             Math.floor(Math.random() * 10)
         ];
         const { home } = this.props;
-        debugger; 
+        // debugger; 
         // const {
         //   home_name,
         //   description,
@@ -33,6 +33,23 @@ class Home extends React.Component {
         return home ? (
             <div className="home-show-container">
                 <div className="home-top">
+                    <div className="home-top-pics">
+                        <div className="home-side-pic">
+                            <img src={living} className="home-show-pic" />
+                        </div>
+                        <div className="home-side-pic">
+                            <img src={kitchen} className="home-show-pic" />
+                        </div>
+                        <div className="home-side-pic">
+                            <img src={bath} className="home-show-pic" />
+                        </div>
+                        <div className="home-side-pic">
+                            <img src={bed1} className="home-show-pic" />
+                        </div>
+                        <div className="home-side-pic">
+                            <img src={stairs} className="home-show-pic" />
+                        </div>
+                    </div>
                     <div className="home-show-name">
                         <h2>{home.home_name}</h2>
                     </div>
@@ -51,7 +68,7 @@ class Home extends React.Component {
                 </div>
 
                 <div className="home-show-info">
-                    <h2>Sleeping arrangement</h2>
+                    <h2>Where you'll sleep</h2>
 
                     <div className="home-show-info-container">
                         <div className="home-bedroom">
@@ -70,7 +87,7 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <div className="home-show-amenities">
-                    <h2>Amenities</h2>
+                    <h2>What this place offers</h2>
                     <div className="amenities">
                         <div className="amenities-1">
                             <div>
@@ -80,7 +97,7 @@ class Home extends React.Component {
                                 <i className="fas fa-car"></i>Free parking
                             </div>
                             <div>
-                                <i className="fas fa-amazon"></i>TV
+                                <i class="fas fa-tv"></i>TV
                             </div>
                             <div>
                                 <i className="fas fa-burn"></i>Heating
@@ -91,19 +108,19 @@ class Home extends React.Component {
                         </div>
                         <div className="amenities-2">
                             <div>
-                                <i className="fas fa-bell"></i>Kitchen
+                                <i class="fas fa-utensils"></i>Kitchen
                             </div>
                             <div>
-                                <i className="fas fa-bell"></i>Pool
+                                <i class="fas fa-swimmer"></i>Pool
                             </div>
                             <div>
-                                <i className="fas fa-bell"></i>Air conditioning
+                                <i class="fas fa-fan"></i>Air conditioning
                             </div>
                             <div>
                                 <i className="fas fa-bell"></i>Smoke alarm
                             </div>
                             <div>
-                                <i className="fas fa-bell"></i>Bar
+                                <i class="fas fa-glass-martini"></i>Bar
                             </div>
                         </div>
                     </div>

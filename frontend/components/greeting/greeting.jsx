@@ -13,7 +13,7 @@ import {
 class Greeting extends React.Component {
     constructor(props) {
         super(props);
-        console.log(props);
+        // console.log(props);
 
     }
     gotoMain() {
