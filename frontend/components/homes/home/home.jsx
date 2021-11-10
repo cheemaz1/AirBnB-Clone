@@ -35,19 +35,19 @@ class Home extends React.Component {
                 <div className="home-top">
                     <div className="home-top-pics">
                         <div className="home-side-pic">
-                            <img src={living} className="home-show-pic" />
+                            <img src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/living.jpeg"} className="home-show-pic" />
                         </div>
                         <div className="home-side-pic">
-                            <img src={kitchen} className="home-show-pic" />
+                            <img src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/kitchen.jpg"} className="home-show-pic" />
                         </div>
                         <div className="home-side-pic">
-                            <img src={bath} className="home-show-pic" />
+                            <img src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/bath.jpg"} className="home-show-pic" />
                         </div>
                         <div className="home-side-pic">
-                            <img src={bed1} className="home-show-pic" />
+                            <img src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/bed1.jpg"} className="home-show-pic" />
                         </div>
                         <div className="home-side-pic">
-                            <img src={stairs} className="home-show-pic" />
+                            <img src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/stairs.jpg"} className="home-show-pic" />
                         </div>
                     </div>
                     <div className="home-show-name">
@@ -138,3 +138,20 @@ class Home extends React.Component {
 }
 
 export default Home;
+
+
+//  <script type="text/javascript">dallas = "<%= image_url('dallas.jpg') %>"</script>
+//     <script type="text/javascript">houston = "<%= image_url('houston.jpg') %>"</script>
+//     <script type="text/javascript">nj = "<%= image_url('nj.jpg') %>"</script>
+//     <script type="text/javascript">nyc = "<%= image_url('nyc.jpg') %>"</script>
+//     <script type="text/javascript">sanfran = "<%= image_url('sanfran.jpg') %>"</script>
+//     <script type="text/javascript">toronto = "<%= image_url('toronto.jpg') %>"</script>
+//     <script type="text/javascript">vancouver = "<%= image_url('vancouver.jpg') %>"</script>
+//     <script type="text/javascript">chicago = "<%= image_url('chicago.jpg') %>"</script>
+//     <script type="text/javascript">try_hosting = "<%= image_url('try_hosting.jpg') %>"</script>
+//     <script type="text/javascript">left = "<%= image_url('left.png') %>"</script>
+//     <script type="text/javascript">living = "<%= image_url('living.jpeg') %>"</script>
+//     <script type="text/javascript">kitchen = "<%= image_url('kitchen.jpg') %>"</script>
+//     <script type="text/javascript">bath = "<%= image_url('bath.jpg') %>"</script>
+//     <script type="text/javascript">bed1 = "<%= image_url('bed1.jpg') %>"</script>
+//     <script type="text/javascript">stairs = "<%= image_url('stairs.jpg') %>"</script>

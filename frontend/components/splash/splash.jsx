@@ -56,7 +56,7 @@ class Splash extends React.Component {
                                 <div className="frog-row">
                             <div className="explore-location">
                                 {/* <div className="img-row"> */}
-                                    <a href={`#/search/Toronto`}><img className="location-img" src={toronto} alt="Location img" /></a>
+                                    <a href={`#/search/Toronto`}><img className="location-img" src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/toronto.jpg"} alt="Location img" /></a>
                                 <Link
                                     to={`/search/Toronto`}
                                     className="explore-location-text"
@@ -68,7 +68,7 @@ class Splash extends React.Component {
                                     </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/search/Vancouver`}><img className="location-img" src={vancouver} alt="Location img" /></a>
+                                    <a href={`#/search/Vancouver`}><img className="location-img" src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/vancouver.jpg"} alt="Location img" /></a>
                                 <Link
                                     to={`/search/Vancouver`}
                                     className="explore-location-text"
@@ -80,7 +80,7 @@ class Splash extends React.Component {
                                 </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/search/Chicago`}><img className="location-img" src={chicago} alt="Location img" /></a>
+                                    <a href={`#/search/Chicago`}><img className="location-img" src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/chicago.jpg"} alt="Location img" /></a>
                                 <Link
                                     to={`/search/Chicago`}
                                     className="explore-location-text"
@@ -92,7 +92,7 @@ class Splash extends React.Component {
                                 </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/search/New York`}><img className="location-img" src={nyc} alt="Location img" /></a>
+                                    <a href={`#/search/New York`}><img className="location-img" src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/nyc.jpg"} alt="Location img" /></a>
                                 <Link to={`/search/New York`} className="explore-location-text">
                                     New York
                                 </Link>
@@ -104,7 +104,7 @@ class Splash extends React.Component {
                             <div className="frog-row">
 
                             <div className="explore-location">
-                                    <a href={`#/search/New Jersey`}><img className="location-img" src={nj} alt="Location img" /></a>
+                                    <a href={`#/search/New Jersey`}><img className="location-img" src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/nj.jpg"} alt="Location img" /></a>
                                 <Link
                                     to={`/search/New Jersey`}
                                     className="explore-location-text"
@@ -116,7 +116,7 @@ class Splash extends React.Component {
                                 </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/search/San Francisco`}><img className="location-img" src={sanfran} alt="Location img" /></a>
+                                    <a href={`#/search/San Francisco`}><img className="location-img" src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/sanfran.jpg"} alt="Location img" /></a>
                                 <Link
                                     to={`/search/San Francisco`}
                                     className="explore-location-text"
@@ -128,7 +128,7 @@ class Splash extends React.Component {
                                 </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/search/Dallas`}><img className="location-img" src={dallas} alt="Location img" /></a>
+                                    <a href={`#/search/Dallas`}><img className="location-img" src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/dallas.jpg"} alt="Location img" /></a>
                                 <Link
                                     to={`/search/Dallas`}
                                     className="explore-location-text"
@@ -140,7 +140,7 @@ class Splash extends React.Component {
                                 </p>
                             </div>
                             <div className="explore-location">
-                                    <a href={`#/search/Houston`}><img className="location-img" src={houston} alt="Location img" /></a>
+                                    <a href={`#/search/Houston`}><img className="location-img" src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/houston.jpg"} alt="Location img" /></a>
                                 <Link to={`/search/Houston`} className="explore-location-text">
                                     Houston
                                 </Link>
@@ -166,7 +166,7 @@ class Splash extends React.Component {
                             <div className="try-hosting-container-container">
                                 <div className="try-hosting-container">
                                     <div className="try-hosting-img-container">
-                                        <img className="try-hosting-img" src={try_hosting} alt="Location img" />
+                                        <img className="try-hosting-img" src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/try_hosting.jpg"} alt="Location img" />
                                     </div>
 
                                     <div className="try-hosting-text-container">

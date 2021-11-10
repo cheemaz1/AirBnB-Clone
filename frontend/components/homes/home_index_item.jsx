@@ -24,12 +24,22 @@ class HomeIndexItem extends React.Component {
             "Farm Stay",
         ][Math.floor(Math.random() * 6)];
         let randomHomeImg = [
-            dallas, toronto, houston, chicago, nj, nyc, sanfran, vancouver
-
+            "https://aa-homes-dev.s3.ca-central-1.amazonaws.com/chicago.jpg",
+            "https://aa-homes-dev.s3.ca-central-1.amazonaws.com/dallas.jpg",
+            "https://aa-homes-dev.s3.ca-central-1.amazonaws.com/houston.jpg",
+            "https://aa-homes-dev.s3.ca-central-1.amazonaws.com/nj.jpg",
+            "https://aa-homes-dev.s3.ca-central-1.amazonaws.com/nyc.jpg",
+            "https://aa-homes-dev.s3.ca-central-1.amazonaws.com/sanfran.jpg",
+            "https://aa-homes-dev.s3.ca-central-1.amazonaws.com/vancouver.jpg",
+            "https://aa-homes-dev.s3.ca-central-1.amazonaws.com/toronto.jpg",
         ][Math.floor(Math.random() * 8)];
         let randN = [1, 2, 3, 4, 5][Math.floor(Math.random() * 5)];
         let { home_name, price, city } = this.props.home;
 
+        // [
+        //     dallas, toronto, houston, chicago, nj, nyc, sanfran, vancouver
+
+        // ]
         return (
             <div className="indiv-home">
                 <div className="indiv-home-container">
