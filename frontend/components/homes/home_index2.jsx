@@ -8,7 +8,7 @@ import MapDisplay from "../map/map_display";
 class HomeIndex2 extends React.Component {
     constructor(props) {
         super(props);
-        debugger;
+        // debugger;
     }
 
     componentDidMount() {
