@@ -30,7 +30,7 @@ import Popper from 'popper.js';
 const App = () => (
     <div>
         <Modal />
-        <header>
+        <header className="headerstyle">
             <div className="headercomp">
                 <GreetingContainer />
                 <SearchContainer />  

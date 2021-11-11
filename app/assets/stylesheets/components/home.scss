@@ -85,7 +85,7 @@
   display: flex;
   font-size: 15px;
   padding-top: 5px;
-  margin-left: 1vh;
+  margin-left: 7vh;
 }
 
 .home-show-desc-p {
@@ -129,6 +129,7 @@
 
 .home-top-pics {
   display: flex;
+  margin-right: 52.9vh;
 }
 
 .home-show-pic {
@@ -136,17 +137,29 @@
   height: 100%;
 }
 .home-first-pic {
-  width: 100vh;
+  width: 100%;
 }
 
 .home-bottom-pics {
   display: flex;
-  margin-right: 52.7vh;
+  // margin-right: 52.7vh;
+  flex-direction: column;
+  margin-right: -41.30000000000001vh;
+  padding-right: 68vh;
+  margin-left: 104vh;
+  margin-top: -69vh;
+  padding-bottom: 3vh;
+}
+
+
+.home-side-pic {
+  width: 100%;
 }
 
 .titlehome {
   font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .textinfos {

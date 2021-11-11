@@ -66,7 +66,7 @@ class ReviewForm extends React.Component {
         return (
             <form className="review-form-container">
                 <div className="review-top">
-                    <h3>Leave a review</h3>
+                    <h3>Write a Review!</h3>
                 </div>
                 <div className="review-mid">
                     <div className="reviews-ratings">
@@ -121,7 +121,7 @@ class ReviewForm extends React.Component {
                             id="review-text"
                             className="review-no-body-error"
                             onChange={this.update("body")}
-                            placeholder="Tell us about your stay"
+                            placeholder="How did we do?"
                             value={this.state.body}
                         ></textarea>
                     </div>
