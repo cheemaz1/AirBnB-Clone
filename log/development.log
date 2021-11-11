@@ -37663,3 +37663,70 @@ Processing by Api::HomesController#show as JSON
 Completed 200 OK in 9ms (Views: 1.0ms | ActiveRecord: 4.1ms | Allocations: 5505)
 
 
+Started GET "/" for 127.0.0.1 at 2021-11-11 16:35:11 -0500
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "N_BxLb7SODushDKUYlVhGA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: api/users/_user.json.jbuilder (called from _app_views_static_pages_root_html_erb__1856459292775624948_70253599916820 at /Users/zayedcheema/Desktop/newproj/bnb/app/views/static_pages/root.html.erb:4)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.9ms | Allocations: 229)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 86.8ms | Allocations: 11055)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.2ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 528.6ms | Allocations: 119528)
+Completed 200 OK in 550ms (Views: 479.3ms | ActiveRecord: 53.7ms | Allocations: 123420)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-11 16:35:13 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "N_BxLb7SODushDKUYlVhGA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.4ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1345)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.4ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 8084)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 2.3ms | Allocations: 8388)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-11 16:37:18 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "N_BxLb7SODushDKUYlVhGA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.5ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 10.7ms | Allocations: 1330)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.2ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 713.1ms | Allocations: 124259)
+Completed 200 OK in 716ms (Views: 712.6ms | ActiveRecord: 2.6ms | Allocations: 124559)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-11 16:37:20 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (18.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "N_BxLb7SODushDKUYlVhGA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.4ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 24.6ms | Allocations: 1344)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.2ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 37.1ms | Allocations: 8082)
+Completed 200 OK in 39ms (Views: 19.2ms | ActiveRecord: 18.6ms | Allocations: 8384)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-11 16:37:22 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "N_BxLb7SODushDKUYlVhGA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.6ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 9.9ms | Allocations: 1329)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.3ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 8067)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 2.8ms | Allocations: 8368)
+
+

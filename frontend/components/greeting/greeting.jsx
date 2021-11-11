@@ -136,7 +136,7 @@ class Greeting extends React.Component {
 
         const sessionLinks = (
             <div className="ddown">
-                <SearchContainer />
+                {/* <SearchContainer /> */}
                 <Link to="/" className="header-link">
                     <div className="cozybnb"><p className="name"><i id="hellobob" className="fab fa-airbnb" ></i>cozybnb</p></div>
                 </Link>
