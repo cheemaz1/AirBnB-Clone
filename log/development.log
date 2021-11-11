@@ -37943,3 +37943,53 @@ Processing by Api::HomesController#show as JSON
 Completed 200 OK in 22ms (Views: 4.6ms | ActiveRecord: 4.7ms | Allocations: 1610)
 
 
+Started GET "/" for 127.0.0.1 at 2021-11-11 17:08:00 -0500
+  [1m[35m (8.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 4.4ms | Allocations: 651)
+  Rendered layout layouts/application.html.erb (Duration: 876.3ms | Allocations: 146920)
+Completed 200 OK in 888ms (Views: 879.4ms | ActiveRecord: 0.0ms | Allocations: 150812)
+
+
+Started GET "/api/homes" for 127.0.0.1 at 2021-11-11 17:08:05 -0500
+Processing by Api::HomesController#index as JSON
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (2.0ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.6ms | Allocations: 169)
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.2ms | Allocations: 81)
+  Rendered api/homes/index.json.jbuilder (Duration: 32.5ms | Allocations: 10000)
+Completed 200 OK in 49ms (Views: 18.6ms | ActiveRecord: 16.9ms | Allocations: 15833)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-11 17:37:34 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 1.9ms | Allocations: 209)
+  Rendered layout layouts/application.html.erb (Duration: 710.7ms | Allocations: 128610)
+Completed 200 OK in 718ms (Views: 716.4ms | Allocations: 128911)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-11 17:37:36 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 0.5ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 6734)
+Completed 200 OK in 15ms (Views: 14.5ms | Allocations: 7038)
+
+
+Started GET "/api/homes" for 127.0.0.1 at 2021-11-11 17:37:41 -0500
+Processing by Api::HomesController#index as JSON
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (2.6ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.6ms | Allocations: 82)
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.4ms | Allocations: 81)
+  Rendered api/homes/index.json.jbuilder (Duration: 62.2ms | Allocations: 6916)
+Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 27.0ms | Allocations: 7258)
+
+
