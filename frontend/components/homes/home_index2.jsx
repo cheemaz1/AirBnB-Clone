@@ -1,8 +1,8 @@
 import React from "react";
 import HomeIndexItem from "./home_index_item";
-import HomeMap from "../map/home_map";
+// import HomeMap from "../map/home_map";
 import MapContainer from "../map/map_container";
-import MapDisplay from "../map/map_display";
+// import MapDisplay from "../map/map_display";
 
 
 class HomeIndex2 extends React.Component {

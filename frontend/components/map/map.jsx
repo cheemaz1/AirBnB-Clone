@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 import MarkerManager from '../../util/marker_manager';
 
-class HomeMap extends React.Component {
+class GMap extends React.Component {
     constructor(props) {
         super(props);
         this.locations = [
@@ -41,4 +40,4 @@ class HomeMap extends React.Component {
     }
 }
 
-export default HomeMap
+export default GMap

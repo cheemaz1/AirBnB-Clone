@@ -37150,3 +37150,218 @@ Processing by Api::HomesController#show as JSON
 Completed 200 OK in 9ms (Views: 2.9ms | ActiveRecord: 1.7ms | Allocations: 1438)
 
 
+Started GET "/" for 127.0.0.1 at 2021-11-11 10:00:17 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "N_BxLb7SODushDKUYlVhGA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: api/users/_user.json.jbuilder (called from _app_views_static_pages_root_html_erb__3964037646178176086_70324027246960 at /Users/zayedcheema/Desktop/newproj/bnb/app/views/static_pages/root.html.erb:4)
+  Rendered api/users/_user.json.jbuilder (Duration: 1.4ms | Allocations: 214)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 53.1ms | Allocations: 6578)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.2ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 873.3ms | Allocations: 146565)
+Completed 200 OK in 875ms (Views: 874.2ms | ActiveRecord: 26.7ms | Allocations: 146866)
+
+
+Started GET "/api/homes" for 127.0.0.1 at 2021-11-11 10:00:19 -0500
+Processing by Api::HomesController#index as JSON
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (2.8ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.6ms | Allocations: 82)
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.2ms | Allocations: 81)
+  Rendered api/homes/index.json.jbuilder (Duration: 10.4ms | Allocations: 1703)
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 2.8ms | Allocations: 2045)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-11 10:01:38 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "N_BxLb7SODushDKUYlVhGA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.4ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1333)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.1ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 802.6ms | Allocations: 142737)
+Completed 200 OK in 804ms (Views: 800.9ms | ActiveRecord: 2.4ms | Allocations: 143038)
+
+
+Started GET "/api/homes" for 127.0.0.1 at 2021-11-11 10:01:40 -0500
+Processing by Api::HomesController#index as JSON
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (0.9ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.2ms | Allocations: 82)
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.1ms | Allocations: 81)
+  Rendered api/homes/index.json.jbuilder (Duration: 3.4ms | Allocations: 1631)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.9ms | Allocations: 1973)
+
+
+Started GET "/api/homes/42" for 127.0.0.1 at 2021-11-11 10:01:43 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"42"}
+  [1m[36mHome Load (2.9ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.5ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 1.7ms | Allocations: 380)
+Completed 200 OK in 11ms (Views: 2.9ms | ActiveRecord: 2.9ms | Allocations: 1443)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-11 10:09:16 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "N_BxLb7SODushDKUYlVhGA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.5ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 43.4ms | Allocations: 6041)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.2ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 729.8ms | Allocations: 131068)
+Completed 200 OK in 731ms (Views: 730.4ms | ActiveRecord: 25.7ms | Allocations: 131368)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-11 10:10:58 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "N_BxLb7SODushDKUYlVhGA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.4ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1330)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.2ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 681.1ms | Allocations: 125015)
+Completed 200 OK in 682ms (Views: 680.0ms | ActiveRecord: 1.7ms | Allocations: 125315)
+
+
+Started GET "/api/homes/42" for 127.0.0.1 at 2021-11-11 10:10:59 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"42"}
+  [1m[36mHome Load (5.8ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.2ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 1.5ms | Allocations: 1126)
+Completed 200 OK in 12ms (Views: 2.3ms | ActiveRecord: 5.8ms | Allocations: 6264)
+
+
+Started GET "/api/homes" for 127.0.0.1 at 2021-11-11 10:11:05 -0500
+Processing by Api::HomesController#index as JSON
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (2.2ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.3ms | Allocations: 82)
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.3ms | Allocations: 81)
+  Rendered api/homes/index.json.jbuilder (Duration: 9.0ms | Allocations: 1630)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 2.2ms | Allocations: 1971)
+
+
+Started GET "/api/homes/1" for 127.0.0.1 at 2021-11-11 10:11:28 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mHome Load (2.4ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+Completed 404 Not Found in 9ms (ActiveRecord: 2.4ms | Allocations: 2298)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Home with 'id'=1:
+  app/controllers/api/homes_controller.rb:26:in `show'
+
+Started GET "/api/homes" for 127.0.0.1 at 2021-11-11 10:11:31 -0500
+Processing by Api::HomesController#index as JSON
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (4.5ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.4ms | Allocations: 82)
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.2ms | Allocations: 81)
+  Rendered api/homes/index.json.jbuilder (Duration: 13.6ms | Allocations: 1630)
+Completed 200 OK in 15ms (Views: 10.3ms | ActiveRecord: 4.5ms | Allocations: 1971)
+
+
+Started GET "/api/homes/42" for 127.0.0.1 at 2021-11-11 10:11:42 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"42"}
+  [1m[36mHome Load (1.9ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.6ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 2.0ms | Allocations: 380)
+Completed 200 OK in 10ms (Views: 3.3ms | ActiveRecord: 1.9ms | Allocations: 1438)
+
+
+Started GET "/api/homes" for 127.0.0.1 at 2021-11-11 10:11:45 -0500
+Processing by Api::HomesController#index as JSON
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (2.4ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.4ms | Allocations: 82)
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.6ms | Allocations: 81)
+  Rendered api/homes/index.json.jbuilder (Duration: 11.7ms | Allocations: 1630)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 2.4ms | Allocations: 1971)
+
+
+Started GET "/api/homes/43" for 127.0.0.1 at 2021-11-11 10:11:46 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"43"}
+  [1m[36mHome Load (1.7ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.8ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 1.8ms | Allocations: 380)
+Completed 200 OK in 11ms (Views: 3.2ms | ActiveRecord: 1.7ms | Allocations: 1487)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-11 10:11:55 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "N_BxLb7SODushDKUYlVhGA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.6ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1330)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.1ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 719.5ms | Allocations: 128119)
+Completed 200 OK in 721ms (Views: 718.5ms | ActiveRecord: 2.0ms | Allocations: 128420)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.debug-53ad7a2981f6d2ea6ab8c45e161ae5f4b8eeb14f7307d7f767a2f8e7b8c2986b.js"):
+  
+Started GET "/" for 127.0.0.1 at 2021-11-11 10:12:04 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "N_BxLb7SODushDKUYlVhGA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.4ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1329)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.2ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 8026)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 1.8ms | Allocations: 8326)
+
+
+Started GET "/api/homes" for 127.0.0.1 at 2021-11-11 10:12:07 -0500
+Processing by Api::HomesController#index as JSON
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (2.7ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.5ms | Allocations: 82)
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.4ms | Allocations: 81)
+  Rendered api/homes/index.json.jbuilder (Duration: 11.4ms | Allocations: 2329)
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 2.7ms | Allocations: 2719)
+
+
+Started GET "/api/homes/42" for 127.0.0.1 at 2021-11-11 10:12:09 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"42"}
+  [1m[36mHome Load (3.8ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.7ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 1.7ms | Allocations: 380)
+Completed 200 OK in 36ms (Views: 2.9ms | ActiveRecord: 3.8ms | Allocations: 2183)
+
+

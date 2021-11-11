@@ -1,5 +1,5 @@
 import React from "react";
-import SingleHomeMap from "../../map/home_show_map";
+// import SingleHomeMap from "../../map/home_show_map";
 import MapContainer from "../../map/map_container";
 import ReviewContainer from "../../review/review_container";
 

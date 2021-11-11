@@ -63,8 +63,8 @@ toronto_1 = Home.create(price: 400,
                         description: "Come chill here for amazing balcony views of the Toronto Skyline", 
                         city: 'Toronto',
                         country: 'Canada', 
-                        ltd: 40.777384, 
-                        lng: -73.9803, 
+                        ltd: 43.651070, 
+                        lng: -79.347015, 
                         address: '14 York St, Toronto, ON M5J 2Z2')
 
 
