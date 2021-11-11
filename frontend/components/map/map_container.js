@@ -46,7 +46,7 @@ const MapContainer = () => {
         // window.location = `/#/homes/${home.id}`
         props.history.push(`/homes/${home.id}`);
     }
-    debugger;
+    // debugger;
 
     return (
         <GoogleMap

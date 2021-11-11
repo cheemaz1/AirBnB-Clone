@@ -15,7 +15,7 @@ class MapDisplay extends React.Component {
         super(props);
         // this.drawCities = this.drawCities.bind(this);
         // this.cityClickHandler = this.cityClickHandler.bind(this);
-        debugger;
+        // debugger;
     }
 
     mapOptions() {
@@ -99,7 +99,7 @@ class MapDisplay extends React.Component {
     }
 
     render() {
-        debugger;
+        // debugger;
         return (
             <div id={`${this.props.type}-map-wrapper`}>
                 <div id="map-container" ref="map">
