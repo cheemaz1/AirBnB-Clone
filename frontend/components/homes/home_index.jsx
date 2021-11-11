@@ -1,6 +1,7 @@
 import React from "react";
 import HomeIndexItem from "./home_index_item";
 import HomeMap from "../map/home_map";
+import MapContainer from "../map/map_container";
 
 
 
@@ -85,6 +86,7 @@ class HomeIndex extends React.Component {
                 <div className="homes-right">
                     <div className="google-map">
                         <HomeMap homes={this.props.homes} />
+                        {/* <MapContainer homes={this.props.homes} /> */}
                     </div>
                 </div>
             </div>

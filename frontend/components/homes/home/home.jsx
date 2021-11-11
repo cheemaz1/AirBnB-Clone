@@ -1,5 +1,6 @@
 import React from "react";
 import SingleHomeMap from "../../map/home_show_map";
+import MapContainer from "../../map/map_container";
 import ReviewContainer from "../../review/review_container";
 
 class Home extends React.Component {
@@ -33,25 +34,8 @@ class Home extends React.Component {
         return home ? (
             <div className="home-show-container">
                 <div className="home-top">
-                    <div className="home-top-pics">
-                        <div className="home-side-pic">
-                            <img src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/living.jpeg"} className="home-show-pic" />
-                        </div>
-                        <div className="home-side-pic">
-                            <img src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/kitchen.jpg"} className="home-show-pic" />
-                        </div>
-                        <div className="home-side-pic">
-                            <img src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/bath.jpg"} className="home-show-pic" />
-                        </div>
-                        <div className="home-side-pic">
-                            <img src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/bed1.jpg"} className="home-show-pic" />
-                        </div>
-                        <div className="home-side-pic">
-                            <img src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/stairs.jpg"} className="home-show-pic" />
-                        </div>
-                    </div>
                     <div className="home-show-name">
-                        <h2>{home.home_name}</h2>
+                        <h2 className="titlehome">{home.home_name}</h2>
                     </div>
                     <div className="home-show-rating">
                         <div className="star">
@@ -60,15 +44,35 @@ class Home extends React.Component {
                         </div>
                         <div className="home-city">{home.city}</div>
                     </div>
+                    <div className="home-top-pics">
+                        <div className="home-side-pic">
+                            <img src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/living.jpeg"} className="home-first-pic" />
+                        </div>
+                        </div>
+                    <div className="home-bottom-pics">
+                        <div className="home-side-pic">
+                            <img src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/kitchen.jpg"} className="home-show-pic" />
+                        </div>
+                        <div className="home-side-pic">
+                            <img src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/bath.jpg"} className="home-show-pic" />
+                        </div>
+                       
+                        <div className="home-side-pic">
+                            <img src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/bed1.jpg"} className="home-show-pic" />
+                        </div>
+                        <div className="home-side-pic">
+                            <img src={"https://aa-homes-dev.s3.ca-central-1.amazonaws.com/stairs.jpg"} className="home-show-pic" />
+                        </div>
+                    </div>
                 </div>
 
                 <div className="home-show-desc">
-                    <h2>Description</h2>
+                    <h2 className="textinfos">Description</h2>
                     <p className="home-show-desc-p">{home.description}</p>
                 </div>
 
                 <div className="home-show-info">
-                    <h2>Where you'll sleep</h2>
+                    <h2 className="textinfos">Where you'll sleep</h2>
 
                     <div className="home-show-info-container">
                         <div className="home-bedroom">
@@ -87,7 +91,7 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <div className="home-show-amenities">
-                    <h2>What this place offers</h2>
+                    <h2 className="textinfos">What this place offers</h2>
                     <div className="amenities">
                         <div className="amenities-1">
                             <div>
@@ -108,19 +112,19 @@ class Home extends React.Component {
                         </div>
                         <div className="amenities-2">
                             <div>
-                                <i class="fas fa-utensils"></i>Kitchen
+                                <i className="fas fa-utensils"></i>Kitchen
                             </div>
                             <div>
-                                <i class="fas fa-swimmer"></i>Pool
+                                <i className="fas fa-swimmer"></i>Pool
                             </div>
                             <div>
-                                <i class="fas fa-fan"></i>Air conditioning
+                                <i className="fas fa-fan"></i>Air conditioning
                             </div>
                             <div>
                                 <i className="fas fa-bell"></i>Smoke alarm
                             </div>
                             <div>
-                                <i class="fas fa-glass-martini"></i>Bar
+                                <i className="fas fa-glass-martini"></i>Bar
                             </div>
                         </div>
                     </div>
@@ -129,8 +133,9 @@ class Home extends React.Component {
                     <ReviewContainer home={this.props.home} />
                 </div>
                 <div className="show-map">
-                    <h2>Location</h2>
-                    <SingleHomeMap />
+                    <h2 className="textinfos">Location</h2>
+                    {/* <SingleHomeMap /> */}
+                    <MapContainer />
                 </div>
             </div>
         ) : null;
