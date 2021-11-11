@@ -14,7 +14,7 @@ export default () => {
                     <h3>Contact</h3>
                     <li><a href="mailto:zayedcheema@hotmail.com">zayedcheema@hotmail.com</a></li>
                     <li><p>(647) 833-5465</p></li>
-                    <li><p>Toronto, Canada</p></li>
+                    {/* <li><p>Toronto, Canada</p></li> */}
                 </ul>
                 <ul>
                     <h3>Other Projects</h3>
