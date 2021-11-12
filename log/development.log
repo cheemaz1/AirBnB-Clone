@@ -40869,3 +40869,85 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 318ms (Views: 309.2ms | ActiveRecord: 0.0ms | Allocations: 47106)
 
 
+Started GET "/" for 127.0.0.1 at 2021-11-12 02:18:56 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 4.6ms | Allocations: 651)
+  Rendered layout layouts/application.html.erb (Duration: 944.8ms | Allocations: 177168)
+Completed 200 OK in 955ms (Views: 947.8ms | ActiveRecord: 0.0ms | Allocations: 181059)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-12 02:19:58 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 1.5ms | Allocations: 209)
+  Rendered layout layouts/application.html.erb (Duration: 699.6ms | Allocations: 132071)
+Completed 200 OK in 702ms (Views: 701.4ms | ActiveRecord: 0.0ms | Allocations: 132375)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-12 02:20:25 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 0.6ms | Allocations: 208)
+Started GET "/" for 127.0.0.1 at 2021-11-12 02:20:25 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 0.3ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 695.4ms | Allocations: 253802)
+Completed 200 OK in 696ms (Views: 696.0ms | ActiveRecord: 0.0ms | Allocations: 254103)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 610.8ms | Allocations: 148866)
+Completed 200 OK in 611ms (Views: 611.1ms | ActiveRecord: 0.0ms | Allocations: 149166)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-12 02:21:46 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 2.3ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 680.0ms | Allocations: 138152)
+Completed 200 OK in 692ms (Views: 689.6ms | ActiveRecord: 0.0ms | Allocations: 138452)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-12 02:22:10 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 0.5ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 674.2ms | Allocations: 135014)
+Completed 200 OK in 677ms (Views: 676.2ms | ActiveRecord: 0.0ms | Allocations: 135317)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-12 02:26:14 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 2.3ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 702.6ms | Allocations: 138171)
+Completed 200 OK in 706ms (Views: 704.4ms | Allocations: 138472)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-12 02:28:09 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 5.8ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 705.1ms | Allocations: 139684)
+Completed 200 OK in 708ms (Views: 706.8ms | Allocations: 139984)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-12 02:29:48 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 1.9ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 691.7ms | Allocations: 139675)
+Completed 200 OK in 695ms (Views: 693.6ms | Allocations: 139977)
+
+

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ConstructionPage from "../construction/construction";
 
 
 
@@ -170,12 +171,13 @@ class Splash extends React.Component {
                                     </div>
 
                                     <div className="try-hosting-text-container">
-                                        <h3 className="try-hosting-h3">Try Hosting</h3>
+                                        
+                                            <h3 className="try-hosting-h3">Try Hosting</h3>
                                         <p className="try-hosting-text">
                                             Earn extra income and unlock new opportunities by sharing your
                                             space
                                         </p>
-                                        <p className="learnmore">Learn More</p>
+                                        <Link to={`/learnmore`} className="const"><p className="learnmore">Learn More</p></Link>
                                     </div>
                                 </div>
                             </div>

@@ -26,6 +26,7 @@ import 'bootstrap';
 // import 'bootstrap/dist/js/bootstrap.js';
 import $ from 'jquery';
 import Popper from 'popper.js';
+import ConstructionPage from './construction/construction';
 
 const App = () => (
     <div>
@@ -48,6 +49,7 @@ const App = () => (
             <Route exact path="/search/:city" component={HomesIndexContainer} />
             <Route exact path="/homes" component={HomesIndexContainer2} />
             <Route exact path="/users/:userId" component={ProfileShowContainer} />
+            <Route exact path="/learnmore" component={ConstructionPage} />
             <Route path={`/homes/:homeId`} component={HomeContainer} />
             <Route component={ErrorPage} />
             {/* <Route path={`/search`} component={SearchContainer} /> */}
