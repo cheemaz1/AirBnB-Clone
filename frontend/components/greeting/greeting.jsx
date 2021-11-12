@@ -176,14 +176,17 @@ class Greeting extends React.Component {
                     <div className="pfcontainer">
 
                         <button className="pf-ask" >☰</button>
-                        <ul className="login-signup-ul">
+                        <ul className="login-signup-ul2">
                             {/* <li className="menu-li">
                         Profile
                     </li> */}
-                            <button className="menu-li" onClick={this.gotoProfile.bind(this)}>
-                                <i className="fas fa-address-card"></i>
-                            </button>
-                            <li className="menu-li" onClick={logout}>
+                            {/* <button className="menu-li" onClick={this.gotoProfile.bind(this)}> */}
+                                {/* <i className="fas fa-address-card"></i> */}
+                                <li className="menu-li2" onClick={this.gotoProfile.bind(this)}>
+                                    Profile
+                                </li>
+                            {/* </button> */}
+                            <li className="menu-li2" onClick={logout}>
                                 Logout
                             </li>
                         </ul>

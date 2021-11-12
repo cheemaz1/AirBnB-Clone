@@ -13,17 +13,17 @@ class ProfileShow extends React.Component {
         return (
             <div className="profile-show">
                 <h1 className="profile-header"> Personal info</h1>
-                <li> <div> Full name</div>
-                    <p>{currentUser.first_name + " " + currentUser.last_name}</p>
+                <li> <div className="info-head"> Full name</div>
+                    <p className="info-ans">{currentUser.first_name + " " + currentUser.last_name}</p>
                 </li>
-                <li> <div> Username </div>
-                    <p>{currentUser.username}</p>
+                <li> <div className="info-head"> Username </div>
+                    <p className="info-ans">{currentUser.username}</p>
                 </li>
-                <li> <div> Email </div>
-                    <p>{currentUser.email}</p>
+                <li> <div className="info-head"> Email </div>
+                    <p className="info-ans">{currentUser.email}</p>
                 </li>
-                <li> <div> Birthday </div>
-                    <p>{currentUser.birthday}</p>
+                <li> <div className="info-head"> Birthday </div>
+                    <p className="info-ans">{currentUser.birthday}</p>
                 </li>
             </div>
         )

@@ -1,6 +1,7 @@
 import React from "react";
 // import SingleHomeMap from "../../map/home_show_map";
 import MapContainer from "../../map/map_container";
+import MapShowContainer1 from "../../map/map_show_container1";
 import ReviewContainer from "../../review/review_container";
 
 class Home extends React.Component {
@@ -94,36 +95,36 @@ class Home extends React.Component {
                     <h2 className="textinfos">What this place offers</h2>
                     <div className="amenities">
                         <div className="amenities-1">
-                            <div>
+                            <div className="amen1">
                                 <i className="fas fa-wifi"></i>Wifi
                             </div>
-                            <div>
+                            <div className="amen1">
                                 <i className="fas fa-car"></i>Free parking
                             </div>
-                            <div>
+                            <div className="amen1">
                                 <i class="fas fa-tv"></i>TV
                             </div>
-                            <div>
+                            <div className="amen1">
                                 <i className="fas fa-burn"></i>Heating
                             </div>
-                            <div>
+                            <div className="amen1">
                                 <i className="fas fa-fire-extinguisher"></i>Fire extinguisher
                             </div>
                         </div>
                         <div className="amenities-2">
-                            <div>
+                            <div className="amen1">
                                 <i className="fas fa-utensils"></i>Kitchen
                             </div>
                             <div>
                                 <i className="fas fa-swimmer"></i>Pool
                             </div>
-                            <div>
+                            <div className="amen1">
                                 <i className="fas fa-fan"></i>Air conditioning
                             </div>
-                            <div>
+                            <div className="amen1">
                                 <i className="fas fa-bell"></i>Smoke alarm
                             </div>
-                            <div>
+                            <div className="amen1">
                                 <i className="fas fa-glass-martini"></i>Bar
                             </div>
                         </div>
@@ -135,7 +136,7 @@ class Home extends React.Component {
                 <div className="show-map">
                     <h2 className="textinfos">Location</h2>
                     {/* <SingleHomeMap /> */}
-                    <MapContainer />
+                    <MapShowContainer1 />
                 </div>
             </div>
         ) : null;

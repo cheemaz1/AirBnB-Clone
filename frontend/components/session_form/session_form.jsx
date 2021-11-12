@@ -204,7 +204,7 @@ class SessionForm extends React.Component {
                             className="session-submit"
                             onClick={() =>
                                 this.props
-                                    .login({ username: "user3", password: "123123", email: 'u33@gmail.com', first_name: 'user', last_name: '3rthy', birthday: '1995-01-01' })
+                                    .login({ username: 'mj_24', password: '123123', email: 'demouser@gmail.com', first_name: 'Michael', last_name: 'Jeff', birthday: '1995-01-01' })
                                     .then(this.props.closeModal)}>Demo</button>) : <></>}
                     </div>
                 </form>

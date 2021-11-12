@@ -84,12 +84,15 @@
 .home-show-rating {
   display: flex;
   font-size: 15px;
-  padding-top: 5px;
-  margin-left: 7vh;
+  padding-top: 1vh;
+  margin-left: 5vh;
+  margin-right: 140vh;
+  padding-bottom: 1vh;
 }
 
 .home-show-desc-p {
   font-size: 15px;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
 }
 
 .home-show-info {
@@ -129,7 +132,8 @@
 
 .home-top-pics {
   display: flex;
-  margin-right: 52.9vh;
+  margin-right: 71.9vh;
+  border: 5px solid black;
 }
 
 .home-show-pic {
@@ -144,11 +148,12 @@
   display: flex;
   // margin-right: 52.7vh;
   flex-direction: column;
-  margin-right: -41.30000000000001vh;
-  padding-right: 68vh;
-  margin-left: 104vh;
-  margin-top: -69vh;
-  padding-bottom: 3vh;
+  margin-right: 50vh;
+  // padding-right: 68vh;
+  margin-left: 87vh;
+  margin-top: -59vh;
+  border: 5px solid black;
+  // padding-bottom: 3vh;
 }
 
 
@@ -164,6 +169,7 @@
 
 .textinfos {
   padding-bottom: 10px;
+  font-weight: bolder;
 }
 
 .amenities {
@@ -185,4 +191,16 @@
 
 .home {
   margin-right: 418px;
+}
+
+.homes-left {
+  margin-left: 1vh;
+}
+
+.amen1 {
+  padding-bottom: 5px;
+}
+
+.home-show-amenities {
+  padding-top: 4vh;
 }

@@ -97,26 +97,27 @@ import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/ap
 const MapContainer = () => {
     const mapOptions = {
         height: '60vh',
-        width: '70vh'
+        width: '70vh',
+        border: "2px solid gray"
     }
 
     const center = {
-        lat: 40.6892,
-        lng: -74.0445
+        lat: 40.777384,
+        lng: -73.9803
     }
 
     const [selected, setSelected] = useState({});
 
     const locations = [
         {
-            id: 42,
+            id: 1,
             location: {
                 lat: 40.777384,
                 lng: -73.9803
             },
         },
         {
-            id: 43,
+            id: 2,
             location: {
                 lat: 43.651070,
                 lng: -79.347015
@@ -131,7 +132,7 @@ const MapContainer = () => {
     return (
         <GoogleMap
             mapContainerStyle={mapOptions}
-            zoom={11}
+            zoom={7}
             center={center}>
             {
                 locations.map(home => {

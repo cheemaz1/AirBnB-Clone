@@ -10,8 +10,8 @@ require 'faker'
 
 User.destroy_all 
 Home.destroy_all
-
-jake = User.create!({username: 'user3', password: '123123', email: 'u33@gmail.com', first_name: 'user', last_name: '3rthy', birthday: '1995-01-01'})
+ApplicationRecord.connection.reset_pk_sequence!('homes')
+jake = User.create!({username: 'mj_24', password: '123123', email: 'demouser@gmail.com', first_name: 'Michael', last_name: 'Jeff', birthday: '1995-01-01'})
 scott = User.create!({username: 'user61', password: '123123', email: 'u33f@gmail.com', first_name: 'scottyp', last_name: '3rthy', birthday: '1995-01-01'})
 
 # home_name = [
