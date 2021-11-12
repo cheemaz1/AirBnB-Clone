@@ -12,7 +12,9 @@ Starting with the backend, I used Ruby on Rails along with  PostGresQL DB, jBuil
 # Challenges Met 
 
 Search By Location 
-A lot of problems I encountered occured were while creating the search bar and search function. None of the homes were displaying when searching for a particular location. 
+A lot of problems I encountered occured were while creating the search bar and search function. None of the homes were displaying when searching for a particular location. I ended up manipulating my homes controller to add conditionals to check whether searchParams present, created a method to query using searchParams insteade of the ID of homes. I set my state to include the key of city and value of searchParams and called the route for my Homes Index. 
+
+
 
 # Future Implementations 
 
