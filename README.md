@@ -4,8 +4,7 @@ Wecome to CozyBnB! This is a clone of the website AirBnB that provides the user 
 
 Check it out here => https://cozybnb.herokuapp.com/#/
 
-**Technologies**
-#
+**Technologies**#
 
 Starting with the backend, I used Ruby on Rails along with  PostGresQL DB, jBuilder DSL to sculpt and limit the json sent up to the frontend. I used React and Redux to deliver the user interface and manage state respectively on the frontend. Google Maps API was used for marking locations. 
 
