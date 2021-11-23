@@ -8,9 +8,16 @@
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['MAPS_API_KEY']}" %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <meta property="og:title" content="CozyBnB" />
+    <meta property='og:image' content="<%= image_url('project_pic.png') %>"/>
+    <meta property="og:description"
+       content="Wecome to CozyBnB! This is a clone of the website AirBnB that provides the user many features from the original."
+    />
+    <meta property="og:url"
+       content="https://cozybnb.herokuapp.com/#/"
+    />
     <script src="https://kit.fontawesome.com/1cad67679b.js" crossorigin="anonymous"></script>
     <script type="text/javascript">window.bg = "<%= image_url('splash-background.jpg') %>"</script>
-
    
   </head>
 <% if current_user %>
