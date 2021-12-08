@@ -5,7 +5,7 @@ import LoginFormContainer from '../session_form/login_form_container';
 import SignupFormContainer from '../session_form/signup_form_container';
 import ReviewContainer from "../review/review_container";
 // import { clearErrors } from "../../actions/session_actions";
-
+import Spinner from '../spinner/spinner';
 function Modal({ modal, closeModal }) {
     if (!modal) {
         return null;
@@ -18,8 +18,18 @@ function Modal({ modal, closeModal }) {
         case 'signup':
             component = <SignupFormContainer />;
             break;
-        case "review":
+        case 'create listing':
+            component = <CreateListingContainer />;
+            break;
+        case 'edit listing':
+            component = <EditListingContainer />;
+            break;
+        case 'create review':
             component = <ReviewContainer />;
+            break;
+        case 'spinner':
+            component = <Spinner />;
+            break;
         default:
             return null;
     }

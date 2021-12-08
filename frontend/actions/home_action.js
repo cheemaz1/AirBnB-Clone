@@ -1,4 +1,4 @@
-import * as APIUtil from "../util/home_api_util";
+import * as APIUtil from "./../util/home_api_util";
 
 export const RECEIVE_HOMES = "RECEIVE_HOMES";
 export const RECEIVE_HOME = "RECEIVE_HOME";

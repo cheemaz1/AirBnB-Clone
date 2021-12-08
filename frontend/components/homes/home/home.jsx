@@ -3,7 +3,7 @@ import React from "react";
 import MapContainer from "../../map/map_container";
 import MapShowContainer1 from "../../map/map_show_container1";
 import ReviewContainer from "../../review/review_container";
-
+import CreateBookingContainer from './../../booking_form/booking_form_container'
 class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -31,7 +31,7 @@ class Home extends React.Component {
         //   lng,
         //   city,
         // } = this.props.home;
-        // debugger;
+        debugger;
         return home ? (
             <div className="home-show-container">
                 <div className="home-top">
@@ -138,6 +138,8 @@ class Home extends React.Component {
                     {/* <SingleHomeMap /> */}
                     <MapShowContainer1 />
                 </div>
+                <CreateBookingContainer
+                    bookedDates={this.props.home.bookings} />
             </div>
         ) : null;
     }

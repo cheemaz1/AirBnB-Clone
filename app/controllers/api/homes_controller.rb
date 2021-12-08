@@ -1,59 +1,84 @@
 class Api::HomesController < ApplicationController
-    before_action :require_logged_in, only: [:create]
+    before_action :require_logged_in, only: [:create, :update, :destroy]
 
     def index 
-        if !params[:searchParams]   
-            # debugger  
-            @homes = Home.all    
-        elsif params[:searchParams][:city]
-            # debugger
-            @homes = Home.where(city: params[:searchParams][:city])
-            
+        @homes = Home.all
+        # byebug
+        if params[:location] 
+            @homes = @homes.where(location: params[:location])
+        else 
+            @home = @homes.all
         end
         render :index
     end
 
+    def show 
+        @home = Home.find(params[:id])
+    end
+
+    def new 
+        @home = :home.new
+        render :new
+    end
+
     def create
+        # debugger 
+        if params[:home][:photos]
+            home_params[:photos] = params[:home][:photos]
+        end
+
         @home = Home.new(home_params)
-        if @home.save 
+
+        if @home.save
             render :show
-        else
+        else 
             render json: @home.errors.full_messages, status: 422
         end
     end
-    
-    def show
-        @home = Home.find(params[:id])
-        render :show 
-    end
 
-    def update 
-        @home = Home.find(params[:id])
+    def update
+        # debugger
+        @home = Home.find_by(id: params[:id])
+
         if @home && @home.update(home_params)
             render :show
-        else
+        else 
             render json: @home.errors.full_messages, status: 422
         end
     end
 
-    # def search
-    #     search_homes = Home.filtered(params[:query])
-    #     if search_homes
-    #         @homes = search_homes
-    #         render :index
-    #     else 
-    #         render json: ["No Home is Available :"], status: 404
-    #     end
-    # end
+    def destroy 
+        @home = Home.find(params[:id])
 
-    private
+        if @home.destroy
 
-    def home_params 
-        params.require(:home).permit(:home_name, :description, :address, :price, :city, :lat, :lng, images: [])
+            render :show
+        else 
+            render json: @home.errors.full_messages, status: 403
+        end
     end
 
-    # def bounds
-    #     params[:bounds]
-    # end
+    private 
 
+    def home_params
+        params.require(:home).permit(
+            :title, 
+            :price, 
+            :description, 
+            :location, 
+            :bedroom, 
+            :bathroom, 
+            :longitude, 
+            :latitude,
+            :owner_id,
+            :host_name, 
+            :city,
+            photos: []
+        )
+    end
+
+    def bounds
+        params[:bounds]
+    end
 end
+

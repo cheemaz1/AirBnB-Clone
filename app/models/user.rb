@@ -4,6 +4,20 @@ class User < ApplicationRecord
   validates :username, :session_token, uniqueness: true 
   validates_length_of :password, minimum: 6, allow_nil: true
 
+
+    has_many :homes,
+        class_name: :Home,
+        foreign_key: :host_id
+
+    has_many :reviews,
+        foreign_key: :user_id,
+        class_name: :Review
+    
+    has_many :reservations,
+        foreign_key: :guest_id,
+        class_name: :Reservation
+
+
   after_initialize :ensure_session_token
 
   attr_reader :password

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_10_040147) do
+ActiveRecord::Schema.define(version: 2021_12_08_233823) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,28 +43,42 @@ ActiveRecord::Schema.define(version: 2021_11_10_040147) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
+  create_table "bookings", force: :cascade do |t|
+    t.datetime "check_in", null: false
+    t.datetime "check_out", null: false
+    t.integer "num_guests", null: false
+    t.integer "home_id", null: false
+    t.integer "guest_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["guest_id"], name: "index_bookings_on_guest_id", unique: true
+    t.index ["home_id"], name: "index_bookings_on_home_id", unique: true
+  end
+
   create_table "homes", force: :cascade do |t|
-    t.integer "host_id", null: false
     t.text "description", null: false
-    t.string "home_name", null: false
     t.float "price", null: false
-    t.string "address", null: false
     t.string "city", null: false
-    t.string "country", null: false
     t.float "lng", null: false
     t.float "ltd", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["host_id"], name: "index_homes_on_host_id", unique: true
+    t.string "title"
+    t.string "location"
+    t.integer "bedroom"
+    t.integer "bathroom"
+    t.integer "owner_id"
+    t.string "host_name"
   end
 
   create_table "reviews", force: :cascade do |t|
     t.text "body", null: false
-    t.date "date", null: false
     t.integer "author_id", null: false
     t.integer "home_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "rating"
+    t.string "review_name"
     t.index ["author_id"], name: "index_reviews_on_author_id"
     t.index ["home_id"], name: "index_reviews_on_home_id"
   end

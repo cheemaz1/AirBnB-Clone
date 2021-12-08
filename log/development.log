@@ -40951,3 +40951,443 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 695ms (Views: 693.6ms | Allocations: 139977)
 
 
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8310871852403426250)[0m
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBookings (20211207050724)
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (28.6ms)[0m  [1m[35mCREATE TABLE "bookings" ("id" bigserial primary key, "check_in" timestamp NOT NULL, "check_out" timestamp NOT NULL, "num_guests" integer NOT NULL, "home_id" integer NOT NULL, "guest_id" integer NOT NULL, "host_id" integer NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_bookings_on_home_id" ON "bookings" ("home_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_bookings_on_guest_id" ON "bookings" ("guest_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207050724"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(8310871852403426250)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8310871852403426250)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to UpdateBookings (20211207051652)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.6ms)[0m  [1m[35mALTER TABLE "bookings" DROP COLUMN "host_id"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211207051652"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8310871852403426250)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-12-07 13:22:53 -0500
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 5.5ms | Allocations: 651)
+  Rendered layout layouts/application.html.erb (Duration: 1016.1ms | Allocations: 164604)
+Completed 200 OK in 1027ms (Views: 1019.1ms | ActiveRecord: 0.0ms | Allocations: 168494)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-07 13:31:43 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 3.3ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 511.1ms | Allocations: 75934)
+Completed 200 OK in 524ms (Views: 518.3ms | Allocations: 76986)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-07 14:27:43 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 3.6ms | Allocations: 209)
+  Rendered layout layouts/application.html.erb (Duration: 737.9ms | Allocations: 135053)
+Completed 200 OK in 740ms (Views: 738.8ms | Allocations: 135357)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-07 14:29:09 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 0.9ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 7698)
+Completed 200 OK in 18ms (Views: 17.7ms | Allocations: 7998)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-07 14:31:15 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 0.9ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 826.7ms | Allocations: 150161)
+Completed 200 OK in 828ms (Views: 827.2ms | Allocations: 150462)
+
+
+Started POST "/api/session" for 127.0.0.1 at 2021-12-07 14:31:21 -0500
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"mj_24", "password"=>"[FILTERED]", "email"=>"demouser@gmail.com", "first_name"=>"Michael", "last_name"=>"Jeff", "birthday"=>"1995-01-01"}}
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "mj_24"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:14:in `find_by_credentials'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:28:in `reset_session_token!'
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "mj_24"], ["id", 467], ["LIMIT", 1]]
+  ↳ app/models/user.rb:28:in `reset_session_token!'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "iJGcLR9eiZDT-JCr2ATriA"], ["id", 467], ["LIMIT", 1]]
+  ↳ app/models/user.rb:28:in `reset_session_token!'
+  [1m[36mUser Update (1.9ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "iJGcLR9eiZDT-JCr2ATriA"], ["updated_at", "2021-12-07 19:31:21.961315"], ["id", 467]]
+  ↳ app/models/user.rb:28:in `reset_session_token!'
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:28:in `reset_session_token!'
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (Duration: 0.3ms | Allocations: 130)
+  Rendered api/users/show.json.jbuilder (Duration: 2.2ms | Allocations: 563)
+Completed 200 OK in 360ms (Views: 4.4ms | ActiveRecord: 56.2ms | Allocations: 20639)
+
+
+Started GET "/api/homes" for 127.0.0.1 at 2021-12-07 14:31:43 -0500
+Processing by Api::HomesController#index as JSON
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (40.1ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 1.2ms | Allocations: 163)
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.2ms | Allocations: 81)
+  Rendered api/homes/index.json.jbuilder (Duration: 85.1ms | Allocations: 9462)
+Completed 200 OK in 136ms (Views: 34.7ms | ActiveRecord: 54.9ms | Allocations: 14125)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-07 14:32:37 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "iJGcLR9eiZDT-JCr2ATriA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: api/users/_user.json.jbuilder (called from _app_views_static_pages_root_html_erb__3104355606042356975_70162556845320 at /Users/zayedcheema/Desktop/FromGithub/CozyBnB/app/views/static_pages/root.html.erb:4)
+  Rendered api/users/_user.json.jbuilder (Duration: 2.5ms | Allocations: 213)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 24.1ms | Allocations: 1844)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.1ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 847.5ms | Allocations: 157287)
+Completed 200 OK in 851ms (Views: 846.8ms | ActiveRecord: 2.4ms | Allocations: 157589)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-07 14:38:20 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "iJGcLR9eiZDT-JCr2ATriA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 3.0ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 59.2ms | Allocations: 6048)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.1ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 982.5ms | Allocations: 170881)
+Completed 200 OK in 988ms (Views: 986.4ms | ActiveRecord: 31.9ms | Allocations: 171182)
+
+
+Started GET "/api/homes/1" for 127.0.0.1 at 2021-12-07 14:38:21 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mHome Load (1.3ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.3ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 1.6ms | Allocations: 448)
+Completed 200 OK in 7ms (Views: 2.5ms | ActiveRecord: 1.3ms | Allocations: 1832)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-07 14:57:57 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "iJGcLR9eiZDT-JCr2ATriA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 1.0ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 80.7ms | Allocations: 6076)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.1ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 961.9ms | Allocations: 167784)
+Completed 200 OK in 965ms (Views: 963.8ms | ActiveRecord: 44.5ms | Allocations: 168086)
+
+
+Started GET "/api/homes/1" for 127.0.0.1 at 2021-12-07 14:57:59 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mHome Load (1.3ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.2ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 0.7ms | Allocations: 380)
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 1.3ms | Allocations: 1518)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-07 17:41:59 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "iJGcLR9eiZDT-JCr2ATriA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.6ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 51.2ms | Allocations: 6060)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.2ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 996.3ms | Allocations: 173747)
+Completed 200 OK in 1000ms (Views: 998.7ms | ActiveRecord: 30.7ms | Allocations: 174048)
+
+
+Started GET "/api/homes/1" for 127.0.0.1 at 2021-12-07 17:42:01 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mHome Load (2.7ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.5ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 1.5ms | Allocations: 469)
+Completed 200 OK in 12ms (Views: 2.5ms | ActiveRecord: 2.7ms | Allocations: 5215)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-07 17:43:02 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "iJGcLR9eiZDT-JCr2ATriA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.3ms | Allocations: 154)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 36.9ms | Allocations: 8884)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.1ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 42.9ms | Allocations: 16591)
+Completed 200 OK in 44ms (Views: 17.3ms | ActiveRecord: 26.2ms | Allocations: 17065)
+
+
+Started GET "/api/homes/1" for 127.0.0.1 at 2021-12-07 17:43:03 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mHome Load (0.6ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.2ms | Allocations: 92)
+  Rendered api/homes/show.json.jbuilder (Duration: 0.5ms | Allocations: 391)
+Completed 200 OK in 30ms (Views: 1.0ms | ActiveRecord: 13.4ms | Allocations: 13409)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-07 18:46:00 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "iJGcLR9eiZDT-JCr2ATriA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.9ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 55.3ms | Allocations: 6073)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.2ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 68.4ms | Allocations: 13777)
+Completed 200 OK in 72ms (Views: 70.2ms | ActiveRecord: 30.3ms | Allocations: 14077)
+
+
+Started GET "/api/homes/1" for 127.0.0.1 at 2021-12-07 18:46:00 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mHome Load (6.5ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.9ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 1.9ms | Allocations: 380)
+Completed 200 OK in 14ms (Views: 3.0ms | ActiveRecord: 6.5ms | Allocations: 1516)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-07 18:46:01 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "iJGcLR9eiZDT-JCr2ATriA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.7ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1329)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.7ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 9033)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 2.1ms | Allocations: 9333)
+
+
+Started GET "/api/homes/1" for 127.0.0.1 at 2021-12-07 18:46:02 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mHome Load (1.5ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.4ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 1.7ms | Allocations: 415)
+Completed 200 OK in 9ms (Views: 3.0ms | ActiveRecord: 1.5ms | Allocations: 1730)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-07 18:49:01 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "iJGcLR9eiZDT-JCr2ATriA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.5ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 16.2ms | Allocations: 1329)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.2ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 9033)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 2.7ms | Allocations: 9333)
+
+
+Started GET "/api/homes/1" for 127.0.0.1 at 2021-12-07 18:49:01 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mHome Load (1.5ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.5ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 1.0ms | Allocations: 380)
+Completed 200 OK in 11ms (Views: 5.7ms | ActiveRecord: 1.5ms | Allocations: 1968)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-07 18:49:02 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "iJGcLR9eiZDT-JCr2ATriA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.2ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1329)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.2ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 910.1ms | Allocations: 167584)
+Completed 200 OK in 911ms (Views: 909.3ms | ActiveRecord: 1.1ms | Allocations: 167884)
+
+
+Started GET "/api/homes/1" for 127.0.0.1 at 2021-12-07 18:49:04 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mHome Load (0.8ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.2ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 1.3ms | Allocations: 1272)
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.8ms | Allocations: 4795)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-07 23:34:32 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "iJGcLR9eiZDT-JCr2ATriA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.9ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 51.9ms | Allocations: 6046)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.1ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 927.1ms | Allocations: 170957)
+Completed 200 OK in 931ms (Views: 928.8ms | ActiveRecord: 28.8ms | Allocations: 171257)
+
+
+Started GET "/api/homes/1" for 127.0.0.1 at 2021-12-07 23:44:53 -0500
+Processing by Api::HomesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mHome Load (1.5ms)[0m  [1m[34mSELECT "homes".* FROM "homes" WHERE "homes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/homes_controller.rb:26:in `show'
+  Rendering api/homes/show.json.jbuilder
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.6ms | Allocations: 81)
+  Rendered api/homes/show.json.jbuilder (Duration: 1.3ms | Allocations: 380)
+Completed 200 OK in 53ms (Views: 2.3ms | ActiveRecord: 22.7ms | Allocations: 5799)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-07 23:45:15 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "iJGcLR9eiZDT-JCr2ATriA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered api/users/_user.json.jbuilder (Duration: 0.7ms | Allocations: 149)
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 14.0ms | Allocations: 1355)
+  Rendered api/users/_user.json.jbuilder (Duration: 0.1ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 989.4ms | Allocations: 170780)
+Completed 200 OK in 991ms (Views: 986.9ms | ActiveRecord: 3.8ms | Allocations: 171081)
+
+
+Started GET "/" for ::1 at 2021-12-08 00:21:52 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (Duration: 1.2ms | Allocations: 118)
+  Rendered layout layouts/application.html.erb (Duration: 887.0ms | Allocations: 161564)
+Completed 200 OK in 890ms (Views: 888.3ms | Allocations: 161864)
+
+
+Started GET "/api/homes" for ::1 at 2021-12-08 00:21:56 -0500
+Processing by Api::HomesController#index as JSON
+  Rendering api/homes/index.json.jbuilder
+  [1m[36mHome Load (2.5ms)[0m  [1m[34mSELECT "homes".* FROM "homes"[0m
+  ↳ app/views/api/homes/index.json.jbuilder:7
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.6ms | Allocations: 82)
+  Rendered api/homes/_home.json.jbuilder (Duration: 0.4ms | Allocations: 81)
+  Rendered api/homes/index.json.jbuilder (Duration: 43.8ms | Allocations: 6139)
+Completed 200 OK in 45ms (Views: 44.9ms | ActiveRecord: 24.2ms | Allocations: 6480)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8310871852403426250)[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to UpdateHomes (20211208232352)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.5ms)[0m  [1m[35mALTER TABLE "homes" DROP COLUMN "home_name"[0m
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "homes" DROP COLUMN "host_id"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "homes" DROP COLUMN "address"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "homes" DROP COLUMN "country"[0m
+  [1m[35m (1.9ms)[0m  [1m[35mALTER TABLE "homes" DROP COLUMN "host_name"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(8310871852403426250)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8310871852403426250)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to UpdateHomes (20211208232352)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.3ms)[0m  [1m[35mALTER TABLE "homes" DROP COLUMN "home_name"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "homes" DROP COLUMN "host_id"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "homes" DROP COLUMN "address"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "homes" DROP COLUMN "country"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8310871852403426250)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8310871852403426250)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to UpdateHomes (20211208232352)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "homes" DROP COLUMN "home_name"[0m
+  [1m[35m (2.3ms)[0m  [1m[35mALTER TABLE "homes" DROP COLUMN "host_id"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "homes" DROP COLUMN "address"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "homes" DROP COLUMN "country"[0m
+  [1m[35m (2.4ms)[0m  [1m[35mALTER TABLE "homes" ADD "title" character varying[0m
+  [1m[35m (3.1ms)[0m  [1m[35mALTER TABLE "homes" ADD "location" character varying[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "homes" ADD "bedroom" integer[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "homes" ADD "bathroom" integer[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "homes" ADD "owner_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211208232352"]]
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8310871852403426250)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8310871852403426250)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to UpdateHomesAgain (20211208233145)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "homes" ADD "host_name" character varying[0m
+  [1m[35m (3.6ms)[0m  [1m[35mALTER TABLE "homes" ALTER COLUMN "owner_id" SET NOT NULL[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(8310871852403426250)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8310871852403426250)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to UpdateHomesAgain (20211208233145)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "homes" ADD "host_name" character varying[0m
+  [1m[35m (2.7ms)[0m  [1m[35mALTER TABLE "homes" ALTER COLUMN "title" SET NOT NULL[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8310871852403426250)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8310871852403426250)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to UpdateHomesAgain (20211208233145)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "homes" ADD "host_name" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211208233145"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8310871852403426250)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8310871852403426250)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to UpdateReviews (20211208233823)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "reviews" DROP COLUMN "date"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "reviews" ADD "rating" integer[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "reviews" ADD "review_name" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (11.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211208233823"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8310871852403426250)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

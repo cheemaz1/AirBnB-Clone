@@ -16,3 +16,4 @@ class CreateHomes < ActiveRecord::Migration[6.1]
     add_index :homes, :host_id, unique: true
   end
 end
+
