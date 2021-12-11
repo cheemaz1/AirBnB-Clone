@@ -1,0 +1,382 @@
+
+.border-box-form{
+  margin-left: 300px;
+  margin-right: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .share{
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .create-home-title-container{
+    // border: 1px red solid;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+
+    p{
+      font-size: 30px;
+      font-weight: bold;  
+      margin: 10px;       
+    }
+
+    h1{
+      font-size: 16px;
+      margin: 10px; 
+    }
+
+    h2{
+      font-size: 16px;
+      color: red;
+      margin: 10px;
+    }
+
+    .create-home-title{
+      width: 100%;
+      margin: 10px;
+      border: 1px solid lightgrey; 
+      border-radius: 8px;   
+      height: 40px;
+    }
+  }
+
+  .create-home-price-container{
+    // border: 1px red solid;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+
+    p{
+      font-size: 30px;
+      font-weight: bold; 
+      margin: 10px;        
+    }
+
+    h1{
+      font-size: 16px;
+      margin: 10px; 
+    }
+
+    h2{
+      font-size: 16px;
+      color: red;
+      margin: 10px;
+    }
+
+    .create-home-price{
+      width: 100%;
+      margin: 10px;
+      border: 1px solid lightgrey;  
+      border-radius: 8px;   
+      height: 40px;
+    }
+  }
+
+  .create-home-description-container{
+    // border: 1px red solid;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+
+    p{
+      font-size: 30px;
+      font-weight: bold; 
+      margin: 10px;        
+    }
+
+    h1{
+      font-size: 16px;
+      margin: 10px; 
+    }
+
+    h2{
+      font-size: 16px;
+      color: red;
+      margin: 10px;
+    }
+
+    .create-home-description{
+      width: 100%;
+      margin: 10px;
+      border: 1px solid lightgrey; 
+      border-radius: 8px;   
+      height: 100px; 
+      resize: none;
+    }
+  }
+
+  .create-home-location-container{
+    // border: 1px red solid;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+
+    p{
+      font-size: 30px;
+      font-weight: bold;   
+      margin: 10px;      
+    }
+
+    h1{
+      font-size: 16px;
+      margin: 10px; 
+    }
+
+    h2{
+      font-size: 16px;
+      color: red;
+      margin: 10px;
+    }
+
+    .create-home-location{
+      width: 100%;
+      margin: 10px;
+      border: 1px solid lightgrey; 
+      border-radius: 8px;   
+      height: 40px; 
+    }
+  }
+
+  .create-home-city-container{
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+
+    p{
+      font-size: 30px;
+      font-weight: bold;   
+      margin: 10px;      
+    }
+
+    h1{
+      font-size: 16px;
+      margin: 10px; 
+    }
+
+    h2{
+      font-size: 16px;
+      color: red;
+      margin: 10px;
+    }
+
+    .create-home-city{
+      width: 100%;
+      margin: 10px;
+      border: 1px solid lightgrey; 
+      border-radius: 8px;   
+      height: 40px; 
+    }
+  } 
+  
+
+  .create-home-bedroom-container{
+    // border: 1px red solid;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+
+    p{
+      font-size: 30px;
+      font-weight: bold;
+      margin: 10px;         
+    }
+
+    h1{
+      font-size: 16px;
+      margin: 10px; 
+    }
+
+    h2{
+      font-size: 16px;
+      color: red;
+      margin: 10px;
+    }
+
+    .create-home-bedroom{
+      width: 100%;
+      margin: 10px;
+      border: 1px solid lightgrey;
+      border-radius: 8px;   
+      height: 40px;  
+    }
+  } 
+  
+
+  .create-home-bathroom-container{
+    // border: 1px red solid;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+
+    p{
+      font-size: 30px;
+      font-weight: bold;  
+      margin: 10px;       
+    }
+
+    h1{
+      font-size: 16px;
+      margin: 10px; 
+    }
+
+    .create-home-bathroom{
+      width: 100%;
+      margin: 10px;
+      border: 1px solid lightgrey;
+      border-radius: 8px;   
+      height: 40px;  
+    }
+  }
+  
+  .create-home-longitude-container{
+    // border: 1px red solid;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+
+    p{
+      font-size: 30px;
+      font-weight: bold; 
+      margin: 10px;        
+    }
+
+    h1{
+      font-size: 16px;
+      margin: 10px; 
+    }
+
+    h2{
+      font-size: 16px;
+      color: red;
+      margin: 10px;
+    }
+
+    .create-home-longitude{
+      width: 100%;
+      margin: 10px;
+      border: 1px solid lightgrey;
+      border-radius: 8px;   
+      height: 40px;  
+    }
+  } 
+
+  .create-home-latitude-container{
+    // border: 1px red solid;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+
+    p{
+      font-size: 30px;
+      font-weight: bold; 
+      margin: 10px;        
+    }
+
+    h1{
+      font-size: 16px;
+      margin: 10px; 
+    }
+
+    h2{
+      font-size: 16px;
+      color: red;
+      margin: 10px;
+    }
+
+    .create-home-latitude{
+      width: 100%;
+      margin: 10px; 
+      border: 1px solid lightgrey;
+      border-radius: 8px;   
+      height: 40px; 
+    }
+  }
+
+  .create-home-name-container{
+    // border: 1px red solid;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+
+    p{
+      font-size: 30px;
+      font-weight: bold;
+      margin: 10px;        
+    }
+
+    h1{
+      font-size: 16px;
+      margin: 10px;        
+    }
+
+    h2{
+      font-size: 16px;
+      color: red;
+      margin: 10px;
+    }
+
+    .create-home-name{
+      width: 100%;    h2{
+      font-size: 12px;
+      color: red;
+    }
+      margin: 10px;   
+      border: 1px solid lightgrey;   
+      border-radius: 8px;   
+      height: 40px;
+    }
+  }
+
+  .home-image-container{
+    // border: 1px red solid;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+
+    p{
+      font-size: 30px;
+      font-weight: bold;
+      margin: 10px;        
+    }
+
+    h1{
+      font-size: 16px;
+      margin: 10px;        
+    }
+
+    .home-image-wrapper{
+      height: inherit; 
+      margin: 10px;  
+      border-radius: none;
+    }
+  }
+}
+
+.create-buttons{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+
+  .form-button{
+    border: none;
+    color: white;
+    background-color: rgb(255, 56, 92);
+    height: 45px;
+    width: 40%;
+    margin: 20px;
+    border-radius: 8px;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

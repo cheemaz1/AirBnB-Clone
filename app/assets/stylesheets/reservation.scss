@@ -1,0 +1,105 @@
+.booking-whole{
+
+    height: 740px;
+    margin-left: 120px;
+    margin-right: 120px;
+    overflow: scroll;
+}
+
+.bookings{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .booking-container{
+        height: 250px;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        border-radius: 18px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        margin-top: 10px;
+
+        .booking-img{
+            width: 40%;
+            border-radius: 18px;
+        }
+
+        .booking-wrapper{
+            width: 250%;
+
+
+            h1{
+                font-size: 28px;
+                font-weight: bold;
+                padding: 15px;
+                text-align: center;
+            }
+
+            h2{
+                padding: 15px;
+            }
+
+            p{
+                padding: 15px;
+            }
+        }
+        
+        .cancel-booking-container{
+            width: 120%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .cancel-booking{
+                border: none;
+                width: 80%;
+                height: 40%;
+                border-radius: 12px;
+                margin: 10px;
+                color: white;
+                background-color: rgb(255, 56, 92);
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .back-to-link{
+                border: none;
+                width: 80%;
+                height: 40%;
+                border-radius: 12px;
+                margin: 10px;
+                color: white;
+                background-color: rgb(255, 56, 92);
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+} 
+
+
+
+
+.booking-header{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    p{
+        font-size: 40px;
+        font-weight: bold;     
+    }
+}

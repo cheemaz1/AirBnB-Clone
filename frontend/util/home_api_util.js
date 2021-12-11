@@ -1,52 +1,53 @@
-export const createHome = (home) =>
-    $.ajax({
-        method: "post",
-        url: "/api/homes",
-        data: { home },
-    });
+export const fetchHomes = location => {
+    // debugger
+    return $.ajax ({
+        method: 'get',
+        url: '/api/homes',
+        data: {location}
+    })
+}
 
-export const updateHome = (home) =>
+export const fetchHome = id => (
     $.ajax({
-        method: "patch",
-        url: `/api/homes/${home.id}`,
-        data: { home },
-    });
+        method: 'get',
+        url: `/api/homes/${id}`
+    })
+)
 
-export const fetchHome = (homeId) =>
-    $.ajax({
-        method: "GET",
-        url: `/api/homes/${homeId}`,
-    });
-
-export const fetchHomes = (searchParams) => {
+export const createHome = home => {
     return $.ajax({
-        method: "GET",
-        url: "/api/homes",
-        data: {searchParams}
-    });
-};
+        method: 'post',
+        url: '/api/homes',
+        data: home,
+        contentType: false,
+        processData: false
+    })
+}
 
-// export const searchHomes = (query) => {
-//     return $.ajax({
-//         method: "GET",
-//         url: "/api/homes",
-//         data: { query }
-//     });
-// };
-
-export const createReview = (review) =>
+export const updateHome = (formData, homeId) => (
     $.ajax({
-        method: "POST",
-        url: "api/reviews",
-        data: { review },
-    });
+        method: 'patch',
+        url: `/api/homes/${homeId}`,
+        data: formData,
+        contentType: false,
+        processData: false
+    })
+)
 
-export const fetchReviews = (homeId) =>
+export const deleteHome = homeId => (
     $.ajax({
-        method: "GET",
-        url: "/api/reviews",
-        data: { homeId },
-    });
+        method: 'delete',
+        url: `/api/homes/${homeId}`
+    })
+)
 
-
+export const uploadPhoto = photo => (
+    $.ajax({
+        url: '/api/posts',
+        method: 'POST',
+        data: formData,
+        contentType: false,
+        processData: false
+    })
+)
 

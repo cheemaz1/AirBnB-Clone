@@ -13,9 +13,9 @@ class User < ApplicationRecord
         foreign_key: :user_id,
         class_name: :Review
     
-    has_many :reservations,
+    has_many :bookings,
         foreign_key: :guest_id,
-        class_name: :Reservation
+        class_name: :Booking
 
 
   after_initialize :ensure_session_token

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_08_233823) do
+ActiveRecord::Schema.define(version: 2021_12_11_060836) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -71,16 +71,45 @@ ActiveRecord::Schema.define(version: 2021_12_08_233823) do
     t.string "host_name"
   end
 
+  create_table "listings", force: :cascade do |t|
+    t.string "title", null: false
+    t.float "price", null: false
+    t.text "description", null: false
+    t.string "location", null: false
+    t.integer "bedroom", null: false
+    t.integer "bathroom", null: false
+    t.float "longitude", null: false
+    t.float "latitude", null: false
+    t.integer "owner_id", null: false
+    t.string "host_name", null: false
+    t.string "city", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["owner_id"], name: "index_listings_on_owner_id", unique: true
+  end
+
+  create_table "reservations", force: :cascade do |t|
+    t.datetime "check_in_date", null: false
+    t.datetime "check_out_date", null: false
+    t.integer "guest_id", null: false
+    t.integer "number_of_guest", null: false
+    t.integer "listing_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["guest_id"], name: "index_reservations_on_guest_id"
+    t.index ["listing_id"], name: "index_reservations_on_listing_id"
+  end
+
   create_table "reviews", force: :cascade do |t|
     t.text "body", null: false
-    t.integer "author_id", null: false
-    t.integer "home_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "rating"
     t.string "review_name"
-    t.index ["author_id"], name: "index_reviews_on_author_id"
-    t.index ["home_id"], name: "index_reviews_on_home_id"
+    t.integer "user_id"
+    t.integer "listing_id"
+    t.index ["listing_id"], name: "index_reviews_on_listing_id"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -88,7 +117,6 @@ ActiveRecord::Schema.define(version: 2021_12_08_233823) do
     t.string "email"
     t.string "first_name"
     t.string "last_name"
-    t.date "birthday"
     t.string "password_digest", null: false
     t.string "session_token", null: false
     t.datetime "created_at", precision: 6, null: false

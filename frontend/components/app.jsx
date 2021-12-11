@@ -1,61 +1,34 @@
-import React from 'react';
-import { Provider } from 'react-redux';
-import {
-    Route,
-    Redirect,
-    Switch,
-    Link,
-    HashRouter
-} from 'react-router-dom';
-import SearchContainer from "./search/search_container";
-import GreetingContainer from './greeting/greeting_container';
-import SignUpFormContainer from './session_form/signup_form_container';
-import LogInFormContainer from './session_form/login_form_container';
-import HomeContainer from "./homes/home/home_container";
-import HomesIndexContainer from "./homes/home_index_container";
-import HomesIndexContainer2 from "./homes/home_index_container2";
-import Modal from './modal/modal';
-import ProfileShowContainer from "./profile/profile_show_container";
+import React from "react"
+import {Route,Redirect,Switch,Link,HashRouter} from 'react-router-dom';
+import SplashPageIndexContainer from './splash/splash_page_container'
+import NavBarContainer from "./nav/navbar_container";
+import Modal from "./modal/modal";
+import HomeIndexContainer from "./home_index/home_index_container";
+import HomeShowContainer from './home_show/home_show_container'
+import CreateFormContainer from './home_form/create_form_container'
+import EditFormContainer from './home_form/edit_form_containter'
+import BookingPageContainer from './booking/booking_page_container'
+import { Fragment } from "react";
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
-import SplashContainer from "./splash/splash_container";
-import Footer from './footer/footer';
-import ErrorPage from "./error_page/error_page";
-import 'bootstrap'; 
-import 'bootstrap';
-// import 'bootstrap/dist/css/bootstrap.css';
-// import 'bootstrap/dist/js/bootstrap.js';
-import $ from 'jquery';
-import Popper from 'popper.js';
-import ConstructionPage from './construction/construction';
+import Footer from "./footer/footerr";
+
 
 const App = () => (
-    <div>
-        <Modal />
-        <header className="headerstyle">
-            <div className="headercomp">
-                <GreetingContainer />
-                <SearchContainer />  
-            </div>
-        </header>
-            {/* <SplashContainer /> */}
-            {/* <AuthRoute exact path="/" component={SplashContainer} />
-            <Route exact path="/homes" component={HomesIndexContainer} />
-            <Route path={`/homes/:homeId`} component={HomeContainer} />
-            <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-            <AuthRoute exact path="/login" component={LogInFormContainer} /> */}
-            {/* <Route path={`/search`} component={SearchContainer} /> */}
-        <Switch>
-            <Route exact path="/" component={SplashContainer} />
-            <Route exact path="/search/:city" component={HomesIndexContainer} />
-            <Route exact path="/homes" component={HomesIndexContainer2} />
-            <Route exact path="/users/:userId" component={ProfileShowContainer} />
-            <Route exact path="/learnmore" component={ConstructionPage} />
-            <Route path={`/homes/:homeId`} component={HomeContainer} />
-            <Route component={ErrorPage} />
-            {/* <Route path={`/search`} component={SearchContainer} /> */}
-        </Switch>
+    <Fragment>
+        <NavBarContainer/>
+        <Modal/>
+          <Switch>
+            <Route exact path="/" component={SplashPageIndexContainer} />
+            <Route exact path='/homes' component={HomeIndexContainer}/>
+            <Route exact path='`/homes/${location}`' component={HomeIndexContainer}/>
+            <Route exact path='/homes/:homeId' component={HomeShowContainer}/>
+            <ProtectedRoute path='/home/new' component={CreateFormContainer}/>
+            <ProtectedRoute path='/homes/:homeId/edit' component={EditFormContainer}/>
+            <ProtectedRoute path='/bookings' component={BookingPageContainer}/>
+          </Switch>
         <Footer />
-    </div>
-);
+    </Fragment>
 
-export default App;
+)
+
+export default App

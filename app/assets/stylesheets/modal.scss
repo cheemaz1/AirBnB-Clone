@@ -1,0 +1,122 @@
+.modal-background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(50, 50, 50, 0.5);
+    z-index: 10;
+}
+
+.modal-child {
+    height: 460px;
+    width: 350px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    padding: 50px;
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.login-form{
+    height: inherit;
+    margin-top: -10px;
+    overflow: scroll;
+
+    .error{
+        color: red;
+    }
+
+    .modal-header{
+        display: flex;
+        flex-direction: row;
+
+        .close-modal{
+            color: lightgrey;
+            font-size: 20px;
+            width: 20px;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        .modal-header-message{
+            text-align: center;
+            width: 100%;
+            font-size: 20px;
+            height: 20px;
+        }
+    }
+
+    .modal-content{
+        display:flex;
+        flex-direction: column;
+        width: inherit;
+        margin-top: 20px;
+        color: red;
+        font-size: 12px;
+
+        .login-input{
+            width: 96%;
+            height: 30px;
+            border-radius: 8px;
+            border: lightgray solid 1px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+    }
+}
+.signup-button-container{
+    width: 100%;
+
+    .session-button{
+        width: 99.5%;
+        height: 40px;
+        border-radius: 8px;
+        border: lightgray solid 1px;
+        background-color: rgb(255, 56, 92);
+        color: white;
+        padding: 5px;
+        border: red solid 1px;
+        margin-top: 10px;
+        font-size: 16px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.modal-footer{
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+
+    h1{
+        color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    span{
+        margin-left: 5px;
+        font-weight: bold;
+        text-decoration: underline;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

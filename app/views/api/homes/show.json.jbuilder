@@ -1,3 +1,4 @@
-# json.partial! 'home', home: @home
+json.partial! 'home', home: @home
 
-json.partial! "api/homes/home", home: @home
+json.reviews @home.reviews
+

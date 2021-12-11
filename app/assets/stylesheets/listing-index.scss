@@ -1,0 +1,234 @@
+.home-left-box{
+    border-top: 1px solid rgb(185, 185, 185);
+    padding: 24px 0;
+    display: flex;
+
+    .home-header{
+        display: flex;
+        align-items: top;
+        color:grey;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .home-title:link{
+        color: grey;
+    }
+    .home-title:visited{
+        color: grey;
+    }
+    .home-title:hover{
+        color: grey;
+    }
+    .home-title:focus{
+        color: grey;
+    }
+    .home-title:active{
+        color: grey;
+    }
+    .home-title {
+        text-decoration: none;
+        color: grey;
+    }
+
+    
+    .home-description{
+        display: flex;
+        color: black;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .home-index-am{
+        display: flex;
+        color:grey;
+        font-size: 14px;
+        margin-bottom: 5px;
+        flex-direction: column;
+    }
+    
+    .home-price{
+        display: flex;
+        color:black;
+        font-size: 18px;
+        margin-top: 150px;
+        font-weight: bolder;
+        display: flex;
+        float: right;
+        margin-right: 14px;
+        justify-content: space-between;
+        width: 96%;
+
+        i{
+            color: rgb(255, 56, 92);
+        }
+
+        h1{
+            display: flex;
+            flex-direction: row;
+        }
+
+        p{
+            font-weight: lighter;
+            color:rgb(35, 34, 34)
+        }
+    }
+
+    .home-items-container{
+        width: 100%;
+        text-decoration: none;
+        color: black;
+
+        .home-location{
+            color:rgb(185, 185, 185);
+            font-size: 15px;
+            margin-left: 1px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .home-items-container:link{
+        color: black;
+    }
+    .home-items-container:visited{
+        color: black;
+    }
+    .home-items-container:hover{
+        color: black;
+    }
+    .home-items-container:focus{
+        color: black;
+    }
+    .home-items-container:active{
+        color: black;
+    }
+
+}
+
+.home-image{
+    width: 720px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden; 
+    margin-right: 20px;
+    margin-left: 20px;
+    background-size: 450px 200px;
+}
+
+
+.home-container{
+    position: relative;
+
+    .home-left-container{
+        width: 840px;
+        overflow: scroll;
+        .home-left{
+            min-height: calc(100vh - 80px);
+            width: 95%;
+            height: 100vh;
+            margin-left: 18px;
+
+            .home-page-header{
+                padding-left: 26px;
+                padding-top: 75px;
+                color: black;
+                font-size: 36px;
+                font-weight: bold;
+            }
+
+            .home-page-button{
+                padding-top: 26px;
+                padding-left: 18px;
+
+                .curved-button{
+                    padding-top: 70px;
+                    padding: 10px 20px;
+                    outline: none;
+                    background: transparent;
+                    margin: 0;
+                    border: 1px solid grey;
+                    border-radius: 30px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    position: relative;
+                    display: inline-block;
+                }
+
+                .drop-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    width: 300px;
+                    height: 130px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    padding: 20px 30px ;
+                    z-index: 1;
+                    border-radius: 18px;
+                    margin-left: -20px;
+                    margin-top: 20px;
+
+                    p{
+                        margin-top: 10px;
+                        color: black;
+                        font-size: 18px;
+                    }
+                }
+
+                .curved-button:hover .drop-content {
+                    display: block;
+                }
+            }
+
+            .words-container-index{
+                display: flex;
+                flex-direction: row;
+                padding: 10px;
+                height: 50px;
+                width: 100%;
+                margin-top: 20px;
+                margin-left: 5px;
+                margin-bottom: 10px;
+
+                .stays-gif{
+                    width: 50px;
+                    height: 50px; 
+                    background-image: url('trophy.gif');
+                    background-size: 100% 100%;   
+                }
+
+                .home-page-words{
+                    padding-top: 10px;
+                    padding-left: 6px;
+                    padding-bottom: 30px;
+                    padding-right: 30px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .main-map{
+        width: calc(100% - 840px);
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+    
+    #map{
+        width: 100%;
+        height: 100%;
+    };
+
+    .map-right{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top:0;
+    }
+
+}
+

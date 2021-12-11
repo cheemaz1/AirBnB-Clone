@@ -1,110 +1,60 @@
-import * as APIUtil from "./../util/home_api_util";
+import * as APIUtil from '../util/home_api_util'
 
-export const RECEIVE_HOMES = "RECEIVE_HOMES";
-export const RECEIVE_HOME = "RECEIVE_HOME";
-export const REQUIRE_SEARCH = "REQUIRE_SEARCH";
+export const RECEIVE_HOMES = 'RECEIVE_HOMES'
+export const RECEIVE_HOME = 'RECEIVE_HOME'
+export const REMOVE_HOME = 'REMOVE_HOME'
+export const RECEIVE_HOME_ERRORS = 'RECEIVE_HOME_ERRORS ';
 
-export const RECEIVE_REVIEW = "RECEIVE_REVIEW";
-export const RECEIVE_REVIEWS = "RECEIVE_REVIEWS";
+export const receiveHomes = homes => ({
+    type: RECEIVE_HOMES,
+    homes, 
+})
 
-export const receiveHomes = (homes) => {
-    // debugger
-    return {
-        type: RECEIVE_HOMES,
-        homes,
-    };
-};
+export const receiveHome = home => ({
+    type: RECEIVE_HOME,
+    home, 
+})
 
-export const receiveHome = (home) => {
-    return {
-        type: RECEIVE_HOME,
-        home,
-    };
-};
+export const removeHome = homeId => ({
+    type: REMOVE_HOME,
+    homeId
+})
 
-export const receiveReview = (review) => {
-    return {
-        type: RECEIVE_REVIEW,
-        review,
-    };
-};
-
-export const receiveReviews = (reviews) => {
-    return {
-        type: RECEIVE_REVIEWS,
-        reviews,
-    };
-};
-
-// export const requireSearch = (scity) => ({
-//     type: REQUIRE_SEARCH,
-//     scity,
-// });
-
-
-// export const searchHomes = () => (dispatch) =>
-//     APIUtil.searchHomes(query).then((homes) => {
-//         return dispatch(receiveHomes(homes));
-//     });
-
-export const fetchHomes = (searchParams) => (dispatch) =>
-APIUtil.fetchHomes(searchParams).then((homes) => {
-    return dispatch(receiveHomes(homes));
+export const receiveErrors = errors => ({
+    type: RECEIVE_HOME_ERRORS,
+    errors
 });
 
 
-export const fetchHome = (homeId) => (dispatch) =>
-APIUtil.fetchHome(homeId).then((home) => {
-    return dispatch(receiveHome(home));
-});
+export const fetchHomes = (location) => dispatch => (
+  APIUtil.fetchHomes(location).then(homes => (
+    dispatch(receiveHomes(homes))
+  ))
+);
 
-export const createHome = (home) => (dispatch) =>
-APIUtil.createHome(home).then((home) => dispatch(receiveHome(home)));
+export const fetchHome = home => dispatch => (
+  APIUtil.fetchHome(home).then(home => (
+    dispatch(receiveHome(home))
+  ))
+);
 
-export const updateHome = (home) => (dispatch) =>
-APIUtil.updateHome(home).then((home) => dispatch(receiveHome(home)));
+export const createHome = home => dispatch => (
+  APIUtil.createHome(home).then(home => (
+    dispatch(receiveHome(home))), err => (
+    dispatch(receiveErrors(err.responseJSON))
+  ))
+);
 
+export const updateHome = (formData, homeId) => dispatch => (
+  APIUtil.updateHome(formData, homeId).then(home => (
+    dispatch(receiveHome(home))), err => (
+    dispatch(receiveErrors(err.responseJSON))
+  ))
+)
 
-export const createReview = (review) => (dispatch) =>
-    APIUtil.createReview(review).then(
-        (review) => dispatch(receiveReview(review)),
-        (error) => dispatch(receiveReviewErrors(error.responseJSON))
-    );
+export const deleteHome = homeId => dispatch => (
+  APIUtil.deleteHome(homeId).then(homeId =>(
+    dispatch(removeHome(homeId))
+  ))
+)
 
-export const fetchReviews = (homeId) => (dispatch) =>
-    APIUtil.fetchReviews(homeId).then((reviews) =>
-        dispatch(receiveReviews(reviews))
-    );
-
-
-
-
-
-
-
-
-
-// export const createReview = (review) => (dispatch) =>
-//     APIUtil.createReview(review).then(
-    //         (review) => dispatch(receiveReview(review)),
-    //         (error) => dispatch(receiveReviewErrors(error.responseJSON))
-    //     );
-    
-    // export const fetchReviews = (spotId) => (dispatch) =>
-    //     APIUtil.fetchReviews(spotId).then((reviews) =>
-    //         dispatch(receiveReviews(reviews))
-    //     );
-    
-    // export const receiveReview = (review) => {
-    //     return {
-    //         type: RECEIVE_REVIEW,
-    //         review,
-    //     };
-    // };
-    
-    // export const receiveReviews = (reviews) => {
-    //     return {
-    //         type: RECEIVE_REVIEWS,
-    //         reviews,
-    //     };
-    // };
