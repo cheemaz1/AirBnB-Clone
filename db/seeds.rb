@@ -19,16 +19,16 @@ demo_user = User.create!(
 jack = User.create({email:'jack@jack.com', password:'jackjack', first_name: 'jack', last_name: 'jack'})
 #NewYork
 home1 = Listing.create!({
-    title: 'Manhattan High life',
+    title: 'New York High life',
     price: 300,
-    description: 'One of the best views of the city if not the best view of the city. A newer luxury condo in the heart of the city. Enjoyed everything the city has to offer, Broadway plays walk to with in mins, Madison Square Garden, Center Park, high end shopping of 5th Ave and the best restaurant in the world unless you feel like a $1.00 slice of pizza Manhattan has that for you to. Perfect home away from home for you and the family.', 
-    location: 'NewYorkCity',
+    description: 'One of the best views of the city if not the best view of the city. A newer luxury condo in the heart of the city. Enjoyed everything the city has to offer, Broadway plays walk to with in mins, Madison Square Garden, Center Park, high end shopping of 5th Ave and the best restaurant in the world unless you feel like a $1.00 slice of pizza New York has that for you to. Perfect home away from home for you and the family.', 
+    location: 'New York',
     num_beds: 5,
     longitude: -73.987747,
     latitude: 40.750433,
     host_id: jack.id,
 
-    city: 'Manhattan',
+    city: 'New York',
 })
 
 
@@ -42,11 +42,11 @@ home1.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'ho
 home2 = Listing.create!({
     description: 'Enjoy a comfortable stay in our modern yet charming room designed to meet all your needs. Our Social rooms offer unparalleled comfort, and special touches make all the difference. Relax, get some work done, and take full advantage of your stay.', 
     price: 200,
-    city: 'Manhattan',
+    city: 'New York',
     longitude: -73.988704,
     latitude: 40.757921,
     title: 'Center of it all',
-    location: 'NewYorkCity',
+    location: 'New York',
     num_beds: 2,
     host_id: jack.id,
      
@@ -62,13 +62,13 @@ home3 = Listing.create!({
     title: 'High-rise: a birds eye view',
     price: 230,
     description: 'Well-placed high-rise in a prime Midtown spot on 45th between 5th and 6th Aves – a 7-minute stroll from the spectacle that is Times Square, with its neighboring Broadway theaters, shops and eateries galore. Plus an easy 14-minute jaunt from the equally famous Empire State Building.', 
-    location: 'NewYorkCity',
+    location: 'New York',
     num_beds: 2,
     longitude: -73.980187,
     latitude: 40.754951,
     host_id: jack.id,
      
-    city: 'Manhattan'
+    city: 'New York'
 })
 
 home3.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'home_images', '11.webp')), filename: '11.webp')
@@ -80,14 +80,14 @@ home3.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'ho
 home4 = Listing.create!({
     title: 'Luxury club life',
     price: 150,
-    description: 'The Manhattan Club is the perfect combination of luxury and location in the heart of New York City. Spend time in one of the oversized suites complete with amenities or explore nearby in Times Square or Central Park.', 
-    location: 'NewYorkCity',
+    description: 'The New York Club is the perfect combination of luxury and location in the heart of New York City. Spend time in one of the oversized suites complete with amenities or explore nearby in Times Square or Central Park.', 
+    location: 'New York',
     num_beds: 1,
     longitude: -73.983882,
     latitude: 40.764633,
     host_id: jack.id,
      
-    city: 'Manhattan'
+    city: 'New York'
 })
 
 home4.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'home_images', '16.webp')), filename: '16.webp')
@@ -100,13 +100,13 @@ home5 = Listing.create!({
     title: 'New York City Town House',
     price: 350,
     description: 'The William is a renovated townhouse into a modern hotel. With few rooms and a location just south of Grand Central Station, you will feel like you have an entire New York City townhouse to yourself. The home living room has been transformed into a hotel lobby and at night turns into a cocktail lounge.', 
-    location: 'NewYorkCity',
+    location: 'New York',
     num_beds: 3,
     longitude: -73.977070,
     latitude: 40.761798,
     host_id: jack.id,
  
-    city: 'Manhattan'
+    city: 'New York'
 })
 
 home5.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'home_images', '21.webp')), filename: '21.webp')
