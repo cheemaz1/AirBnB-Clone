@@ -45,10 +45,7 @@ class ListingIndex extends React.Component {
       return (
         <div className="no-listings-container">
           <div className="no-listings">
-            <p className="no-listings-text"> No Listings Here</p>{" "}
-            <span className="no-listings-sad-face">
-              <SentimentDissatisfiedTwoToneIcon style={{ fontSize: 200 }} />
-            </span>{" "}
+            <p className="no-listings-text"> There are no listings to show in this area</p>
           </div>
         </div>
       );

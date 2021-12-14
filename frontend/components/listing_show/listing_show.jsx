@@ -150,7 +150,7 @@ class ListingShow extends React.Component {
                     >
                       <div className="meet-host-container">
                         <h3 className="host-info-h3">
-                          Meet your Host, {host.fname} {host.lname}
+                          Meet your Host, {host.first_name} {host.last_name}
                         </h3>
 
                         <p className="host-info-created-at">
@@ -168,7 +168,7 @@ class ListingShow extends React.Component {
 
                     <div className="listing-description-container">
                       <h3 className="description-h3">
-                        All about {host.fname}'s place
+                        All about {host.first_name}'s place
                       </h3>
 
                       <p className="listing-description">

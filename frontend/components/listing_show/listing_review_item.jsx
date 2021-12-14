@@ -30,7 +30,7 @@ const ListingReviewItem = ({ review }) => {
           />
         </Link>
         <div className="reviewer-info-container">
-          <h5 className="listing-reviewer-name">{review.reviewer.fname}</h5>
+          <h5 className="listing-reviewer-name">{review.reviewer.first_name}</h5>
           <span className="listing-review-created-at">{createdAt}</span>
         </div>
       </div>

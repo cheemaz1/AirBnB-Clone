@@ -133,17 +133,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background: linear-gradient(
-    to right,
-    rgb(230, 30, 77) 0%,
-    rgb(227, 28, 95) 50%,
-    rgb(215, 4, 102) 100%
-  );
 }
 
 .no-bookings-text {
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
 }
 

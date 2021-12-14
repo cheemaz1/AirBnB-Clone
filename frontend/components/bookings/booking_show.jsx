@@ -108,7 +108,7 @@ class BookingShow extends React.Component {
             </div>
             <div className="your-stay-at-host-container">
               <h3 className="your-stay-at-host">
-                Your stay at {booking.host.fname}'s place
+                Your stay at {booking.host.first_name}'s place
               </h3>
             </div>
             <div className="booking-listing-image-container">
@@ -154,14 +154,14 @@ class BookingShow extends React.Component {
                   </div>
                   <p className="booking-listing-address">{listing.address}</p>
                   <p className="booking-listing-state-city-zip">
-                    {listing.city}, {listing.state}, {listing.zip_code}
+                    {listing.city}
                   </p>
                 </div>
               </div>
 
               <div className="host-container">
                 <h3 className="host-display-h3">
-                  Your host, {booking.host.fname}
+                  Your host, {booking.host.first_name}
                 </h3>
                 <Link
                   className="host-link"

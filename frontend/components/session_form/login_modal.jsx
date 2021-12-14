@@ -44,7 +44,7 @@ class LoginModal extends React.Component {
     render() {
         return <div className='login-container'>
             <div onClick={this.props.closeModal} className="close-x">X</div>
-            <h3 className='login-welcome'>Welcome back!</h3>
+            <h3 className='login-welcome'>Welcome!</h3>
             <form onSubmit={this.handleSubmit} className='login-form'>
             {this.renderErrors()}
      
