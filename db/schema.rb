@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_14_174407) do
+ActiveRecord::Schema.define(version: 2021_12_14_180839) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -61,14 +61,14 @@ ActiveRecord::Schema.define(version: 2021_12_14_174407) do
     t.float "price", null: false
     t.text "description", null: false
     t.string "location", null: false
+    t.integer "num_beds", null: false
     t.float "longitude", null: false
     t.float "latitude", null: false
+    t.integer "host_id", null: false
     t.string "city"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "num_beds"
-    t.integer "host_id"
-    t.index ["host_id"], name: "index_listings_on_host_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["host_id"], name: "index_listings_on_host_id", unique: true
   end
 
   create_table "reviews", force: :cascade do |t|
@@ -80,18 +80,6 @@ ActiveRecord::Schema.define(version: 2021_12_14_174407) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["guest_id"], name: "index_reviews_on_guest_id"
     t.index ["listing_id"], name: "index_reviews_on_listing_id"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "email", null: false
-    t.string "first_name", null: false
-    t.string "last_name", null: false
-    t.string "password_digest", null: false
-    t.string "session_token", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["session_token"], name: "index_users_on_session_token", unique: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
