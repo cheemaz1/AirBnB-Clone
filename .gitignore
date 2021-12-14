@@ -14,12 +14,5 @@ yarn-debug.log*
 # Ignore application configuration
 /config/application.yml
 
-/storage/*
-!/storage/.keep
 
-/public/assets
-.byebug_history
 
-/tmp/pids/*
-!/tmp/pids/
-!/tmp/pids/.keep
