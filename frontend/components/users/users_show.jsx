@@ -58,7 +58,7 @@ class UserShow extends React.Component {
           className="create-listing-li"
           onClick={() => this.props.openModal("create listing")}
         >
-          Create Listing
+          Create a Listing
         </li>
       );
     } else {
@@ -119,7 +119,7 @@ class UserShow extends React.Component {
         <div className="listings-bookings-reviews-container">
           <div className="listings-container">
             <div>
-              <h4 className="listings-h4">Listings</h4>
+              {/* <h4 className="listings-h4">Listings</h4> */}
 
               <div>
                 <UsersListings
