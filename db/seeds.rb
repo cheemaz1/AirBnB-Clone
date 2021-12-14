@@ -17,7 +17,19 @@ demo_user = User.create!(
     password: "demouser",
 )
 jack = User.create({email:'jack@jack.com', password:'jackjack', first_name: 'jack', last_name: 'jack'})
+
+50.times do
+    user = User.create! ({
+        first_name: Faker::Name.first_name,
+        last_name: Faker::Name.last_name,
+        email: Faker::Internet.unique.email,
+        password: "password",
+    })
+end
+
 #NewYork
+
+
 home1 = Listing.create!({
     title: 'New York High life',
     price: 300,
@@ -26,7 +38,7 @@ home1 = Listing.create!({
     num_beds: 5,
     longitude: -73.987747,
     latitude: 40.750433,
-    host_id: jack.id,
+    host_id: 1,
 
     city: 'New York',
 })
@@ -48,7 +60,7 @@ home2 = Listing.create!({
     title: 'Center of it all',
     location: 'New York',
     num_beds: 2,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
      
 })
 
@@ -66,7 +78,7 @@ home3 = Listing.create!({
     num_beds: 2,
     longitude: -73.980187,
     latitude: 40.754951,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
      
     city: 'New York'
 })
@@ -85,7 +97,7 @@ home4 = Listing.create!({
     num_beds: 1,
     longitude: -73.983882,
     latitude: 40.764633,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
      
     city: 'New York'
 })
@@ -104,7 +116,7 @@ home5 = Listing.create!({
     num_beds: 3,
     longitude: -73.977070,
     latitude: 40.761798,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
  
     city: 'New York'
 })
@@ -124,7 +136,7 @@ home6 = Listing.create!({
     num_beds: 1,
     longitude: -80.184443,
     latitude: 25.815239,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
 
     city: 'Miami'
 })
@@ -143,7 +155,7 @@ home7 = Listing.create!({
     num_beds: 3,
     longitude: -80.200335,
     latitude: 25.794945,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
 
     city: 'Miami'
 })
@@ -162,7 +174,7 @@ home8 = Listing.create!({
     num_beds: 3,
     longitude: -80.190032,
     latitude: 25.798655,
-    host_id: jack.id,
+    host_id: 1,
     
     city: 'Miami'
 })
@@ -181,7 +193,7 @@ home9 = Listing.create!({
     num_beds: 3,
     longitude: -80.200060,
     latitude: 25.806228,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
      
     city: 'Miami'
 })
@@ -200,7 +212,7 @@ home10 = Listing.create!({
     num_beds: 1,
     longitude: -80.195439,
     latitude: 25.803185,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
      
     city: 'Miami'
 })
@@ -221,7 +233,7 @@ home11 = Listing.create!({
     num_beds: 1,
     longitude: -123.124999,
     latitude: 49.279795,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
 
     city: 'Vancouver'
 })
@@ -240,7 +252,7 @@ home12 = Listing.create!({
     num_beds: 1,
     longitude: -123.124786,
     latitude: 49.280828,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
   
     city: 'Vancouver'
 })
@@ -259,7 +271,7 @@ home13 = Listing.create!({
     num_beds: 2,
     longitude: -123.1238021850586,
     latitude: 49.282649993896484,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
 
     city: 'Vancouver'
 })
@@ -278,7 +290,7 @@ home14 = Listing.create!({
     num_beds: 2,
     longitude: -123.122707,
     latitude: 49.279874,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
 
     city: 'Vancouver'
 })
@@ -297,7 +309,7 @@ home15 = Listing.create!({
     num_beds: 2,
     longitude: -123.122302,
     latitude: 49.279376,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
      
     city: 'Vancouver'
 })
@@ -318,7 +330,7 @@ home16 = Listing.create!({
     num_beds: 4,
     longitude: -118.248597,
     latitude: 34.088243,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
  
     city: 'LA'
 })
@@ -346,7 +358,7 @@ home17 = Listing.create!({
     num_beds: 3,
     longitude: -118.410774,
     latitude: 34.00812,
-    host_id: jack.id,
+    host_id: 1,
  
     city: 'LA'
 })
@@ -368,7 +380,7 @@ home18 = Listing.create!({
     num_beds: 1,
     longitude: -118.39787,
     latitude: 34.048271,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
      
     city: 'LA'
 })
@@ -389,7 +401,7 @@ home19 = Listing.create!({
     num_beds: 2,
     longitude: -118.26888,
     latitude: 34.03612,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
      
     city: 'LA'
 })
@@ -408,7 +420,7 @@ home20 = Listing.create!({
     num_beds: 2,
     longitude: -118.30669,
     latitude: 34.07164,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
  
     city: 'LA'
 })
@@ -429,7 +441,7 @@ home21 = Listing.create!({
     num_beds: 1,
     longitude: -79.374382,
     latitude: 43.648380,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
      
     city: 'Toronto'
 })
@@ -449,7 +461,7 @@ home22 = Listing.create!({
     num_beds: 1,
     longitude: -79.376190,
     latitude: 43.641010,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
  
     city: 'Toronto'
 })
@@ -468,7 +480,7 @@ home23 = Listing.create!({
     num_beds: 2,
     longitude: -79.381760,
     latitude: 43.645611,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
  
     city: 'Toronto'
 })
@@ -487,7 +499,7 @@ home24 = Listing.create!({
     num_beds: 1,
     longitude: -79.385368,
     latitude: 43.649872,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
     
     city: 'Toronto'
 })
@@ -506,7 +518,7 @@ home25 = Listing.create!({
     num_beds: 1,
     longitude: -79.387016,
     latitude: 43.645489,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
     
     city: 'Toronto'
 })
@@ -527,7 +539,7 @@ home26 = Listing.create!({
     num_beds: 2,
     longitude: -87.63736,
     latitude: 41.89127,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
     
     city: 'Chicago'
 })
@@ -546,7 +558,7 @@ home27 = Listing.create!({
     num_beds: 1,
     longitude: -87.63497,
     latitude: 41.88509,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
      
     city: 'Chicago'
 })
@@ -565,7 +577,7 @@ home28 = Listing.create!({
     num_beds: 2,
     longitude: -87.64310,
     latitude: 41.88404,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
      
     city: 'Chicago'
 })
@@ -584,7 +596,7 @@ home29 = Listing.create!({
     num_beds: 1,
     longitude: -87.62667,
     latitude: 41.89050,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
      
     city: 'Chicago'
 })
@@ -604,7 +616,7 @@ home30 = Listing.create!({
     num_beds: 2,
     longitude: -87.632827,
     latitude: 41.8864,
-    host_id: jack.id,
+    host_id: Faker::Number.within(range: 1..50),
      
     city: 'Chicago'
 })
@@ -614,3 +626,34 @@ home30.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'h
 home30.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'home_images', '148.webp')), filename: '148.webp')
 home30.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'home_images', '149.webp')), filename: '149.webp')
 home30.photos.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'home_images', '150.webp')), filename: '150.webp')
+
+30.times do 
+    rating1 = Faker::Number.within(range: 1..5)
+    Review.create! ({
+        body: 'Awesome, unique spot! Very clean. Great communication with hosts.',
+        rating: rating1,
+        guest_id: Faker::Number.within(range: 1..50), 
+        listing_id: Faker::Number.within(range: 1..30),
+    })
+    rating2 = Faker::Number.within(range: 1..5)
+    Review.create! ({
+        body: 'Beautiful place and the host is very accommodating. My partner and I enjoyed our stay. Thanks for having us once again',
+        rating: rating2,
+        guest_id: Faker::Number.within(range: 1..50), 
+        listing_id: Faker::Number.within(range: 1..30),
+    })
+    rating3 = Faker::Number.within(range: 1..5)
+    Review.create! ({
+        body: 'I loved the place is beautiful, The host was always super attentive to my needs, I highly recommend the place.',
+        rating: rating3,
+        guest_id: Faker::Number.within(range: 1..50), 
+        listing_id: Faker::Number.within(range: 1..30),
+    })
+    rating4 = Faker::Number.within(range: 1..5)
+    Review.create! ({
+        body: 'Excellent location! Supremely clean and the hosts were very responsive to any inquiries. Strongly recommend and if I’m ever back to the city, will definitely stay here.',
+        rating: rating4,
+        guest_id: Faker::Number.within(range: 1..50), 
+        listing_id: Faker::Number.within(range: 1..30),
+    })
+end

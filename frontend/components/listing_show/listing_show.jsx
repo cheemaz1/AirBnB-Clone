@@ -71,22 +71,10 @@ class ListingShow extends React.Component {
     }
 
     let ratingSum = 0.0;
-    let cleanlinessSum = 0.0;
-    let communicationSum = 0.0;
-    let checkInSum = 0.0;
-    let accuracySum = 0.0;
-    let locationSum = 0.0;
-    let valueSum = 0.0;
     let listingReviews;
     if (this.props.listing.listing_reviews) {
       listingReviews = this.props.listing.listing_reviews.map((review, idx) => {
         ratingSum += review.rating;
-        cleanlinessSum += review.cleanliness;
-        communicationSum += review.communication;
-        checkInSum += review.check_in;
-        accuracySum += review.accuracy;
-        locationSum += review.location;
-        valueSum += review.value;
         return (
           <div
             key={`${idx}${review.id}`}
@@ -101,24 +89,7 @@ class ListingShow extends React.Component {
     let reviewRating = (
       ratingSum / this.props.listing.listing_reviews.length
     ).toFixed(2);
-    let cleanlinessRating = (
-      cleanlinessSum / this.props.listing.listing_reviews.length
-    ).toFixed(1);
-    let communicationRating = (
-      communicationSum / this.props.listing.listing_reviews.length
-    ).toFixed(1);
-    let checkInRating = (
-      checkInSum / this.props.listing.listing_reviews.length
-    ).toFixed(1);
-    let accuracyRating = (
-      accuracySum / this.props.listing.listing_reviews.length
-    ).toFixed(1);
-    let locationRating = (
-      locationSum / this.props.listing.listing_reviews.length
-    ).toFixed(1);
-    let valueRating = (
-      valueSum / this.props.listing.listing_reviews.length
-    ).toFixed(1);
+    
     return (
       <>
         <div className="flex-container-listing-show">
@@ -232,104 +203,6 @@ class ListingShow extends React.Component {
                   ""
                 ) : (
                   <div className="individual-ratings-grid">
-                    <div className="individual-rating-container">
-                      <span className="individual-rating-text">
-                        Cleanliness
-                      </span>
-                      <div className="meter-container">
-                        <meter
-                          className="reviews-meter"
-                          min="1"
-                          max="5"
-                          value={cleanlinessRating}
-                        ></meter>
-                        <span className="individual-rating-num">
-                          {cleanlinessRating}
-                        </span>
-                      </div>
-                    </div>
-                    <div className="individual-rating-container">
-                      <span className="individual-rating-text">
-                        Communication
-                      </span>
-                      <div className="meter-container">
-                        <meter
-                          className="reviews-meter"
-                          min="1"
-                          max="5"
-                          value={communicationRating}
-                        >
-                          {" "}
-                        </meter>
-                        <span className="individual-rating-num">
-                          {communicationRating}
-                        </span>
-                      </div>
-                    </div>
-                    <div className="individual-rating-container">
-                      <span className="individual-rating-text">Check-in</span>
-                      <div className="meter-container">
-                        <meter
-                          className="reviews-meter"
-                          min="1"
-                          max="5"
-                          value={checkInRating}
-                        >
-                          {" "}
-                        </meter>
-                        <span className="individual-rating-num">
-                          {checkInRating}
-                        </span>
-                      </div>
-                    </div>
-                    <div className="individual-rating-container">
-                      <span className="individual-rating-text">Accuracy</span>
-                      <div className="meter-container">
-                        <meter
-                          className="reviews-meter"
-                          min="1"
-                          max="5"
-                          value={accuracyRating}
-                        >
-                          {" "}
-                        </meter>
-                        <span className="individual-rating-num">
-                          {accuracyRating}
-                        </span>
-                      </div>
-                    </div>
-                    <div className="individual-rating-container">
-                      <span className="individual-rating-text">Location</span>
-                      <div className="meter-container">
-                        <meter
-                          className="reviews-meter"
-                          min="1"
-                          max="5"
-                          value={locationRating}
-                        >
-                          {" "}
-                        </meter>
-                        <span className="individual-rating-num">
-                          {locationRating}
-                        </span>
-                      </div>
-                    </div>
-                    <div className="individual-rating-container">
-                      <span className="individual-rating-text">Value</span>
-                      <div className="meter-container">
-                        <meter
-                          className="reviews-meter"
-                          min="1"
-                          max="5"
-                          value={valueRating}
-                        >
-                          {" "}
-                        </meter>
-                        <span className="individual-rating-num">
-                          {valueRating}
-                        </span>
-                      </div>
-                    </div>
                   </div>
                 )}
 

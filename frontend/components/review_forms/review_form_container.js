@@ -10,12 +10,8 @@ const mSTP = (state, ownProps) => ({
     rating: '',
     guest_id: state.session.id,
     listing_id: parseInt(ownProps.location.pathname.split('/')[2]),
-    cleanliness: 5,
-    communication: 5,
-    check_in: 5,
-    accuracy: 5,
-    location: 5,
-    value: 5,
+    rating: 5,
+
   },
 });
 

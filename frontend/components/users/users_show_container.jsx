@@ -12,6 +12,8 @@ const mSTP = (state, ownProps) => ({
     currentUserId: state.session.id
 })
 
+// debugger;
+
 const mDTP = dispatch => ({
     fetchListings: () => dispatch(fetchListings()),
     fetchUser: userId => dispatch(fetchUser(userId)),
