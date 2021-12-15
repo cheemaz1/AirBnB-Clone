@@ -245,7 +245,9 @@ textarea {
 .create-review-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
+  width: 80%;
+  height: 80%;
 }
 
 .images-preview-container {

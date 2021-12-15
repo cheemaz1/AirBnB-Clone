@@ -5,9 +5,9 @@ const UsersListings = ({listings, userId}) => {
     let selectedListings = listings.filter(
         listing => listing.host_id === userId
       );
-      console.log(selectedListings)
-      console.log(userId)
-      console.log(listings)
+      // console.log(selectedListings)
+      // console.log(userId)
+      // console.log(listings)
       return selectedListings.map((listing, idx) => {
         return (
           <li key={`${idx}${listing.id}`} className="listing-blurb">

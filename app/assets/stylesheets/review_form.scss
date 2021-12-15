@@ -16,7 +16,7 @@
 .review-rating-section-container {
   display: flex;
   gap: 10px;
-  justify-content: space-between;
+  justify-content: center;
   input {
     display: none;
   }
@@ -31,6 +31,7 @@
 }
 
 .review-rating-section-h6 {
+  align-self: center;
 }
 
 .review-stars-container {
